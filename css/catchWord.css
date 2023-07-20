@@ -1,0 +1,106 @@
+.catchWord_btn{
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    position: absolute;
+    cursor: pointer;
+    right: 35px;
+    transition: .3s;
+}
+.catchWord_btn:hover p{
+    color: rgb(255, 255, 255);
+}
+.catchWord_btn:hover div{
+    opacity: .85;
+    transform: translateX(-50%) translateY(-32%);
+}
+.catchWord_btn p{
+    position: relative;
+    transition: .5s;
+    z-index: 999;
+}
+.catchWord_btn div{
+    height: 50px;
+    width: 50px;
+    background-image: linear-gradient(to bottom, rgb(31, 240, 226), rgb(30, 254, 149, 0) 68%);
+    opacity: .7;
+    position: absolute;
+    border-radius: 100%;
+    z-index: 998;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-28%);
+    transition: .5s;
+}
+.catchWord_Window{
+    z-index: 1;
+    position: fixed;
+    top: -200px;
+    /* top: 60px; */
+    right: 8px;
+    width: 112px;
+    border-radius: 0 0 3px 3px;
+    height: 240px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(240, 248, 255, 0.1);
+    transition: .8s;
+    backdrop-filter: blur(4px);
+    border-top: #6bc7a5ab 2px solid;
+    box-shadow: 0 2px 50px 1px rgb(0 0 0 / 20%);
+}
+#catchTextBox{
+    height: 180px;
+    width: 82%;
+    box-shadow: 0 0 20px 2px rgba(0, 84, 94, 0.01);
+    border-radius: 3px;
+    color: rgba(240, 248, 255);
+    background-color: #00000039;
+    margin: 10px 10px 5px;
+    outline: none;
+    line-height: 20px;
+    border: none;
+    font-size: 13px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px 8px;
+    resize: none;
+}
+#catchTextBox::-webkit-scrollbar{
+    width: 3px;
+}
+#catchTextBox::-webkit-scrollbar-thumb{
+    border-radius: 2px;
+    background: rgba(60, 60, 60);
+}
+#catchTextBox::-webkit-scrollbar-thumb:hover{
+    background: rgb(0, 0, 0);
+}
+#catchTextBox::-webkit-scrollbar-track{
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 0.5);
+}
+#uploadInput {
+    display: none;
+}
+.custom-file-upload {
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 7px 10px 6px;
+    letter-spacing: 6px;
+    display: inline-block;
+    background-color: #1ccdac;
+    background-image: linear-gradient(to left, #199cc2, #1ccdac);
+    transition: .3s;
+    color: #141516bc;
+    cursor: pointer;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    text-align: right;
+    border-radius: 0 0 3px 3px;
+}
+.custom-file-upload:hover {
+    color: #141516;
+}

@@ -1,0 +1,103 @@
+.madeThingsWindow{
+    /* width: 55%; */
+    min-width: 800px;
+    height: 440px;
+    background-color: rgba(240, 248, 255, 0.05);
+    position: fixed;
+    transition: 1s;
+    z-index: 999;
+    left: 2000px;
+    top: 0;
+    backdrop-filter: blur(4px);
+    border-bottom: #6bc7a580 1px solid;
+    border-radius: 15px 3px 3px 3px;
+    box-shadow: 0 2px 50px 1px rgba(0, 0, 0, 0.2);
+}
+.madeThingsWindow_top{
+    height: 25px;
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(25, 145, 200), rgb(30, 254, 149));
+    border-radius: 15px 0 0 0;
+    cursor: all-scroll;
+}
+.madeThingsWindow_inside{
+    overflow: auto;
+    height: 410px;
+    color: #fafafa;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 25px;
+}
+.madeThingsWindow_inside::-webkit-scrollbar{
+    width: 1px;
+    height: 1px;
+}
+.madeThingsWindow_inside::-webkit-scrollbar-thumb{
+    border-radius: 2px;
+    background: #1fff97a8;
+}
+.madeThingsWindow_inside::-webkit-scrollbar-track{
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 0);
+}
+.madeThingsWindow_closeBtn{
+    position: absolute;
+    height: 25px;
+    width: 80px;
+    background-color: rgba(255, 0, 0, 0.797);
+    right: 0;
+    cursor: pointer;
+}
+.ThingWindow_title{
+    margin: 0 0 2px 10px;
+    font-size: 25px;
+    color: rgb(234, 234, 234);
+    font-weight: 600;
+}
+.ThingWindow_title_btm{
+    margin: 0 0 5px 14px;
+    color: rgb(190, 190, 190);
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+.ThingWindow_nameBox{
+    border-left: 4px solid #f0f0f0;
+    margin: 8px 0 10px 0;
+}
+.ThingWindow_madeBox{
+    position: relative;
+}
+.ThingWindow_madeBox table{
+    position: absolute;
+    width: 750px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.madeBox_title{
+    background-color: #fafafaed;
+    display: inline-block;
+    padding: 2px 14px;
+    border-radius: 13px;
+    color: #393839;
+    font-size: 13px;
+    line-height: 20px;
+    height: 25px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    box-sizing: border-box;
+    margin-left: 25px;
+    font-weight: 600;
+}
+.ThingWindow_q,.ThingWindow_q_num,.tuzhi_how{
+    margin-left: 48px;
+    font-size: 16px;
+    color: rgb(215, 215, 215);
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 5px;
+}
+.madeItWinImg{
+    height: 100px;
+    margin-top: 5px;
+    cursor: pointer;
+    display: block;
+}
