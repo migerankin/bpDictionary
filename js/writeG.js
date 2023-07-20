@@ -111,7 +111,7 @@ function writeG(){
                 <p class="commentText">${returnArray[i].title.replace('【',' [ ').replace('】',' ] ')}</p>
             </a>`
         }
-        console.log(returnArray);
+        // console.log(returnArray);
         Ghtml += `
         <div class="nowActivity">
             <div class="mainMessage"><p>/ 官方公告</p></div>
