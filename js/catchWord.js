@@ -13,7 +13,7 @@ document.getElementsByClassName('catchWord_btn')[0].onclick = function(){
     document.addEventListener('paste', handlePaste);
   }else{
     document.getElementsByClassName('catchWord_Window')[0].style.top = '-200px'
-    document.getElementById('catchTextBox').innerText = '选择图片文件或复制图片后ctrl+ v。受识别准确率影响，建议只截取两三个连贯的正确假名进行模糊搜索。'
+    // document.getElementById('catchTextBox').innerText = '选择图片文件或复制图片后ctrl+ v。受识别准确率影响，建议只截取两三个连贯的正确假名进行模糊搜索。'
     catchWord_WindowTimes=0
     document.removeEventListener('paste', handlePaste);
   }
