@@ -32,6 +32,5 @@ var totalImages = imgurl.length;
 
     // Load images
     for (var i = 0; i < totalImages; i++) {
-        if(totalImages-i==1)loadedImages=totalImages;
       loadImage(imgurl[i]);
     }
