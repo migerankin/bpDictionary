@@ -25,7 +25,6 @@ var totalImages = imgurl.length;
 
     function updateProgressBar() {
       var progress = (loadedImages / totalImages) * 100;
-        if(progress>100)progress=100;
       document.getElementById("progress").style.width = progress + "%";
       document.getElementById('progress').getElementsByTagName('p')[0].innerHTML = Math.floor(progress) + '%'
     }
