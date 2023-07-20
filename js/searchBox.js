@@ -400,9 +400,6 @@ function searchByIndexOf(keyWord, list){
             // table.rows[i].cells[9].setAttribute('title', '精神力');
         }
         showStart()
-        $('#Htable img').click(function(){
-            drawMakeThingWindow(W_value[this.title])
-        })
     }else if(messageKind==6){
         var W_htmlStr = `
         <p class="windowTitle">| 查询 角色武器</p> 
