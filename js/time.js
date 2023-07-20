@@ -28,8 +28,8 @@ var futureDateelse = new Date(futureTimeStampelse);
 
 // console.log(futureDate);
 
-let c = document.getElementById('canvas')
-    let ctx = c.getContext('2d')
+var c = document.getElementById('canvas')
+var ctx = c.getContext('2d')
     var precent = 100
     //绘制轨道
     function drawTrack() {
@@ -76,6 +76,7 @@ let c = document.getElementById('canvas')
         // console.log(dayOrNight);
         if(startSecond/1500>=1){
             startSecond = 0
+            ctx.clearRect(0, 0, 300, 300);
         }
         now = new Date()
         currentTimeStamp = Date.now();
@@ -96,7 +97,7 @@ let c = document.getElementById('canvas')
         futureDate = new Date(futureTimeStamp);
         futureDateelse = new Date(futureTimeStampelse);
 
-        // console.log(futureDate);
+        console.log(futureDate);
 
         document.getElementById('nowTime').innerHTML = `北京时间<br><b style="color: #edf5f5;">${now.getHours().toString().padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')}:${now.getSeconds().toString().padStart(2, '0')}</b>`
         if(dayOrNight==1){
