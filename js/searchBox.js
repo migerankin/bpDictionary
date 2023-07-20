@@ -11,7 +11,7 @@ function showList(){
 	var res = searchByIndexOf(search.value,E_value);
     for(var i=0;i<res.length;i++){
 		var li = document.createElement("li");
-		li.innerHTML = `<div style="color: ${TextAnswerBoxColor}" onclick="searchMessage('${res[i]}',1)">${res[i]}<p style="position: absolute; right: 15px; top: 0px; line-height: 55px;">E幻想</p></div>`;
+		li.innerHTML = `<div style="color: ${TextAnswerBoxColor};" onclick="searchMessage('${res[i]}',1)">${res[i]}<p style="position: absolute; right: 15px; top: 0px; line-height: 55px;">E幻想</p></div>`;
 		document.getElementById("drop").appendChild(li);
 	}
     res = searchByIndexOf(search.value,B_value)
@@ -72,17 +72,17 @@ search.onfocus = function(){
 }
  
 //添加失去焦点事件
-search.onblur = function(){
-//	console.log("soutsout")
-document.getElementById("drop").style.opacity = '0'
-// document.getElementById("drop").style.width = '220px'
-$('.blue-input').css('width','220px')
-    setTimeout(function(){
-        var drop = document.getElementById("drop");
-	    selectedId.removeChild(drop);
-$('.blue-input').css('opacity','.8')
-    },200)
-}
+// search.onblur = function(){
+// //	console.log("soutsout")
+// document.getElementById("drop").style.opacity = '0'
+// // document.getElementById("drop").style.width = '220px'
+// $('.blue-input').css('width','220px')
+//     setTimeout(function(){
+//         var drop = document.getElementById("drop");
+// 	    selectedId.removeChild(drop);
+// $('.blue-input').css('opacity','.8')
+//     },200)
+// }
  
  
  
@@ -310,7 +310,7 @@ function searchByIndexOf(keyWord, list){
     
         MB_value.forEach((MB_every)=>{
             if(MB_every.name==message){
-                searchhtml += `<tr class="canclick">
+                searchhtml += `<tr>
                     <td><img src="./img/icon/m/${MB_every.pid}.png" alt="暂无" style="height: 110px;"></td>
                     <td style="font-size: 14px;">${MB_every.level}</td>
                     <td style="font-size: 14px;">${MB_every.name}</td>
@@ -357,10 +357,10 @@ function searchByIndexOf(keyWord, list){
                     <th width="50%">地图点位</th>
                 </tr>`
     
-        SC_value.forEach((SC_every)=>{
+        SC_value.forEach((SC_every, index)=>{
             if(SC_every.name==message){
                 if(SC_every.mappic=='1'){
-                    searchhtml += `<tr id="Htable">
+                    searchhtml += `<tr class="canclick">
                         <td style="font-size: 14px;">${SC_every.name}</td>
                         <td style="font-size: 14px;">${SC_every.kind}</td>
                         <td>${SC_every.obtain}</td>
