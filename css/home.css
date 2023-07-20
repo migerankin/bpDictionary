@@ -203,7 +203,14 @@
     letter-spacing: 10px;
     user-select: none;
 }
-
+.soManyMins{
+    bottom: -105px;
+    letter-spacing: 0;
+    text-align: center;
+    width: 40%;
+    font-size: 15px;
+    opacity: .55;
+}
 
 
 .commentBox{
