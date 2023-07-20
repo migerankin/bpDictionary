@@ -360,7 +360,7 @@ function searchByIndexOf(keyWord, list){
         SC_value.forEach((SC_every)=>{
             if(SC_every.name==message){
                 if(SC_every.mappic=='1'){
-                    searchhtml += `<tr>
+                    searchhtml += `<tr id="Htable">
                         <td style="font-size: 14px;">${SC_every.name}</td>
                         <td style="font-size: 14px;">${SC_every.kind}</td>
                         <td>${SC_every.obtain}</td>
@@ -400,6 +400,9 @@ function searchByIndexOf(keyWord, list){
             // table.rows[i].cells[9].setAttribute('title', '精神力');
         }
         showStart()
+        $('#Htable img').click(function(){
+            drawMakeThingWindow(W_value[this.title])
+        })
     }else if(messageKind==6){
         var W_htmlStr = `
         <p class="windowTitle">| 查询 角色武器</p> 
