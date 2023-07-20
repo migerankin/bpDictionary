@@ -153,7 +153,7 @@ function searchByIndexOf(keyWord, list){
     })
     
     searchhtml += `</tbody>
-    </table>`
+    </table><div style="height: 200px;"></div>${buttomTag}`
     
     document.getElementsByClassName('window')[0].innerHTML = searchhtml
 
@@ -224,7 +224,7 @@ function searchByIndexOf(keyWord, list){
         })
         
         searchhtml += `</tbody>
-        </table>`
+        </table><div style="height: 200px;"></div>${buttomTag}`
         
         document.getElementsByClassName('window')[0].innerHTML = searchhtml
 
@@ -275,7 +275,7 @@ function searchByIndexOf(keyWord, list){
             }
         })
         
-        searchhtml += `</tbody></table>`
+        searchhtml += `</tbody></table><div style="height: 200px;"></div>${buttomTag}`
 
         document.getElementsByClassName('window')[0].innerHTML = searchhtml
         let table = document.getElementsByTagName('table')[0];
@@ -321,7 +321,7 @@ function searchByIndexOf(keyWord, list){
             }
         })
         
-        searchhtml += `</tbody></table>`
+        searchhtml += `</tbody></table><div style="height: 200px;"></div>${buttomTag}`
         
         
         document.getElementsByClassName('window')[0].innerHTML = searchhtml
@@ -379,7 +379,7 @@ function searchByIndexOf(keyWord, list){
             }
         })
         
-        searchhtml += `</tbody></table>`
+        searchhtml += `</tbody></table><div style="height: 200px;"></div>${buttomTag}`
         
         document.getElementsByClassName('window')[0].innerHTML = searchhtml
 
@@ -443,7 +443,7 @@ function searchByIndexOf(keyWord, list){
         })
         
         W_htmlStr += `</tbody>
-        </table>`
+        </table><div style="height: 200px;"></div>${buttomTag}`
         
         document.getElementsByClassName('window')[0].innerHTML = W_htmlStr
 
