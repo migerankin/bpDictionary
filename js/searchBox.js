@@ -310,7 +310,7 @@ function searchByIndexOf(keyWord, list){
     
         MB_value.forEach((MB_every)=>{
             if(MB_every.name==message){
-                searchhtml += `<tr>
+                searchhtml += `<tr class="canclick">
                     <td><img src="./img/icon/m/${MB_every.pid}.png" alt="暂无" style="height: 110px;"></td>
                     <td style="font-size: 14px;">${MB_every.level}</td>
                     <td style="font-size: 14px;">${MB_every.name}</td>
