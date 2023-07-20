@@ -75,8 +75,8 @@ var ctx = c.getContext('2d')
         // console.log(startSecond);
         // console.log(dayOrNight);
         if(startSecond/1500>=1){
-            startSecond = 0
             ctx.clearRect(0, 0, 300, 300);
+            startSecond = 0
         }
         now = new Date()
         currentTimeStamp = Date.now();

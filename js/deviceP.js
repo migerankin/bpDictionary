@@ -14,7 +14,7 @@ var windowSizeInterval = setInterval(function(){
             document.getElementById('windowSizeWarning').style.left = '-210px'
         }
     }
-    document.getElementById('windowSizeWarning').innerHTML = `<span>×</span><p>当前网页缩放比例为：${Math.floor(windowsize*100)}%<br>调节至125%以获得更优使用体验</p>`
+    document.getElementById('windowSizeWarning').innerHTML = `<span>×</span><p>当前网页缩放比例为：${Math.floor(windowsize*100)}%<br>调节至 125% 以获得更优使用体验</p>`
     document.getElementById('windowSizeWarning').getElementsByTagName('span')[0].onclick = function(){
         intervalor=1
         document.getElementById('windowSizeWarning').style.left = '-210px'

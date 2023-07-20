@@ -10,7 +10,7 @@ var totalImages = imgurl.length;
         loadedImages++;
         updateProgressBar();
 
-        if (loadedImages >= totalImages) {
+        if (loadedImages === totalImages) {
           // All images are loaded
           // Proceed to your web page
         //   console.log("All images loaded");
