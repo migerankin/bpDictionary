@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蓝协字典</title>
+    <meta name="description" content="蓝协字典是玩家自发为多人在线二次元类MMO蓝色协议所编写的wiki站点。">
+    <meta name="keywords" content="blue protocol,蓝色协议,蓝色协议wiki,蓝协字典,蓝协wiki,blue protocol wiki,wiki">
+    <link rel="shortcut icon" href="./img/icon/myicon_black_removebg.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/window.css">
+    <link rel="stylesheet" href="./css/searchBox.css">
+    <link rel="stylesheet" href="./css/madeThing.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/catchWord.css">
+</head>
+<body>
+    <div class="backgroundImg"></div>
+    <div class="bar">
+        <a href="https://blue-protocol.com/" target="_blank">
+            <div style="display: flex; align-items: center; margin: 0 40px 0 110px;" class="title2">
+                <img src="./img/icon/myicon_black.png" style="width: 24px; height: 24px;">
+                <p class="bphtml">BLUE PROTOCOL</p>
+            </div>
+        </a>
+        <div><p class="title title2" onclick="writeG()" style="border-bottom-color: #ffffff">主页</p></div>
+        <div><p class="title title2" onclick="writeB()">B 幻想</p></div>
+        <div><p class="title title2" onclick="writeE()">E 幻想</p></div>
+        <div><p class="title title2" onclick="writeW()">武器</p></div>
+        <div><p class="title title2" onclick="writeM()">怪物</p></div>
+        <div><p class="title title2" onclick="writeSC()">材料</p></div>
+        <div><a href="./src/log.html" target="_blank"><p class="title title2">开发日志</p></a></div>
+        
+        <div class="sea-container">
+            <input type="text" name="search" class="blue-input" placeholder="幻想/武器/怪物/材料名查找">
+            <p id="selectedId"></p>
+        </div>
+
+        <div class="catchWord_btn"><div></div><p>日文识别</p></div>
+    </div>
+    
+    <div class="catchWord_Window">
+        <textarea name="" cols="30" rows="10" id="catchTextBox">选择图片文件或复制图片后ctrl+ v。受识别准确率影响，建议只截取两三个连贯的正确假名进行模糊搜索。</textarea>
+        <div style="width: 80%; height: 1px; background-color: #00000039; margin: 0 auto;"></div>
+        <label for="uploadInput" class="custom-file-upload">选择图片</label>
+        <input type="file" id="uploadInput" accept="image/*">
+    </div>
+    <img src="./img/map/7008.png" alt="暂缺" class="IMGshowWindow">
+    <div class="window"></div>
+    <div class="Blackhover">
+        <div id="progress-bar">
+            <p class="progressTitle">资源加载中</p>
+            <div id="progress">
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <div class="floatBox"></div>
+    <div class="totop" onclick="scrollToTop()"><img src="./img/icon/top.png"></div>
+    <div class="madeThingsWindow">
+        <div class="madeThingsWindow_closeBtn"></div>
+        <div class="madeThingsWindow_top"></div>
+        <div class="madeThingsWindow_inside">
+        </div>
+    </div>
+    <div class="canvasBox">
+        <div class="canvasShadow"></div>
+        <canvas id="canvas" width="300" height="300">您的浏览器不支持 HTML5 canvas 标签。</canvas>
+        <div style="position: absolute; top: 84px; left: 50%; transform: translateX(-50%);">
+            <p id="nowDay"></p>
+            <p id="nowTime"></p>
+            <p id="nextFirst"></p>
+            <p id="nextSecond"></p>
+        </div>
+    </div>
+    <div id="windowSizeWarning"><span>×</span><p>当前网页缩放比例为：100%<br>调节至125%以获得更优使用体验</p></div>
+</body>
+</html>
+<script>function scrollToSection(sectionId) {var section = document.getElementById(sectionId);section.scrollIntoView({ behavior: 'smooth' });}</script>
+<!-- <script src="./js/topScrop.js"></script> -->
+<script src="./js/showIMGwindow.js"></script>
+<script src="./js/randomHome.js"></script>
+<script src="./js/jquery.js"></script>
+<script src="./js/data_l.js"></script>
+<script src="./js/data_e.js"></script>
+<script src="./js/data_b.js"></script>
+<script src="./js/data_sc.js"></script>
+<script src="./js/data_m.js"></script>
+<script src="./js/data_w.js"></script>
+<script src="./js/data_g.js"></script>
+<script src="./js/rewrite.js"></script>
+<script src="./js/choiseE.js"></script>
+<script src="./js/writeE.js"></script>
+<script src="./js/writeB.js"></script>
+<script src="./js/writeSC.js"></script>
+<script src="./js/writeM.js"></script>
+<script src="./js/writeW.js"></script>
+<script src="./js/choiseB.js"></script>
+<script src="./js/choiseW.js"></script>
+<!-- <script src="./js/choiseWindow.js"></script> -->
+<script src="./js/toTop.js"></script>
+<script src="./js/choiseTop.js"></script>
+<script src="./js/searchBox.js"></script>
+<script src="./js/madeThingDrop.js"></script>
+<script src="./js/catch_data.js"></script>
+<script src="./js/writeG.js"></script>
+<script src="./js/load.js"></script>
+<script src="./js/downLoad.js"></script>
+<!-- <script src="./js/tesseract.min.js.map"></script> -->
+
+<script src="./js/tesseract.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="./js/catchWord.js"></script>
+<script src="./js/deviceP.js"></script>
+<script src="./js/time.js"></script>
