@@ -72,17 +72,17 @@ search.onfocus = function(){
 }
  
 //添加失去焦点事件
-// search.onblur = function(){
-// //	console.log("soutsout")
-// document.getElementById("drop").style.opacity = '0'
-// // document.getElementById("drop").style.width = '220px'
-// $('.blue-input').css('width','220px')
-//     setTimeout(function(){
-//         var drop = document.getElementById("drop");
-// 	    selectedId.removeChild(drop);
-// $('.blue-input').css('opacity','.8')
-//     },200)
-// }
+search.onblur = function(){
+//	console.log("soutsout")
+document.getElementById("drop").style.opacity = '0'
+// document.getElementById("drop").style.width = '220px'
+$('.blue-input').css('width','220px')
+    setTimeout(function(){
+        var drop = document.getElementById("drop");
+	    selectedId.removeChild(drop);
+$('.blue-input').css('opacity','.8')
+    },200)
+}
  
  
  
