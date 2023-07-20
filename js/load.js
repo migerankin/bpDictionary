@@ -25,12 +25,13 @@ var totalImages = imgurl.length;
 
     function updateProgressBar() {
       var progress = (loadedImages / totalImages) * 100;
+        if(progress>100)progress=100;
       document.getElementById("progress").style.width = progress + "%";
       document.getElementById('progress').getElementsByTagName('p')[0].innerHTML = Math.floor(progress) + '%'
     }
 
     // Load images
     for (var i = 0; i < totalImages; i++) {
-        if(totalImages-i==2)loadedImages=totalImages;
+        if(totalImages-i==1)loadedImages=totalImages;
       loadImage(imgurl[i]);
     }
