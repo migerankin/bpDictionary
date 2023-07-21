@@ -52,7 +52,7 @@ var ctx = c.getContext('2d')
         ctx.lineWidth = 54
         ctx.strokeStyle = 'rgb(237, 246, 246)'
         // context.arc(x,y,r,sAngle,eAngle,counterclockwise);   //x坐标,y坐标,半径,起始角,结束角,顺时针/逆时针
-        ctx.arc(150, 150, 100, -Math.PI / 2, -Math.PI / 2 + 2 * startSecond * Math.PI)
+        ctx.arc(150, 150, 100, -Math.PI / 2 + 2 * startSecond * Math.PI, -Math.PI / 2)
         ctx.stroke()
         ctx.closePath();
         ctx.restore();
