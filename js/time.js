@@ -98,7 +98,7 @@ var ctx = c.getContext('2d')
         if(startSecond/1500>=1){
             startSecond = 0
         }
-        console.log(futureDate);
+        // console.log(futureDate);
 
         document.getElementById('nowTime').innerHTML = `北京时间<br><b style="color: #edf5f5;">${now.getHours().toString().padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')}:${now.getSeconds().toString().padStart(2, '0')}</b>`
         if(dayOrNight==1){
