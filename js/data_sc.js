@@ -58,7 +58,7 @@ var SC_value = [
       
 
     { pid: '7401', name: '割れた貝殻', kind: '水栖采集', obtain: '全地图', mappic: '0', sfrom:'水栖'},
-    { pid: '7402', name: 'さざなみ石', kind: '水栖采集', obtain: '全地图', mappic: '0', sfrom:'水栖'},
+    { pid: '7402', name: 'さざなみ石', kind: '水栖采集', obtain: '全地图<br>[以下必掉]<br>アステリア平原<br>バハマール高原<br>モンテノール渓谷', mappic: '2', sfrom:'水栖',mapWhere:['740201','740202','740203']},
     { pid: '7403', name: '旅藻草', kind: '水栖采集', obtain: 'ミンスター丘陵', mappic: '1', sfrom:'水栖'},
     { pid: '7404', name: 'フィエル蓮葉', kind: '水栖采集', obtain: 'バハマール高原', mappic: '1', sfrom:'水栖'},
     { pid: '7405', name: 'ルーノコハク・イミュー', kind: '水栖采集', obtain: 'バハマール高原', mappic: '1', sfrom:'水栖'},
