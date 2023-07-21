@@ -42,12 +42,12 @@ var buttomTag = ` <div class="outBox">
     </div>
     <div class="outBox_firstdiv secondDiv">
         <div class="outtitle"><p>| 反馈与勘误</p></div>
-        <div class="outBlock"><a href="javascript:;">贴吧</a></div>
-        <div class="outBlock"><a href="javascript:;">NGA 论坛</a></div>
+        <div class="outBlock"><a href="javascript:;" target="_blank">贴吧</a></div>
+        <div class="outBlock"><a href="javascript:;" target="_blank">NGA 论坛</a></div>
     </div>
     <div class="outBox_firstdiv secondDiv">
         <div class="outtitle"><p>| Github</p></div>
-        <div class="outBlock"><a href="https://github.com/migerankin/bpDictionary">@migerankin</a></div>
+        <div class="outBlock"><a href="https://github.com/migerankin/bpDictionary" target="_blank">@migerankin</a></div>
     </div>
 </div>`
 var interevalPic
