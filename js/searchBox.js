@@ -266,7 +266,7 @@ function searchByIndexOf(keyWord, list){
                 for(var i=0;i<M_every.mapWhere.length;i++){
                     imgSrcString += `<img src="./img/monster/`+M_every.mapWhere[i]+`.png" alt="暂无" style="height: 150px;">`
                 }
-                searchhtml += `<tr>
+                searchhtml += `<tr class="canclick">
                     <td><img src="./img/icon/m/${M_every.pid}.png" alt="暂无" style="height: 100px;"></td>
                     <td style="font-size: 14px;">${M_every.name}</td>
                     <td>${M_every.spaceName}</td>
@@ -310,7 +310,7 @@ function searchByIndexOf(keyWord, list){
     
         MB_value.forEach((MB_every)=>{
             if(MB_every.name==message){
-                searchhtml += `<tr>
+                searchhtml += `<tr class="canclick">
                     <td><img src="./img/icon/m/${MB_every.pid}.png" alt="暂无" style="height: 110px;"></td>
                     <td style="font-size: 14px;">${MB_every.level}</td>
                     <td style="font-size: 14px;">${MB_every.name}</td>
