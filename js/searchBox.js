@@ -367,6 +367,17 @@ function searchByIndexOf(keyWord, list){
                         <td>${SC_every.sfrom}</td>
                         <td><img src="./img/map/${SC_every.pid}.png" alt="暂无" style="height: 200px;"></td>
                     </tr>`
+                }else if(SC_every.mappic=='2'){
+                    for(var i=0;i<SC_every.mapWhere.length;i++){
+                        imgSrcString += `<img src="./img/map/`+SC_every.mapWhere[i]+`.png" alt="暂无" style="height: 150px;">`
+                    }
+                    searchhtml += `<tr class="canclick">
+                        <td style="font-size: 14px;">${SC_every.name}</td>
+                        <td style="font-size: 14px;">${SC_every.kind}</td>
+                        <td>${SC_every.obtain}</td>
+                        <td>${SC_every.sfrom}</td>
+                        <td class="manyImgBar">${imgSrcString}</td>
+                    </tr>`
                 }else{
                     searchhtml += `<tr>
                         <td style="font-size: 14px;">${SC_every.name}</td>
