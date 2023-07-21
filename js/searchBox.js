@@ -356,7 +356,7 @@ function searchByIndexOf(keyWord, list){
                     <th width="20%">获取对象</th>
                     <th width="50%">地图点位</th>
                 </tr>`
-    
+        var imgSrcString = ``
         SC_value.forEach((SC_every, index)=>{
             if(SC_every.name==message){
                 if(SC_every.mappic=='1'){
