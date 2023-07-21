@@ -69,15 +69,13 @@ var ctx = c.getContext('2d')
     //     drawProgress(num)
     // }())
     setInterval(function(){
+        ctx.clearRect(0, 0, 300, 300);
+
         drawTrack()
         drawProgress(startSecond/1500)
-        startSecond+=1
+        // startSecond+=1
         // console.log(startSecond);
         // console.log(dayOrNight);
-        if(startSecond/1500>=1){
-            ctx.clearRect(0, 0, 300, 300);
-            startSecond = 0
-        }
         now = new Date()
         currentTimeStamp = Date.now();
 
@@ -97,7 +95,10 @@ var ctx = c.getContext('2d')
         futureDate = new Date(futureTimeStamp);
         futureDateelse = new Date(futureTimeStampelse);
 
-        // console.log(futureDate);
+        if(startSecond/1500>=1){
+            startSecond = 0
+        }
+        console.log(futureDate);
 
         document.getElementById('nowTime').innerHTML = `北京时间<br><b style="color: #edf5f5;">${now.getHours().toString().padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')}:${now.getSeconds().toString().padStart(2, '0')}</b>`
         if(dayOrNight==1){
