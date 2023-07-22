@@ -4,16 +4,12 @@ function showStart(){
     $('.IMGshowWindow').css('display','none')
     isshowWindowClose=0
     $('.canclick img').click(function(){
-        if(isshowWindowClose==0){
-            $('.IMGshowWindow').css('height','400px')
-            $('.IMGshowWindow').css('display','block')
-            isshowWindowClose=1
-        }
+        $('.IMGshowWindow').css('height','400px')
+        $('.IMGshowWindow').css('display','block')
         $('.IMGshowWindow').attr('src',this.src)
     })
     $('.IMGshowWindow').click(function(){
         $('.IMGshowWindow').css('display','none')
-        isshowWindowClose=0
     })
     $(".IMGshowWindow").on("wheel", function(event) {
         event.preventDefault();
