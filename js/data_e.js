@@ -99,7 +99,7 @@ var E_value = [
 
     {pid:'2008',name:'岩場に佇むホーンゴート<br>立于峭壁上的霍恩羊',kind:'矢尻',lev:'35',atk:'7',def:'15',j:'22',n:'10',q:'22',z:'24',s:'13',end:'スタミナセーブ：全・G1<br>インスピレーションG2<br>巧妙G2',endexp:'全体力减免+3%+10<br>筋力+7 精神+7<br>器用+13',isJust:'0',madeIt:{tuzhi:'<a onclick="showFuBenWhereIs(1)">巨竜の爪痕・自由探索</a> 开宝箱<img src="../img/precious/0012.png" alt="暂缺" class="madeItWinImg">',sucai_Q:'ルーノ',sucai_Q_num:'224300',sucai_C:['動的エングラムの結晶片','トコヨ草','湧水石'],sucai_C_num:[22,15,9],sucai_B:'',sucai_B_num:''}},
 
-    {pid:'2009',name:'一座の絆<br>剧团的纽带',kind:'矢尻',lev:'35',atk:'9',def:'14',j:'16',n:'26',q:'20',z:'22',s:'2',end:'耐冰心得G3<br>生命奔流G2<br>集中G2',endexp:'冰属性耐性+10<br>HP+400<br>精神+13',isJust:'0',madeIt:{tuzhi:'角色任务「一座の絆」',sucai_Q:'ルーノ',sucai_Q_num:'224300',sucai_C:['水晶の原石','動的エングラムの結晶片','燃える妖花'],sucai_C_num:[15,22,9],sucai_B:'',sucai_B_num:''}},
+    {pid:'2009',name:'一座の絆<br>剧团的牵绊',kind:'矢尻',lev:'35',atk:'9',def:'14',j:'16',n:'26',q:'20',z:'22',s:'2',end:'耐冰心得G3<br>生命奔流G2<br>集中G2',endexp:'冰属性耐性+10<br>HP+400<br>精神+13',isJust:'0',madeIt:{tuzhi:'角色任务「一座の絆」',sucai_Q:'ルーノ',sucai_Q_num:'224300',sucai_C:['水晶の原石','動的エングラムの結晶片','燃える妖花'],sucai_C_num:[15,22,9],sucai_B:'',sucai_B_num:''}},
 
     {pid:'2010',name:'天の弾丸ゾルキシア狙撃兵<br>高天之弹・索尔基西亚狙击兵',kind:'矢尻',lev:'40',atk:'6',def:'20',j:'24',n:'15',q:'24',z:'20',s:'16',end:'生命奔流G2<br>刚力G2<br>防御的极意：火属性攻击・G1',endexp:'HP+400<br>筋力+13<br>火属性受伤减免+8%',isJust:'0',madeIt:{tuzhi:'<a onclick="showFuBenWhereIs(4)">枷神の産屋・自由探索</a> 开宝箱得到的任务板里<img src="../img/precious/0006.png" alt="暂缺" class="madeItWinImg">',sucai_Q:'ルーノ',sucai_Q_num:'293000',sucai_C:['環状石','動的エングラムの欠片','バラージアームの機鎧'],sucai_C_num:[15,69,15],sucai_B:'',sucai_B_num:''}},
 
