@@ -7,9 +7,10 @@
     <link rel="shortcut icon" href="../img/icon/myicon_black_removebg.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/window.css">
+    <link rel="stylesheet" href="../css/home.css">
     <script src="../js/jquery.js"></script>
     <style>
-        .window p{
+        .windowdiv p{
             font-size: 15px;
             color: aliceblue;
             font-family: '宋体';
@@ -25,7 +26,7 @@
             margin: 10px 0 0 120px;
             height: 100px;
         }
-        .window div{
+        .windowdiv{
             margin-bottom: 30px;
         }
         #hiddenit{
@@ -38,6 +39,9 @@
         }
         .hiddenit{
             display: none;
+        }
+        .outBox{
+            margin-top: 200px;
         }
     </style>
 </head>
@@ -58,7 +62,7 @@
         <div><a href="script:;"><p class="title title2">开发日志</p></a></div>
     </div>
     <div class="window" style="padding-bottom: 40px;">
-        <div>
+        <div class="windowdiv">
             <p style="background-color: #ffffff; color: black; width: auto; display: inline-block; padding: 0 15px;">待补充的数据</p><span id="hiddenit">[显示]</span>
             <p class="hiddenit">1，E - 花火を楽しむなら夜なのじゃ（活动幻想）<i> / 需要货币数及材料类型、数目</i></p>
             <p class="hiddenit">2，E - 貝殻ゴブリンがやってきた（活动幻想）<i> / 需要货币数及材料类型、数目</i></p>
@@ -70,46 +74,74 @@
             <p class="hiddenit">8，B - 遺留のオートマトン<i> / 需要货币数</i></p>
             <p class="hiddenit">9，B - 朱に染まりし機神<i> / 需要货币数</i></p>
         </div>
-        <div>
+        <div class="windowdiv">
+            <p>2023-7-22 15:52</p>
+            <p>优化了窗口中央提示图片的显示逻辑。</p>
+            <p>调整了日文图片识别窗口的层次属性。</p>
+        </div>
+        <div class="windowdiv">
             <p>2023-7-21 20:26</p>
             <p>完善了材料数据的地图点位显示方式。</p>
             <p>新增了若干水栖材料的地图点位。</p>
         </div>
-        <div>
+        <div class="windowdiv">
             <p>2023-7-21 10:48</p>
             <p>修复了搜索小怪及 Boss 时地图点触事件缺失的问题。</p>
         </div>
-        <div>
+        <div class="windowdiv">
             <p>2023-7-20 22:21</p>
             <p>修复了游戏内昼夜显示工具环形条显示异常的问题。</p>
             <p>修复了搜索材料时结果界面地图点击事件缺失的问题。</p>
             <p>调整了搜索候选框的元素结构。</p>
             <p>调整了若干元素的样式。</p>
         </div>
-        <div>
+        <div class="windowdiv">
             <p>2023-7-20 15:11</p>
             <p>拟上线。</p>
         </div>
-        <div>
+        <div class="windowdiv">
             <p>2023-7-19 23:23</p>
             <p>武器界面、武器与幻想制作界面、首页编写完成。日文识别与游戏内昼夜状态同步工具编写完成。部分细节待完善。活动幻想和部分地图 boss 幻想数据待补充。</p>
         </div>
-        <div>
+        <div class="windowdiv">
             <p>2023-7-16 23:24</p>
             <p>画了LOGO。</p>
             <img src="../img/icon/myicon_black.png" alt="它是LOGO">
         </div>
-        <div>
+        <div class="windowdiv">
             <p>2023-7-16 22:06</p>
             <p>强化幻想、战斗幻想、怪物掉落物和怪物清单数据全部编入，搜索功能实装。武器数据和幻想制作界面待补充。</p></div>
-        <div>
+        <div class="windowdiv">
             <p>2023-7-14 23:18</p>
             <p>强化幻想的数据全部编入，强化幻想和战斗幻想的标签筛选和表格排序功能实装，战斗幻想还差点。<br>有几个幻想的信息要上号验证和补完。</p>
         </div>
-        <div>
+        <div class="windowdiv">
             <p>2023-7-13 22:26</p>
             <p>确立界面布局，编入强化幻想数据十条。</p>
         </div>
+        
+    <div class="outBox">
+        <div class="outBox_firstdiv">
+            <div class="outtitle"><p>| 站外传送门</p></div>
+            <div class="outBlock"><a href="https://blue-protocol.cn/" target="_blank">蓝色协议中文站</a></div>
+            <div class="outBlock"><a href="https://blueprotocol.swiki.jp/index.php" target="_blank">蓝色协议 swiki</a></div>
+            <div class="outBlock"><a href="https://game8.jp/blue-protocol" target="_blank">蓝色协议 game8</a></div>
+            <div class="outBlock"><a href="https://bp.incin.net/map#cty001" target="_blank">蓝色协议大地图</a></div>
+        </div>
+        <div class="outBox_firstdiv secondDiv">
+            <div class="outtitle"><p>| JavaScript 文件下载</p></div>
+            <div class="outBlock"><a href="javascript:downloadFile('./js/data_w.js', 'weapon.js');">武器数据</a></div>
+            <div class="outBlock"><a href="javascript:downloadFile('./js/data_b.js', 'b_imagine.js');">战斗幻想数据</a></div>
+            <div class="outBlock"><a href="javascript:downloadFile('./js/data_e.js', 'e_imagine.js');">强化幻想数据</a></div>
+            <div class="outBlock"><a href="javascript:downloadFile('./js/data_sc.js', 'material.js');">材料数据</a></div>
+            <div class="outBlock"><a href="javascript:downloadFile('./js/data_m.js', 'monster.js');">小怪及 Boss 数据</a></div>
+        </div>
+        <div class="outBox_firstdiv secondDiv">
+            <div class="outtitle"><p>| 反馈与勘误</p></div>
+            <div class="outBlock"><a href="javascript:;">贴吧</a></div>
+            <div class="outBlock"><a href="javascript:;">NGA 论坛</a></div>
+        </div>
+    </div>
     </div>
 </body>
 </html>
