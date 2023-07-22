@@ -33,7 +33,7 @@
     transition: .5s;
 }
 .catchWord_Window{
-    z-index: 1;
+    z-index: 9;
     position: fixed;
     top: -200px;
     /* top: 60px; */
