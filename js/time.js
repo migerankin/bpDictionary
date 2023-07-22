@@ -1,7 +1,7 @@
 var currentTimeStamp = Date.now();
 
 // 指定目标时间的时间戳（2023年7月19日17点22分10秒）
-var targetTimeStamp = new Date('2023-07-19T17:22:10').getTime();
+var targetTimeStamp = new Date('2023-07-22T18:12:10').getTime();
 
 // 计算时间间隔（以秒为单位）
 var timeDifferenceInSeconds = Math.floor((currentTimeStamp - targetTimeStamp) / 1000);
