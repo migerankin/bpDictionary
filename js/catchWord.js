@@ -61,7 +61,7 @@ async function demo2(file) {
       await worker.initialize('jpn'); // 使用的语言
       const { data: { text } } = await worker.recognize(file);
       // document.getElementById('log').innerHTML = text;
-      document.getElementById('catchTextBox').innerText = text.replace(/\s/g, '')+'   [页面中部为原图用于核对字符，单击原图消失]'
+      document.getElementById('catchTextBox').innerText = text.replace(/\s/g, '')+'   [网页中央出现的上传原图用于核对字符，单击原图消失]'
       await worker.terminate();
   }
 }
