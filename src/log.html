@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="../img/icon/myicon_black_removebg.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/window.css">
+    <script src="../js/jquery.js"></script>
     <style>
         .window p{
             font-size: 15px;
@@ -26,6 +27,17 @@
         }
         .window div{
             margin-bottom: 30px;
+        }
+        #hiddenit{
+            cursor: pointer;
+            color: #ffffff71;
+            margin-left: 15px;
+            font-size: 14px;
+            user-select: none;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .hiddenit{
+            display: none;
         }
     </style>
 </head>
@@ -47,8 +59,16 @@
     </div>
     <div class="window" style="padding-bottom: 40px;">
         <div>
-            <p>2023-7-21 22:33</p>
-            <p>优化了游戏内昼夜显示工具的绘制逻辑。</p>
+            <p style="background-color: #ffffff; color: black; width: auto; display: inline-block; padding: 0 15px;">待补充的数据</p><span id="hiddenit">[显示]</span>
+            <p class="hiddenit">1，E - 花火を楽しむなら夜なのじゃ（活动幻想）<i> / 需要货币数及材料类型、数目</i></p>
+            <p class="hiddenit">2，E - 貝殻ゴブリンがやってきた（活动幻想）<i> / 需要货币数及材料类型、数目</i></p>
+            <p class="hiddenit">3，E - クラスパートナーのバカンス（活动幻想）<i> / 需要货币数及材料类型、数目</i></p>
+            <p class="hiddenit">4，E - 新米亭主のお手伝い<i> / 需要货币数</i></p>
+            <p class="hiddenit">5，E - アステルリーズ・ビーチの夏（活动幻想）<i> / 需要货币数及材料类型、数目</i></p>
+            <p class="hiddenit">6，B - 炎角<i> / 需要货币数及材料类型、数目</i></p>
+            <p class="hiddenit">7，B - 貝を集めし邪教徒（活动幻想）<i> / 需要货币数及材料类型、数目</i></p>
+            <p class="hiddenit">8，B - 遺留のオートマトン<i> / 需要货币数</i></p>
+            <p class="hiddenit">9，B - 朱に染まりし機神<i> / 需要货币数</i></p>
         </div>
         <div>
             <p>2023-7-21 20:26</p>
@@ -72,7 +92,7 @@
         </div>
         <div>
             <p>2023-7-19 23:23</p>
-            <p>武器界面、武器与幻想制作界面、首页编写完成。日文识别与游戏内昼夜显示工具编写完成。部分细节待完善。活动幻想和部分地图 boss 幻想数据待补充。</p>
+            <p>武器界面、武器与幻想制作界面、首页编写完成。日文识别与游戏内昼夜状态同步工具编写完成。部分细节待完善。活动幻想和部分地图 boss 幻想数据待补充。</p>
         </div>
         <div>
             <p>2023-7-16 23:24</p>
@@ -93,3 +113,17 @@
     </div>
 </body>
 </html>
+<script>
+    var hiddentime = 1
+    document.getElementById('hiddenit').onclick = function(){
+        if(hiddentime==0){
+            $('.hiddenit').css('display','none')
+            hiddentime=1
+            document.getElementById('hiddenit').innerHTML=`[显示]`
+        }else{
+            $('.hiddenit').css('display','block')
+            hiddentime=0
+            document.getElementById('hiddenit').innerHTML=`[隐藏]`
+        }
+    }
+</script>
