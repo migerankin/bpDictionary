@@ -173,6 +173,7 @@
     background-image: linear-gradient(to right, rgb(20, 115, 158), rgb(137, 255, 200));
 }
 .Blackhover{
+    transition: .3s;
     width: 100%;
     background-color: #292a2e;
     z-index: 99999;
