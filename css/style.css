@@ -35,7 +35,7 @@ a{
 }
 .bar{
     position: fixed;
-    z-index: 3;
+    z-index: 10;
     width: 100%;
     background-color: black;
     height: 60px;
