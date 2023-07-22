@@ -21,7 +21,7 @@ function writeSC(){
                 <th width="20%">获取对象</th>
                 <th width="50%">地图点位</th>
             </tr>`
-    
+    var imgSrcString = ``
     SC_value.forEach((SC_every)=>{
         if(SC_every.pid=='7901'){
             var trNameId = `<tr id="qita" class="canclick">`
