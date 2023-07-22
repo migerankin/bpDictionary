@@ -1,8 +1,11 @@
 var isshowWindowClose = 0
 var nowPage = 0
 function showStart(){
+    $('.IMGshowWindow').css('display','none')
+    isshowWindowClose=0
     $('.canclick img').click(function(){
         if(isshowWindowClose==0){
+            $('.IMGshowWindow').css('height','400px')
             $('.IMGshowWindow').css('display','block')
             isshowWindowClose=1
         }
