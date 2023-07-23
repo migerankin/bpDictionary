@@ -151,6 +151,19 @@ function drawMakeThingWindow(thingArray){
                         <td style="font-size: 14px;">${SC_every.sfrom}</td>
                         <td><img src="./img/map/${SC_every.pid}.png" alt="暂无" style="height: 200px;"></td>
                     </tr>`
+                }else if(SC_every.mappic=='2'){
+                    var imgSrcString  =``
+                    for(var i=0;i<SC_every.mapWhere.length;i++){
+                        imgSrcString += `<img src="./img/map/`+SC_every.mapWhere[i]+`.png" alt="暂无" style="height: 150px;">`
+                    }
+                    windowHtml += `<tr class="canclick">
+                    <td style="font-size: 14px;">${SC_every.name}</td>
+                    <td style="font-size: 14px;">${thingArray.madeIt.sucai_C_num[sucai_num++]}</td>
+                    <td style="font-size: 14px;">${SC_every.kind}</td>
+                    <td style="font-size: 14px;">${SC_every.obtain}</td>
+                    <td style="font-size: 14px;">${SC_every.sfrom}</td>
+                        <td class="manyImgBar" style="max-width: 300px;">${imgSrcString}</td>
+                    </tr>`
                 }else{
                     windowHtml += `<tr>
                         <td style="font-size: 14px;">${SC_every.name}</td>
@@ -170,8 +183,14 @@ function drawMakeThingWindow(thingArray){
         document.getElementsByClassName('madeThingsWindow_inside')[0].innerHTML = windowHtml
 
         showStart()
-        draggableElement.style.top = window.innerHeight-450+'px'
-        draggableElement.style.left = window.innerWidth-805+'px'
+        draggableElement.style.display = 'block'
+        setTimeout(function(){
+            draggableElement.style.top = '50%'
+            draggableElement.style.transform = 'translateX(-50%) translateY(-50%) scale(1)'
+            draggableElement.style.opacity = '1'
+        })
+        // draggableElement.style.top = window.innerHeight-450+'px'
+        // draggableElement.style.left = window.innerWidth-805+'px'
     }else if(thingArray.madeIt.sucai_B!=''&&thingArray.madeIt.sucai_B!='wepen'){
         // console.log('dddddddddd');
         var sucai_num = 0
@@ -271,6 +290,19 @@ function drawMakeThingWindow(thingArray){
                                 <td style="font-size: 14px;">${SC_every.sfrom}</td>
                                 <td><img src="./img/map/${SC_every.pid}.png" alt="暂无" style="height: 200px;"></td>
                             </tr>`
+                        }else if(SC_every.mappic=='2'){
+                            var imgSrcString  =``
+                            for(var i=0;i<SC_every.mapWhere.length;i++){
+                                imgSrcString += `<img src="./img/map/`+SC_every.mapWhere[i]+`.png" alt="暂无" style="height: 150px;">`
+                            }
+                            windowHtml += `<tr class="canclick">
+                            <td style="font-size: 14px;">${SC_every.name}</td>
+                            <td style="font-size: 14px;">${thingArray.madeIt.sucai_C_num[sucai_num++]}</td>
+                            <td style="font-size: 14px;">${SC_every.kind}</td>
+                            <td style="font-size: 14px;">${SC_every.obtain}</td>
+                            <td style="font-size: 14px;">${SC_every.sfrom}</td>
+                                <td class="manyImgBar" style="max-width: 300px;">${imgSrcString}</td>
+                            </tr>`
                         }else{
                             windowHtml += `<tr>
                                 <td style="font-size: 14px;">${SC_every.name}</td>
@@ -297,8 +329,14 @@ function drawMakeThingWindow(thingArray){
         document.getElementsByClassName('madeThingsWindow_inside')[0].innerHTML = windowHtml
 
         showStart()
-        draggableElement.style.top = window.innerHeight-450+'px'
-        draggableElement.style.left = window.innerWidth-810+'px'
+        draggableElement.style.display = 'block'
+        setTimeout(function(){
+            draggableElement.style.top = '50%'
+            draggableElement.style.transform = 'translateX(-50%) translateY(-50%) scale(1)'
+            draggableElement.style.opacity = '1'
+        })
+        // draggableElement.style.top = window.innerHeight-450+'px'
+        // draggableElement.style.left = window.innerWidth-810+'px'
     }else if(thingArray.madeIt.sucai_B!=''&&thingArray.madeIt.sucai_B=='wepen'){
         var sucai_num = 0
         windowHtml += `
@@ -343,6 +381,19 @@ function drawMakeThingWindow(thingArray){
                                 <td style="font-size: 14px;">${SC_every.sfrom}</td>
                                 <td><img src="./img/map/${SC_every.pid}.png" alt="暂无" style="height: 200px;"></td>
                             </tr>`
+                        }else if(SC_every.mappic=='2'){
+                            var imgSrcString  =``
+                            for(var i=0;i<SC_every.mapWhere.length;i++){
+                                imgSrcString += `<img src="./img/map/`+SC_every.mapWhere[i]+`.png" alt="暂无" style="height: 150px;">`
+                            }
+                            windowHtml += `<tr class="canclick">
+                            <td style="font-size: 14px;">${SC_every.name}</td>
+                                <td style="font-size: 14px;">${thingArray.madeIt.sucai_C_num[sucai_num++]}</td>
+                                <td style="font-size: 14px;">${SC_every.kind}</td>
+                                <td style="font-size: 14px;">${SC_every.obtain}</td>
+                                <td style="font-size: 14px;">${SC_every.sfrom}</td>
+                                <td class="manyImgBar" style="max-width: 300px;">${imgSrcString}</td>
+                            </tr>`
                         }else{
                             windowHtml += `<tr>
                                 <td style="font-size: 14px;">${SC_every.name}</td>
@@ -369,8 +420,13 @@ function drawMakeThingWindow(thingArray){
         document.getElementsByClassName('madeThingsWindow_inside')[0].innerHTML = windowHtml
 
         showStart()
-        draggableElement.style.top = window.innerHeight-450+'px'
-        draggableElement.style.left = window.innerWidth-810+'px'
+        draggableElement.style.display = 'block'
+        setTimeout(function(){
+            draggableElement.style.top = '50%'
+            draggableElement.style.transform = 'translateX(-50%) translateY(-50%) scale(1)'
+            draggableElement.style.opacity = '1'
+        })
+        // draggableElement.style.left = window.innerWidth-810+'px'
     }
 
 }
