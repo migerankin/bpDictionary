@@ -255,7 +255,8 @@ function searchByIndexOf(keyWord, list){
             <tbody>
                 <tr>
                     <th width="12%">样貌</th>
-                    <th width="20%">名称</th>
+                    <th width="12%">名称</th>
+                    <th width="10%">弱点属性</th>
                     <th width="20%">分布区域</th>
                     <th width="50%">地图点位</th>
                 </tr>`
@@ -269,6 +270,7 @@ function searchByIndexOf(keyWord, list){
                 searchhtml += `<tr class="canclick">
                     <td><img src="./img/icon/m/${M_every.pid}.png" alt="暂无" style="height: 100px;"></td>
                     <td style="font-size: 14px;">${M_every.name}</td>
+                    <td style="font-size: 14px;">${M_every.lessElem}</td>
                     <td>${M_every.spaceName}</td>
                     <td class="manyImgBar">${imgSrcString}</td>
                 </tr>`
@@ -286,7 +288,8 @@ function searchByIndexOf(keyWord, list){
             table.rows[i].cells[3].style.backgroundColor = '#35353555';
             // table.rows[i].cells[3].style.backgroundColor = '#353535';
             // table.rows[i].cells[4].style.backgroundColor = '#353535';
-            table.rows[i].cells[2].setAttribute('title', '分布范围');
+            table.rows[i].cells[2].setAttribute('title', '弱点属性');
+            table.rows[i].cells[3].setAttribute('title', '分布范围');
             table.rows[i].cells[1].setAttribute('title', '名称');
             // table.rows[i].cells[5].setAttribute('title', '筋力');
             // table.rows[i].cells[6].setAttribute('title', '耐久');
