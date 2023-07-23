@@ -1,8 +1,13 @@
 var currentTimeStamp = Date.now();
 
 // 指定目标时间的时间戳（2023年7月19日17点22分10秒）
-var targetTimeStamp = new Date('2023-07-22T18:12:10').getTime();
-
+var targetTimeStamp = new Date();
+targetTimeStamp.setHours(4);
+targetTimeStamp.setMinutes(2);
+targetTimeStamp.setSeconds(10);
+if (currentTimeStamp < targetTimeStamp) {
+    targetTimeStamp.setDate(targetTimeStamp.getDate() - 1);
+}
 // 计算时间间隔（以秒为单位）
 var timeDifferenceInSeconds = Math.floor((currentTimeStamp - targetTimeStamp) / 1000);
 
@@ -53,6 +58,7 @@ var ctx = c.getContext('2d')
         ctx.strokeStyle = 'rgb(237, 246, 246)'
         // context.arc(x,y,r,sAngle,eAngle,counterclockwise);   //x坐标,y坐标,半径,起始角,结束角,顺时针/逆时针
         ctx.arc(150, 150, 100, -Math.PI / 2 + 2 * startSecond * Math.PI, -Math.PI / 2)
+
         ctx.stroke()
         ctx.closePath();
         ctx.restore();
@@ -78,6 +84,13 @@ var ctx = c.getContext('2d')
         // console.log(dayOrNight);
         now = new Date()
         currentTimeStamp = Date.now();
+        targetTimeStamp = new Date();
+        targetTimeStamp.setHours(4);
+        targetTimeStamp.setMinutes(2);
+        targetTimeStamp.setSeconds(10);
+        if (currentTimeStamp < targetTimeStamp) {
+            targetTimeStamp.setDate(targetTimeStamp.getDate() - 1);
+        }
 
         // 计算时间间隔（以秒为单位）
         timeDifferenceInSeconds = Math.floor((currentTimeStamp - targetTimeStamp) / 1000);
