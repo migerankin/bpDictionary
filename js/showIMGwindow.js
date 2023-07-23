@@ -41,8 +41,12 @@ var buttomTag = ` <div class="outBox">
     </div>
     <div class="outBox_firstdiv secondDiv">
         <div class="outtitle"><p>| 反馈与勘误</p></div>
-        <div class="outBlock"><a href="javascript:;" target="_blank">贴吧</a></div>
-        <div class="outBlock"><a href="javascript:;" target="_blank">NGA 论坛</a></div>
+        <div class="outBlock"><a href="https://tieba.baidu.com/p/8517189533" target="_blank">贴吧</a></div>
+        <div class="outBlock"><a href="https://bbs.nga.cn/read.php?tid=37098764&page=1" target="_blank">NGA 论坛</a></div>
+    </div>
+    <div class="outBox_firstdiv secondDiv">
+        <div class="outtitle"><p>| Github</p></div>
+        <div class="outBlock"><a href="https://github.com/migerankin/bpDictionary" target="_blank">@migerankin</a></div>
     </div>
 </div>`
 var interevalPic
