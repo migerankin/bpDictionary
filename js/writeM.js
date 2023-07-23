@@ -9,7 +9,7 @@ function writeM(){
     <div onclick="scrollToSection('Boss')">Boss</div>
 </div>`
     var M_htmlStr = `<p class="windowTitle">| 地图及自由探索怪物清单</p>
-    <p class="Topword">该清单包含野外地图及自由探索地图中的小怪及 Boss ,暂不包含仅在多人副本及主线剧情副本中出现的怪物。<br>地图点位上的红色标注为有可能刷新该怪物的地点，左键单击图片可将其放大并可用鼠标滚轮再次放大。</p>
+    <p class="Topword">该清单包含野外地图及自由探索地图中的小怪及 Boss ,暂不包含仅在多人副本及主线剧情副本中出现的怪物。<br>地图点位上的红色标注为有可能刷新该怪物的地点，左键单击图片可将其放大并可用鼠标滚轮再次放大。<br>对于怪物的弱点与抵抗属性的机制，有两种情况造成的伤害将获得提升：一，装备怪物弱点属性的武器，造成任意属性（除开怪物的抵抗属性）的伤害；二，装备任意属性的武器，对怪物造成弱点属性的伤害。战斗幻想造成的伤害不受情况一的影响，即，不会因为你装备了怪物弱点属性的武器而获得伤害提升。</p>
     <p class="M_mbTile" id="xiaoguai" style="margin-top: 20px;">地图及自由探索中的小怪</p>
     <p class="Topword">以下为小怪清单，注意：<b>小怪的掉落物有区域分别，并非所有地图上的该种小怪都会掉落材料，</b>如有刷材料的需求请于材料列表中进行搜索或翻阅。</p>
     <table>
@@ -17,7 +17,8 @@ function writeM(){
             <tr>
                 <th width="12%">样貌</th>
                 <th width="12%">名称</th>
-                <th width="10%">弱点属性</th>
+                <th width="5%">弱点属性</th>
+                <th width="5%">抵抗属性</th>
                 <th width="20%">分布区域</th>
                 <th width="50%">地图点位</th>
             </tr>`
@@ -30,6 +31,7 @@ function writeM(){
         M_htmlStr += `<tr class="canclick">
             <td><img src="./img/icon/m/${M_every.pid}.png" alt="暂无" style="height: 100px;"></td>
             <td style="font-size: 14px;">${M_every.name}</td>
+            <td style="font-size: 14px;">${M_every.moreElem}</td>
             <td style="font-size: 14px;">${M_every.lessElem}</td>
             <td>${M_every.spaceName}</td>
             <td class="manyImgBar">${imgSrcString}</td>
@@ -39,7 +41,8 @@ function writeM(){
     M_htmlStr += `<tr>
     <th width="12%">样貌</th>
     <th width="12%">名称</th>
-    <th width="10%">弱点属性</th>
+    <th width="5%">弱点属性</th>
+    <th width="5%">抵抗属性</th>
     <th width="20%">分布区域</th>
     <th width="50%">地图点位</th>
 </tr></tbody>
@@ -88,11 +91,13 @@ function writeM(){
     for (var i = 1; i < table.rows.length-1; i++) {
         table.rows[i].cells[1].style.backgroundColor = '#35353555';
         table.rows[i].cells[3].style.backgroundColor = '#35353555';
+        table.rows[i].cells[5].style.backgroundColor = '#35353555';
         // table.rows[i].cells[3].style.backgroundColor = '#353535';
         // table.rows[i].cells[4].style.backgroundColor = '#353535';
-        table.rows[i].cells[1].setAttribute('title', '名称');
-        table.rows[i].cells[3].setAttribute('title', '分布范围');
+        table.rows[i].cells[4].setAttribute('title', '分布范围');
+        table.rows[i].cells[3].setAttribute('title', '抵抗属性');
         table.rows[i].cells[2].setAttribute('title', '弱点属性');
+        table.rows[i].cells[1].setAttribute('title', '名称');
         // table.rows[i].cells[5].setAttribute('title', '筋力');
         // table.rows[i].cells[6].setAttribute('title', '耐久');
         // table.rows[i].cells[7].setAttribute('title', '器用');
