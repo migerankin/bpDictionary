@@ -16,7 +16,8 @@ function writeM(){
         <tbody>
             <tr>
                 <th width="12%">样貌</th>
-                <th width="20%">名称</th>
+                <th width="12%">名称</th>
+                <th width="10%">弱点属性</th>
                 <th width="20%">分布区域</th>
                 <th width="50%">地图点位</th>
             </tr>`
@@ -29,15 +30,17 @@ function writeM(){
         M_htmlStr += `<tr class="canclick">
             <td><img src="./img/icon/m/${M_every.pid}.png" alt="暂无" style="height: 100px;"></td>
             <td style="font-size: 14px;">${M_every.name}</td>
+            <td style="font-size: 14px;">${M_every.lessElem}</td>
             <td>${M_every.spaceName}</td>
             <td class="manyImgBar">${imgSrcString}</td>
         </tr>`
     })
     
     M_htmlStr += `<tr>
-    <th width="10%">样貌</th>
-    <th width="20%">名称</th>
-    <th width="15%">分布区域</th>
+    <th width="12%">样貌</th>
+    <th width="12%">名称</th>
+    <th width="10%">弱点属性</th>
+    <th width="20%">分布区域</th>
     <th width="50%">地图点位</th>
 </tr></tbody>
     </table>`
