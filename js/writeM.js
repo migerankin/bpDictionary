@@ -90,8 +90,9 @@ function writeM(){
         table.rows[i].cells[3].style.backgroundColor = '#35353555';
         // table.rows[i].cells[3].style.backgroundColor = '#353535';
         // table.rows[i].cells[4].style.backgroundColor = '#353535';
-        table.rows[i].cells[2].setAttribute('title', '分布范围');
         table.rows[i].cells[1].setAttribute('title', '名称');
+        table.rows[i].cells[3].setAttribute('title', '分布范围');
+        table.rows[i].cells[2].setAttribute('title', '弱点属性');
         // table.rows[i].cells[5].setAttribute('title', '筋力');
         // table.rows[i].cells[6].setAttribute('title', '耐久');
         // table.rows[i].cells[7].setAttribute('title', '器用');
