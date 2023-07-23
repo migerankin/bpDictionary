@@ -3,8 +3,8 @@ function writeG(){
     nowPage = 0
     document.getElementsByClassName('floatBox')[0].innerHTML = ``
     document.getElementsByClassName('window')[0].style.paddingTop = '20px'
-    draggableElement.style.top = window.innerHeight-450+'px'
-    draggableElement.style.left = window.innerWidth+'px'
+    // draggableElement.style.top = window.innerHeight-450+'px'
+    // draggableElement.style.left = window.innerWidth+'px'
     var Ghtml = `<div class="mainPic" style="background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.2)), url(./img/pagemain${(Math.floor(Math.random() * 3)+1)}.png) 80% 40%;background-size: 100% auto;"></div>
     <div class="mainTitle">BLUE PROTOCOL DICTIONARY</div>
     <div style="background-color: rgba(247, 255, 255, 0.968); padding: 5px 0; width: 95%; margin: 0 auto; border-radius: 3px;" class="allbox">
