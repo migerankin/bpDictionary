@@ -92,7 +92,7 @@
     margin-left: 40px;
 }
 .outBox{
-    margin: 25px auto;
+    margin: 25px auto 35px;
     font-size: 15px;
     display: flex;
     align-items: flex-start;
