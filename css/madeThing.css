@@ -2,22 +2,36 @@
     /* width: 55%; */
     min-width: 800px;
     height: 440px;
-    background-color: rgba(240, 248, 255, 0.05);
+    background-color: rgba(240, 248, 255, 0.08);
     position: fixed;
-    transition: 1s;
+    transition: .5s;
     z-index: 999;
-    left: 2000px;
-    top: 0;
+    left: 50%;
+    user-select: none;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%) scale(0.95);
     backdrop-filter: blur(4px);
     border-bottom: #6bc7a580 1px solid;
     border-radius: 15px 3px 3px 3px;
     box-shadow: 0 2px 50px 1px rgba(0, 0, 0, 0.2);
 }
+.madeThingsWindow_closeBtn img{
+    height: 25px;
+    float: right;
+    opacity: .6;
+    transition: .5s;
+}
+.madeThingsWindow_closeBtn:hover{
+    background-color: rgba(255, 0, 0, 0.866);
+}
+.madeThingsWindow_closeBtn:hover img{
+    opacity: .9;
+}
 .madeThingsWindow_top{
     height: 25px;
     width: 100%;
     background-image: linear-gradient(to right, rgb(25, 145, 200), rgb(30, 254, 149));
-    border-radius: 15px 0 0 0;
+    border-radius: 1px;
     cursor: all-scroll;
 }
 .madeThingsWindow_inside{
@@ -43,6 +57,7 @@
 .madeThingsWindow_closeBtn{
     position: absolute;
     height: 25px;
+    transition: .5s;
     width: 80px;
     background-color: rgba(255, 0, 0, 0.797);
     right: 0;
