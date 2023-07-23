@@ -46,16 +46,25 @@ var draggableElement_top = document.querySelector(".madeThingsWindow_top");
       document.removeEventListener("mouseup", stopDragelse);
     }
 $('.madeThingsWindow_closeBtn').click(function(){
-    draggableElement.style.transition = '1s'
+    draggableElement.style.transition = '.5s'
 
     setTimeout(function(){
-        draggableElement.style.left = window.innerWidth+'px'
-        draggableElement.style.top = window.innerHeight-450+'px'
+        // draggableElement.style.left = window.innerWidth+'px'
+        draggableElement.style.opacity = '0'
+        draggableElement.style.transform = 'translateX(-50%) translateY(-47%) scale(0.97)'
+        setTimeout(function(){
+          draggableElement.style.left = '50%'
+          draggableElement.style.top = '53%'
+          draggableElement.style.display = 'none'
+        },500)
     },100)
 })
 window.onload = function(){
-    draggableElement.style.left = window.innerWidth+'px'
-    draggableElement.style.top = window.innerHeight-450+'px'
+    draggableElement.style.opacity = '0'
+    draggableElement.style.transform = 'translateX(-50%) translateY(-47%) scale(0.97)'
+    draggableElement.style.left = '50%'
+    draggableElement.style.display = 'none'
+    draggableElement.style.top = '53%'
 }
 
 draggableElement.addEventListener('wheel', function(e) {
