@@ -7,6 +7,8 @@ function writeE(){
     document.getElementsByClassName('floatBox')[0].innerHTML = ``
     
     var E_htmlStr = `<p class="windowTitle">| E - 强化幻想</p>
+    <p class="Topword">强化幻想按形状类型分为五类。单击列名可进行升、降序排列。单击幻想图标可查看其制作材料及获取途径。<br>名称前标注有 * 号的为活动限定幻想。</p>
+
     <div class="EchoiseBox">
         <div style="background-color: rgb(55, 194, 192); color: rgb(38, 41, 46); border-color: rgb(55, 194, 192, 0);">三叶</div>
         <div>山岳</div>
@@ -15,7 +17,6 @@ function writeE(){
         <div>水瓶</div>
         <p class="B_E_searchNum">三叶幻想有 null 条数据</p>
     </div>
-    <p class="Topword">强化幻想按形状类型分为五类。单击列名可进行升、降序排列。单击幻想图标可查看其制作材料及获取途径。<br>名称前标注有 * 号的为活动限定幻想。</p>
     <table id="Etable">
         <tbody>
             <tr>
