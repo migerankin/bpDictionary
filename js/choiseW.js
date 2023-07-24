@@ -1,4 +1,4 @@
-function choiseWKind(WBox, WElement){
+function choiseWKind(WBox, WElement, WLevel){
     var table = document.getElementsByTagName('table')[0];
     var rows = table.getElementsByTagName('tr');
     var Wnum = 0
