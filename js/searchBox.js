@@ -11,37 +11,37 @@ function showList(){
 	var res = searchByIndexOf(search.value,E_value);
     for(var i=0;i<res.length;i++){
 		var li = document.createElement("li");
-		li.innerHTML = `<div style="color: ${TextAnswerBoxColor};" onclick="searchMessage('${res[i]}',1)">${res[i]}<p style="position: absolute; right: 15px; top: 0px; line-height: 55px;">E幻想</p></div>`;
+		li.innerHTML = `<div style="color: ${TextAnswerBoxColor};" onclick="searchMessage('${res[i]}',1)">${res[i]}<p style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%);">E幻想</p></div>`;
 		document.getElementById("drop").appendChild(li);
 	}
     res = searchByIndexOf(search.value,B_value)
     for(var i=0;i<res.length;i++){
 		var li = document.createElement("li");
-		li.innerHTML = `<div style="color: ${TextAnswerBoxColor}" onclick="searchMessage('${res[i]}',2)">${res[i]}<p style="position: absolute; right: 15px; top: 0px; line-height: 55px;">B幻想</p></div>`;
+		li.innerHTML = `<div style="color: ${TextAnswerBoxColor}" onclick="searchMessage('${res[i]}',2)">${res[i]}<p style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%);">B幻想</p></div>`;
 		document.getElementById("drop").appendChild(li);
 	}
     res = searchByIndexOf(search.value,M_value)
     for(var i=0;i<res.length;i++){
 		var li = document.createElement("li");
-		li.innerHTML = `<div style="color: ${TextAnswerBoxColor}" onclick="searchMessage('${res[i]}',3)">${res[i]}<p style="position: absolute; right: 15px; top: 0px; line-height: 55px;">小怪</p></div>`;
+		li.innerHTML = `<div style="color: ${TextAnswerBoxColor}" onclick="searchMessage('${res[i]}',3)">${res[i]}<p style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%);">小怪</p></div>`;
 		document.getElementById("drop").appendChild(li);
 	}
     res = searchByIndexOf(search.value,MB_value)
     for(var i=0;i<res.length;i++){
 		var li = document.createElement("li");
-		li.innerHTML = `<div style="color: ${TextAnswerBoxColor}" onclick="searchMessage('${res[i]}',4)">${res[i]}<p style="position: absolute; right: 15px; top: 0px; line-height: 55px;">Boss</p></div>`;
+		li.innerHTML = `<div style="color: ${TextAnswerBoxColor}" onclick="searchMessage('${res[i]}',4)">${res[i]}<p style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%);">Boss</p></div>`;
 		document.getElementById("drop").appendChild(li);
 	}
     res = searchByIndexOf(search.value,SC_value)
     for(var i=0;i<res.length;i++){
 		var li = document.createElement("li");
-		li.innerHTML = `<div style="color: ${TextAnswerBoxColor}" onclick="searchMessage('${res[i]}',5)">${res[i]}<p style="position: absolute; right: 15px; top: 0px; line-height: 55px;">材料</p></div>`;
+		li.innerHTML = `<div style="color: ${TextAnswerBoxColor}" onclick="searchMessage('${res[i]}',5)">${res[i]}<p style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%);">材料</p></div>`;
 		document.getElementById("drop").appendChild(li);
 	}
     res = searchByIndexOf(search.value,W_value)
     for(var i=0;i<res.length;i++){
 		var li = document.createElement("li");
-		li.innerHTML = `<div style="color: ${TextAnswerBoxColor}" onclick="searchMessage('${res[i]}',6)">${res[i]}<p style="position: absolute; right: 15px; top: 0px; line-height: 55px;">武器</p></div>`;
+		li.innerHTML = `<div style="color: ${TextAnswerBoxColor}" onclick="searchMessage('${res[i]}',6)">${res[i]}<p style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%);">武器</p></div>`;
 		document.getElementById("drop").appendChild(li);
 	}
 	
@@ -67,7 +67,7 @@ search.onfocus = function(){
         originalUl.id = "drop";
         selectedId.appendChild(originalUl);
         $('.blue-input').css('opacity','1')
-        $('.blue-input').css('width','280px')
+        // $('.blue-input').css('width','280px')
 	showList();
 }
  
@@ -76,7 +76,7 @@ search.onblur = function(){
 //	console.log("soutsout")
 document.getElementById("drop").style.opacity = '0'
 // document.getElementById("drop").style.width = '220px'
-$('.blue-input').css('width','220px')
+// $('.blue-input').css('width','220px')
     setTimeout(function(){
         var drop = document.getElementById("drop");
 	    selectedId.removeChild(drop);
@@ -249,8 +249,7 @@ function searchByIndexOf(keyWord, list){
         })
     }else if(messageKind==3){
         var searchhtml = `<p class="windowTitle">| 搜索 地图及自由探索小怪</p>
-    <p class="Topword">地图点位上的红色标注为有可能刷新该怪物的地点，左键单击图片可将其放大并可用鼠标滚轮再次放大。<br>对于怪物的弱点与抵抗属性的机制，有两种情况造成的伤害将获得提升：一，装备怪物弱点属性的武器，造成任意属性（除开怪物的抵抗属性）的伤害；二，装备任意属性的武器，对怪物造成弱点属性的伤害。战斗幻想造成的伤害不受情况一的影响，即，不会因为你装备了怪物弱点属性的武器而获得伤害提升。</p>
-        <p class="Topword">注意：<b>小怪的掉落物有区域分别，并非所有地图上的该种小怪都会掉落材料，</b>如有刷材料的需求请于“幻想与武器素材”列表中进行搜索或翻阅。</p>
+    <p class="Topword">地图点位上的红色标注为有可能刷新该怪物的地点，左键单击图片可将其放大并可用鼠标滚轮再次放大。<br>对于怪物的弱点与抵抗属性的机制，有两种情况造成的伤害将获得提升：一，装备怪物弱点属性的武器，造成任意属性（除开怪物的抵抗属性）的伤害；二，装备任意属性的武器，对怪物造成弱点属性的伤害。战斗幻想造成的伤害不受情况一的影响，即，不会因为你装备了怪物弱点属性的武器而获得伤害提升。<br>注意：<b>小怪的掉落物有区域分别，并非所有地图上的该种小怪都会掉落材料，</b>如有刷材料的需求请于“幻想与武器素材”列表中进行搜索或翻阅。</p>
         <table>
             <tbody>
                 <tr>
@@ -301,7 +300,7 @@ function searchByIndexOf(keyWord, list){
         }
         showStart()
     }else if(messageKind==4){
-        var searchhtml = `<p class="windowTitle">| 搜索 地图及自由探索 Boss</p><p class="Topword">地图点位上的红色标注为有可能刷新该怪物的地点，左键单击图片可将其放大并可用鼠标滚轮再次放大。</p><p class="Topword">Boss 刷新时将在同区域内的地图范围内进行图标广播。Boss 的刷新通常都具有数十分钟的冷却时间。</p>
+        var searchhtml = `<p class="windowTitle">| 搜索 地图及自由探索 Boss</p><p class="Topword">地图点位上的红色标注为有可能刷新该怪物的地点，左键单击图片可将其放大并可用鼠标滚轮再次放大。<br>>Boss 刷新时将在同区域内的地图范围内进行图标广播。Boss 的刷新通常都具有数十分钟的冷却时间。</p>
         <table>
             <tbody>
                 <tr>
