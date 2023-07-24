@@ -65,9 +65,12 @@ td{
     font-size: 14px;
     font-weight: 600;
 }
+.BchoiseBoxLevelWM div{
+    margin-bottom: 12px;
+}
 .BchoiseBoxLevel div{
     width: auto;
-    padding: 0 8px;
+    padding: 0 14px;
 }
 .BchoiseBox div{
     width: 65px;
@@ -93,7 +96,7 @@ td{
 .Topword{
     color: rgb(185, 191, 197);
     font-size: 13px;
-    margin: 10px 75px;
+    margin: 10px 65px;
     line-height: 24px;
 }
 .goToId{
