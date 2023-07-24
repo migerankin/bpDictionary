@@ -24,12 +24,24 @@
             </div>
         </a>
         <div><p class="title title2" onclick="writeG()" style="border-bottom-color: #ffffff">主页</p></div>
-        <div><p class="title title2" onclick="writeB()">B 幻想</p></div>
-        <div><p class="title title2" onclick="writeE()">E 幻想</p></div>
-        <div><p class="title title2" onclick="writeW()">武器</p></div>
+        <div class="titleboxOutside">
+            <div style="display: flex; align-items: center;"><p class="title title2">幻想</p><img src="./img/icon/barbtm.svg" class="barbtm"></div>
+            <div class="titlebox">
+                <div><p class="title title3" onclick="writeB()">战斗幻想</p></div>
+                <div><p class="title title3" onclick="writeE()">强化幻想</p></div>
+            </div>
+        </div>
+        <div class="titleboxOutside">
+            <div style="display: flex; align-items: center;"><p class="title title2">武器</p><img src="./img/icon/barbtm.svg" class="barbtm"></div>
+            <div class="titlebox">
+                <div><p class="title title4" onclick="writeW()">武器图鉴</p></div>
+                <div><p class="title title4" onclick="writeWM()">武器插头</p></div>
+            </div>
+        </div>
+        <div><p class="title title2" onclick="writeC()">角色</p></div>
         <div><p class="title title2" onclick="writeM()">怪物</p></div>
         <div><p class="title title2" onclick="writeSC()">材料</p></div>
-        <div><a href="./src/log.html" target="_blank"><p class="title title2">开发日志</p></a></div>
+        <div><a href="./src/log.html" target="_blank"><p class="title title10">开发日志</p></a></div>
         
         <div class="sea-container">
             <input type="text" name="search" class="blue-input" placeholder="幻想/武器/怪物/材料名查找">
@@ -90,6 +102,7 @@
 <script src="./js/data_m.js"></script>
 <script src="./js/data_w.js"></script>
 <script src="./js/data_g.js"></script>
+<script src="./js/data_wm.js"></script>
 <script src="./js/rewrite.js"></script>
 <script src="./js/choiseE.js"></script>
 <script src="./js/writeE.js"></script>
@@ -97,8 +110,11 @@
 <script src="./js/writeSC.js"></script>
 <script src="./js/writeM.js"></script>
 <script src="./js/writeW.js"></script>
+<script src="./js/writeWM.js"></script>
+<script src="./js/writeC.js"></script>
 <script src="./js/choiseB.js"></script>
 <script src="./js/choiseW.js"></script>
+<script src="./js/choiseWM.js"></script>
 <!-- <script src="./js/choiseWindow.js"></script> -->
 <script src="./js/toTop.js"></script>
 <script src="./js/choiseTop.js"></script>
