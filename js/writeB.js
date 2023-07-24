@@ -12,6 +12,8 @@ function writeB(){
     BElement = '全部'
     var B_htmlStr = `
     <p class="windowTitle">| B - 战斗幻想</p>
+<p class="Topword">战斗幻想具有三类功能及七类属性。单击列名可进行升、降序排列。单击幻想图标可查看其制作材料及获取途径。<br>名称前标注有 * 号的为活动限定幻想。</p>
+
 <div class="BchoiseBox">
     <div style="background-color: rgb(55, 194, 192); color: rgb(38, 41, 46); border-color: rgb(55, 194, 192, 0);">全部</div>
     <div>攻击型</div>
@@ -29,7 +31,6 @@ function writeB(){
     <div>无</div>
     <p class="B_E_searchNum">全部类型 全部属性 共有 null 条数据</p>
 </div>
-<p class="Topword">战斗幻想具有三类功能及七类属性。单击列名可进行升、降序排列。单击幻想图标可查看其制作材料及获取途径。<br>名称前标注有 * 号的为活动限定幻想。</p>
 <table>
     <tbody>
         <tr>
