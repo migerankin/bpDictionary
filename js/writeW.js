@@ -48,19 +48,20 @@ function writeW(){
 <table>
     <tbody>
         <tr>
-            <th width="9%">图标</th>
-            <th width="15%">名称</th>
+            <th width="6%">图标</th>
+            <th width="8%">名称</th>
             <th width="3%" onclick="rewrite(2)" style="cursor: pointer;">等级</th>
-            <th width="5%" onclick="rewrite(3)" style="cursor: pointer;">攻击</th>
-            <th width="5%" onclick="rewrite(4)" style="cursor: pointer;">会心</th>
+            <th width="3%" onclick="rewrite(3)" style="cursor: pointer;">攻击</th>
+            <th width="4%" onclick="rewrite(4)" style="cursor: pointer;">会心</th>
             <th width="3%">属性</th>
-            <th width="6%" onclick="rewrite(6)" style="cursor: pointer;">属性攻击</th>
-            <th width="4%" onclick="rewrite(7)" style="cursor: pointer;">筋力</th>
-            <th width="4%" onclick="rewrite(8)" style="cursor: pointer;">耐久</th>
-            <th width="4%" onclick="rewrite(9)" style="cursor: pointer;">器用</th>
-            <th width="4%" onclick="rewrite(10)" style="cursor: pointer;">知力</th>
-            <th width="4%" onclick="rewrite(11)" style="cursor: pointer;">精神力</th>
-            <th width="6%">种类</th>
+            <th width="3%" onclick="rewrite(6)" style="cursor: pointer;">属性<br>攻击</th>
+            <th width="2%" onclick="rewrite(7)" style="cursor: pointer;">筋力</th>
+            <th width="2%" onclick="rewrite(8)" style="cursor: pointer;">耐久</th>
+            <th width="2%" onclick="rewrite(9)" style="cursor: pointer;">器用</th>
+            <th width="2%" onclick="rewrite(10)" style="cursor: pointer;">知力</th>
+            <th width="2%" onclick="rewrite(11)" style="cursor: pointer;">精神</th>
+            <th width="4%">种类</th>
+            <th width="12%">特攻</th>
         </tr>`
     
     W_value.forEach((W_every, index)=>{
@@ -78,24 +79,25 @@ function writeW(){
         <td style="font-size: 16px;color: rgb(235, 235, 235);">${W_every.z}</td>
         <td style="font-size: 16px;color: rgb(235, 235, 235);">${W_every.s}</td>
         <td style="font-size: 16px;color: rgb(235, 235, 235);">${W_every.kind}</td>
+        <td style="font-size: 16px;color: rgb(235, 235, 235);">${W_every.morePower}</td>
     </tr>`
     })
     
     W_htmlStr += `<tr>
-    <th width="9%">图标</th>
-            <th width="15%">名称</th>
-            <th width="3%" onclick="rewrite(2)" style="cursor: pointer;">等级</th>
-            <th width="5%" onclick="rewrite(3)" style="cursor: pointer;">攻击</th>
-            <th width="5%" onclick="rewrite(4)" style="cursor: pointer;">会心</th>
-            <th width="3%">属性</th>
-            <th width="6%" onclick="rewrite(6)" style="cursor: pointer;">属性攻击</th>
-            <th width="4%" onclick="rewrite(7)" style="cursor: pointer;">筋力</th>
-            <th width="4%" onclick="rewrite(8)" style="cursor: pointer;">耐久</th>
-            <th width="4%" onclick="rewrite(9)" style="cursor: pointer;">器用</th>
-            <th width="4%" onclick="rewrite(10)" style="cursor: pointer;">知力</th>
-            <th width="4%" onclick="rewrite(11)" style="cursor: pointer;">精神力</th>
-            <th width="6%">种类</th>
-
+    <th width="6%">图标</th>
+    <th width="8%">名称</th>
+    <th width="3%" onclick="rewrite(2)" style="cursor: pointer;">等级</th>
+    <th width="3%" onclick="rewrite(3)" style="cursor: pointer;">攻击</th>
+    <th width="4%" onclick="rewrite(4)" style="cursor: pointer;">会心</th>
+    <th width="3%">属性</th>
+    <th width="3%" onclick="rewrite(6)" style="cursor: pointer;">属性<br>攻击</th>
+    <th width="2%" onclick="rewrite(7)" style="cursor: pointer;">筋力</th>
+    <th width="2%" onclick="rewrite(8)" style="cursor: pointer;">耐久</th>
+    <th width="2%" onclick="rewrite(9)" style="cursor: pointer;">器用</th>
+    <th width="2%" onclick="rewrite(10)" style="cursor: pointer;">知力</th>
+    <th width="2%" onclick="rewrite(11)" style="cursor: pointer;">精神</th>
+    <th width="4%">种类</th>
+    <th width="12%">特攻</th>
 </tr></tbody>
     </table>${buttomTag}`
     
@@ -156,4 +158,29 @@ function writeW(){
     $('#Wtable img').click(function(){
         drawMakeThingWindow(W_value[this.title])
     })
+
+
+    
+
+$('.moreMessage').hover(function(){
+    var messagehtml  = `<p class="moreTitle">${WTG_value[$(this).attr('title')].cName}</p>`
+    if(WTG_value[$(this).attr('title')].mons_normol.length!=0){
+        messagehtml += `<div class="moreNormalBox">`
+        for(var iii=0;iii<WTG_value[$(this).attr('title')].mons_normol.length;iii++){
+            messagehtml += `<div><img src="./img/icon/m/${M_value[WTG_value[$(this).attr('title')].mons_normol[iii]].pid}.png" class="moreNormalImg"><p class="moreNormalName">${M_value[WTG_value[$(this).attr('title')].mons_normol[iii]].name}</p></div>`
+        }
+        messagehtml += `</div>`
+    }
+    if(WTG_value[$(this).attr('title')].mons_boss.length!=0){
+        messagehtml += `<div class="moreBossBox">`
+    for(var iii=0;iii<WTG_value[$(this).attr('title')].mons_boss.length;iii++){
+        messagehtml += `<div><img src="./img/icon/m/${MB_value[WTG_value[$(this).attr('title')].mons_boss[iii]].pid}.png" class="moreBossImg"><p class="moreBossName">${MB_value[WTG_value[$(this).attr('title')].mons_boss[iii]].name}</p></div>`
+    }
+    messagehtml += `</div>`
+}
+
+    $(this).after(`<div class="moreWindow">${messagehtml}</div>`);
+},function(){
+    $(this).parent().find('.moreWindow').css('display','none')
+})
 }
