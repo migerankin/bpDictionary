@@ -2,8 +2,8 @@ var currentTimeStamp = Date.now();
 
 // 指定目标时间的时间戳（2023年7月19日17点22分10秒）
 var targetTimeStamp = new Date();
-targetTimeStamp.setHours(23);
-targetTimeStamp.setMinutes(2);
+targetTimeStamp.setHours(8);
+targetTimeStamp.setMinutes(12);
 targetTimeStamp.setSeconds(10);
 if (currentTimeStamp < targetTimeStamp) {
     targetTimeStamp.setDate(targetTimeStamp.getDate() - 1);
@@ -85,8 +85,8 @@ var ctx = c.getContext('2d')
         now = new Date()
         currentTimeStamp = Date.now();
         targetTimeStamp = new Date();
-        targetTimeStamp.setHours(23);
-        targetTimeStamp.setMinutes(2);
+        targetTimeStamp.setHours(8);
+        targetTimeStamp.setMinutes(12);
         targetTimeStamp.setSeconds(10);
         if (currentTimeStamp < targetTimeStamp) {
             targetTimeStamp.setDate(targetTimeStamp.getDate() - 1);
