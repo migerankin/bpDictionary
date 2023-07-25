@@ -161,9 +161,9 @@ function searchByIndexOf(keyWord, list){
 
     // 遍历表格的每一行，设置目标列的颜色
     for (var i = 1; i < table.rows.length; i++) {
-        table.rows[i].cells[2].style.backgroundColor = '#434343';
-        table.rows[i].cells[3].style.backgroundColor = '#353535';
-        table.rows[i].cells[4].style.backgroundColor = '#353535';
+        table.rows[i].cells[2].style.backgroundColor = '#43434360';
+        table.rows[i].cells[3].style.backgroundColor = '#35353533';
+        table.rows[i].cells[4].style.backgroundColor = '#35353533';
         table.rows[i].cells[3].setAttribute('title', '攻击力');
         table.rows[i].cells[4].setAttribute('title', '防御力');
         table.rows[i].cells[5].setAttribute('title', '筋力');
@@ -232,10 +232,10 @@ function searchByIndexOf(keyWord, list){
 
         // 遍历表格的每一行，设置目标列的颜色
         for (var i = 1; i < table.rows.length; i++) {
-            table.rows[i].cells[2].style.backgroundColor = '#434343';
-            table.rows[i].cells[3].style.backgroundColor = '#434343';
-            table.rows[i].cells[4].style.backgroundColor = '#353535';
-            table.rows[i].cells[5].style.backgroundColor = '#353535';
+            table.rows[i].cells[2].style.backgroundColor = '#43434360';
+            table.rows[i].cells[3].style.backgroundColor = '#43434360';
+            table.rows[i].cells[4].style.backgroundColor = '#35353533';
+            table.rows[i].cells[5].style.backgroundColor = '#35353533';
             table.rows[i].cells[4].setAttribute('title', '攻击力');
             table.rows[i].cells[5].setAttribute('title', '防御力');
             table.rows[i].cells[6].setAttribute('title', '筋力');
@@ -255,6 +255,7 @@ function searchByIndexOf(keyWord, list){
                 <tr>
                     <th width="12%">样貌</th>
                     <th width="12%">名称</th>
+                    <th width="12%">种系</th>
                     <th width="5%">弱点属性</th>
                     <th width="5%">抵抗属性</th>
                     <th width="20%">分布区域</th>
@@ -270,6 +271,7 @@ function searchByIndexOf(keyWord, list){
                 searchhtml += `<tr class="canclick">
                     <td><img src="./img/icon/m/${M_every.pid}.png" alt="暂无" style="height: 100px;"></td>
                     <td style="font-size: 14px;">${M_every.name}</td>
+                    <td style="font-size: 14px;">${M_every.monsKind}</td>
                     <td style="font-size: 14px;">${M_every.moreElem}</td>
                     <td style="font-size: 14px;">${M_every.lessElem}</td>
                     <td>${M_every.spaceName}</td>
@@ -305,8 +307,9 @@ function searchByIndexOf(keyWord, list){
             <tbody>
                 <tr>
                     <th width="15%">样貌</th>
-                    <th width="10%">等级</th>
-                    <th width="20%">名称</th>
+                    <th width="5%">等级</th>
+                    <th width="12%">名称</th>
+                    <th width="10%">种系</th>
                     <th width="15%">分布区域</th>
                     <th width="30%">地图点位</th>
                     <th width="20%">触发事件</th>
@@ -318,6 +321,7 @@ function searchByIndexOf(keyWord, list){
                     <td><img src="./img/icon/m/${MB_every.pid}.png" alt="暂无" style="height: 110px;"></td>
                     <td style="font-size: 14px;">${MB_every.level}</td>
                     <td style="font-size: 14px;">${MB_every.name}</td>
+                    <td style="font-size: 14px;">${MB_every.monsKind}</td>
                     <td>${MB_every.spaceName}</td>
                     <td><img src="./img/monster/${MB_every.mapWhere[0]}.png" alt="暂无" style="height: 180px;"></td>
                     <td>${MB_every.showTime}</td>
@@ -421,21 +425,22 @@ function searchByIndexOf(keyWord, list){
     <p class="Topword">单击列名可进行升、降序排列。单击武器图标可查看其制作材料、图纸及获取途径。</p>
     <table>
         <tbody>
-            <tr>
-                <th width="9%">图标</th>
-                <th width="15%">名称</th>
-                <th width="3%" onclick="rewrite(2)" style="cursor: pointer;">等级</th>
-                <th width="5%" onclick="rewrite(3)" style="cursor: pointer;">攻击</th>
-                <th width="5%" onclick="rewrite(4)" style="cursor: pointer;">会心</th>
-                <th width="3%">属性</th>
-                <th width="6%">属性攻击</th>
-                <th width="4%" onclick="rewrite(7)" style="cursor: pointer;">筋力</th>
-                <th width="4%" onclick="rewrite(8)" style="cursor: pointer;">耐久</th>
-                <th width="4%" onclick="rewrite(9)" style="cursor: pointer;">器用</th>
-                <th width="4%" onclick="rewrite(10)" style="cursor: pointer;">知力</th>
-                <th width="4%" onclick="rewrite(11)" style="cursor: pointer;">精神力</th>
-                <th width="6%">种类</th>
-            </tr>`
+        <tr>
+        <th width="6%">图标</th>
+        <th width="8%">名称</th>
+        <th width="3%" onclick="rewrite(2)" style="cursor: pointer;">等级</th>
+        <th width="3%" onclick="rewrite(3)" style="cursor: pointer;">攻击</th>
+        <th width="4%" onclick="rewrite(4)" style="cursor: pointer;">会心</th>
+        <th width="3%">属性</th>
+        <th width="3%" onclick="rewrite(6)" style="cursor: pointer;">属性<br>攻击</th>
+        <th width="2%" onclick="rewrite(7)" style="cursor: pointer;">筋力</th>
+        <th width="2%" onclick="rewrite(8)" style="cursor: pointer;">耐久</th>
+        <th width="2%" onclick="rewrite(9)" style="cursor: pointer;">器用</th>
+        <th width="2%" onclick="rewrite(10)" style="cursor: pointer;">知力</th>
+        <th width="2%" onclick="rewrite(11)" style="cursor: pointer;">精神</th>
+        <th width="4%">种类</th>
+        <th width="12%">特攻</th>
+    </tr>`
         
         W_value.forEach((W_every, index)=>{
             if(W_every.name==message){
@@ -453,6 +458,7 @@ function searchByIndexOf(keyWord, list){
                 <td style="font-size: 16px;color: rgb(235, 235, 235);">${W_every.z}</td>
                 <td style="font-size: 16px;color: rgb(235, 235, 235);">${W_every.s}</td>
                 <td style="font-size: 16px;color: rgb(235, 235, 235);">${W_every.kind}</td>
+                <td style="font-size: 16px;color: rgb(235, 235, 235);">${W_every.morePower}</td>
             </tr>`
             }
         })
