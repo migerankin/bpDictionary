@@ -100,10 +100,10 @@ function writeB(){
     document.getElementsByClassName('B_E_searchNum')[0].innerText = `全部类型 全部属性 共有 ${table.rows.length-2} 条数据`
     // 遍历表格的每一行，设置目标列的颜色
     for (var i = 1; i < table.rows.length-1; i++) {
-        table.rows[i].cells[2].style.backgroundColor = '#434343';
-        table.rows[i].cells[3].style.backgroundColor = '#434343';
-        table.rows[i].cells[4].style.backgroundColor = '#353535';
-        table.rows[i].cells[5].style.backgroundColor = '#353535';
+        table.rows[i].cells[2].style.backgroundColor = '#43434360';
+        table.rows[i].cells[3].style.backgroundColor = '#43434360';
+        table.rows[i].cells[4].style.backgroundColor = '#35353533';
+        table.rows[i].cells[5].style.backgroundColor = '#35353533';
         table.rows[i].cells[4].setAttribute('title', '攻击力');
         table.rows[i].cells[5].setAttribute('title', '防御力');
         table.rows[i].cells[6].setAttribute('title', '筋力');
