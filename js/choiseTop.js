@@ -23,7 +23,7 @@ $('.title4').click(function(){
 })
 
 
-$('.titleboxOutside').eq(0).mouseenter(function(){
+$('.titleboxOutside').eq(0).hover(function(){
     clearTimeout(setTimeOutboxhide)
     $('.titlebox').eq(0).css('display','block')
     // $('.title2').eq(2).css('border-bottom-color','#25ffa800')
@@ -31,16 +31,15 @@ $('.titleboxOutside').eq(0).mouseenter(function(){
         $('.titlebox').eq(0).css('margin-top','0')
         $('.titlebox').eq(0).css('opacity','1')
     })
-})
-$('.titleboxOutside').eq(0).mouseleave(function(){
+},function(){
     clearTimeout(setTimeOutboxhide)
     $('.titlebox').eq(0).css('margin-top','5px')
     $('.titlebox').eq(0).css('opacity','0')
     setTimeOutboxhide = setTimeout(function(){
         $('.titlebox').eq(0).css('display','none')
-    },500)
+    },300)
 })
-$('.titleboxOutside').eq(1).mouseenter(function(){
+$('.titleboxOutside').eq(1).hover(function(){
     clearTimeout(setTimeOutboxhide)
     $('.titlebox').eq(1).css('display','block')
     // $('.title2').eq(2).css('border-bottom-color','#25ffa800')
@@ -48,12 +47,11 @@ $('.titleboxOutside').eq(1).mouseenter(function(){
         $('.titlebox').eq(1).css('margin-top','0')
         $('.titlebox').eq(1).css('opacity','1')
     })
-})
-$('.titleboxOutside').eq(1).mouseleave(function(){
+},function(){
     clearTimeout(setTimeOutboxhide)
     $('.titlebox').eq(1).css('margin-top','5px')
     $('.titlebox').eq(1).css('opacity','0')
     setTimeOutboxhide = setTimeout(function(){
         $('.titlebox').eq(1).css('display','none')
-    },500)
+    },300)
 })
