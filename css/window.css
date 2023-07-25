@@ -134,7 +134,7 @@ tr img{
 .manyImgBar{
     display: flex;
     overflow: auto;
-    max-width: 500px;
+    max-width: 400px;
     padding: 10px;
 }
 .manyImgBar img{
@@ -174,4 +174,10 @@ td a{
 }
 tr{
     height: 65px;
+}
+
+.moreMessage{
+    height: 14px;
+    cursor: pointer;
+    margin: 0 3px;
 }
