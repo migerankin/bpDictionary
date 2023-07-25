@@ -144,7 +144,7 @@ var B_value = [
 
     {pid:'5059',name:'*貝を集めし邪教徒<br>*收集贝壳的邪徒',element:'火',lev:'40',atk:'15',def:'12',j:'26',n:'26',q:'26',z:'26',s:'26',end:'勇猛G2<br>气功G2<br>忍耐力G2',endexp:'攻击力+25<br>耐久+7 器用+7<br>耐久+13',cd:'60',skill:'向周围发射火球造成火属性伤害',kind:'攻击',isJust:'1',madeIt:{tuzhi:'初始',sucai_Q:'ルーノ',sucai_Q_num:'待补充',sucai_C:['-'],sucai_C_num:[2,2],sucai_B:'*貝を集めし邪教徒',sucai_B_num:'',otherWords:''}},
 
-    {pid:'5060',name:'遺留のオートマトン<br>徘徊的自律机关',element:'无',lev:'40',atk:'18',def:'10',j:'38',n:'8',q:'23',z:'36',s:'26',end:'强击：全攻击・G1<br>气功G2<br>刚力G2',endexp:'全攻击伤害+4%<br>耐久+7 器用+7<br>筋力+13',cd:'65',skill:'向前全速突进攻击敌人，并为其赋予恐惧状态',kind:'攻击',isJust:'0',madeIt:{tuzhi:'初始',sucai_Q:'ルーノ',sucai_Q_num:'待补充',sucai_C:['動的エングラムの結晶片','割れた貝殻','謎の金属'],sucai_C_num:[24,10,3],sucai_B:'遺留のオートマトン',sucai_B_num:'2',otherWords:''}},
+    {pid:'5060',name:'遺留のオートマトン<br>徘徊的自律机关',element:'无',lev:'40',atk:'18',def:'10',j:'38',n:'8',q:'23',z:'36',s:'26',end:'强击：全攻击・G1<br>气功G2<br>刚力G2',endexp:'全攻击伤害+4%<br>耐久+7 器用+7<br>筋力+13',cd:'65',skill:'向前全速突进攻击敌人，并为其赋予恐惧状态',kind:'攻击',isJust:'0',madeIt:{tuzhi:'初始',sucai_Q:'ルーノ',sucai_Q_num:'293000',sucai_C:['動的エングラムの結晶片','割れた貝殻','謎の金属'],sucai_C_num:[24,10,3],sucai_B:'遺留のオートマトン',sucai_B_num:'2',otherWords:''}},
 
     {pid:'5061',name:'朱に染まりし機神<br>朱红机神',element:'雷',lev:'45',atk:'21',def:'11',j:'46',n:'6',q:'26',z:'46',s:'26',end:'溢れる力G1<br>インスピレーションG3<br>刚力G3',endexp:'HP满时增加会心力+6<br>筋力+13 精神+13<br>筋力+25',cd:'60',skill:'从手部向五个方向发射子弹，造成雷属性攻击',kind:'攻击',isJust:'0',madeIt:{tuzhi:'初始',sucai_Q:'ルーノ',sucai_Q_num:'待补充',sucai_C:['環状石','動的エングラムの欠片','ゴーレムの核'],sucai_C_num:[15,74,8],sucai_B:'朱に染まりし機神',sucai_B_num:'2',otherWords:''}},
 
