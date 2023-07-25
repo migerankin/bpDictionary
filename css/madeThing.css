@@ -2,7 +2,7 @@
     /* width: 55%; */
     min-width: 800px;
     height: 440px;
-    background-color: rgba(240, 248, 255, 0.08);
+    background-color: rgba(153, 153, 153, 0.04);
     position: fixed;
     transition: .5s;
     display: none;
