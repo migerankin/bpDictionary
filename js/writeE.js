@@ -76,9 +76,9 @@ function writeE(){
 
     // 遍历表格的每一行，设置目标列的颜色
     for (var i = 1; i < table.rows.length-1; i++) {
-        table.rows[i].cells[2].style.backgroundColor = '#434343';
-        table.rows[i].cells[3].style.backgroundColor = '#353535';
-        table.rows[i].cells[4].style.backgroundColor = '#353535';
+        table.rows[i].cells[2].style.backgroundColor = '#43434360';
+        table.rows[i].cells[3].style.backgroundColor = '#35353533';
+        table.rows[i].cells[4].style.backgroundColor = '#35353533';
         table.rows[i].cells[3].setAttribute('title', '攻击力');
         table.rows[i].cells[4].setAttribute('title', '防御力');
         table.rows[i].cells[5].setAttribute('title', '筋力');
@@ -212,7 +212,8 @@ function drawMakeThingWindow(thingArray){
                     <tr style="height: 20px; font-size: 14px;">
                         <th width="15%">样貌</th>
                         <th width="5%">等级</th>
-                        <th width="20%">名称</th>
+                        <th width="15%">名称</th>
+                        <th width="10%">种系</th>
                         <th width="15%">分布区域</th>
                         <th width="20%">地图点位</th>
                         <th width="12%">触发事件</th>
@@ -222,6 +223,7 @@ function drawMakeThingWindow(thingArray){
                         <td><img src="./img/icon/m/${MB_every.pid}.png" alt="暂无" style="height: 80px;"></td>
                         <td style="font-size: 14px;">${MB_every.level}</td>
                         <td style="font-size: 14px;">${MB_every.name}</td>
+                        <td style="font-size: 14px;">${MB_every.monsKind}</td>
                         <td style="font-size: 14px;">${MB_every.spaceName}</td>
                         <td><img src="./img/monster/${MB_every.mapWhere[0]}.png" alt="暂无" style="height: 120px;"></td>
                         <td style="font-size: 14px;">${MB_every.showTime}</td>
