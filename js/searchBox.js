@@ -492,6 +492,33 @@ function searchByIndexOf(keyWord, list){
         $('#Wtable img').click(function(){
             drawMakeThingWindow(W_value[this.title])
         })
+
+        $('.moreMessage').hover(function(){
+            var maxwidth = ``
+            var messagehtml  = `<p class="moreTitle">${WTG_value[$(this).attr('title')].cName}</p>`
+            if(WTG_value[$(this).attr('title')].mons_normol.length!=0){
+                if($(this).attr('title')==5)maxwidth=`style="max-width: 500px;"`
+                else if($(this).attr('title')==22)maxwidth=`style="max-width: 350px;"`
+                messagehtml += `<div class="moreNormalBox"${maxwidth}>`
+                for(var iii=0;iii<WTG_value[$(this).attr('title')].mons_normol.length;iii++){
+                    messagehtml += `<div><img src="./img/icon/m/${M_value[WTG_value[$(this).attr('title')].mons_normol[iii]].pid}.png" class="moreNormalImg"><p class="moreNormalName">${M_value[WTG_value[$(this).attr('title')].mons_normol[iii]].name}</p></div>`
+                }
+                messagehtml += `</div>`
+            }
+            if(WTG_value[$(this).attr('title')].mons_boss.length!=0){
+                if($(this).attr('title')==5)maxwidth=`style="max-width: 250px;"`
+                else if($(this).attr('title')==22)maxwidth=`style="max-width: 250px;"`
+                messagehtml += `<div class="moreBossBox"${maxwidth}>`
+            for(var iii=0;iii<WTG_value[$(this).attr('title')].mons_boss.length;iii++){
+                messagehtml += `<div><img src="./img/icon/m/${MB_value[WTG_value[$(this).attr('title')].mons_boss[iii]].pid}.png" class="moreBossImg"><p class="moreBossName">${MB_value[WTG_value[$(this).attr('title')].mons_boss[iii]].name}</p></div>`
+            }
+            messagehtml += `</div>`
+        }
+        
+            $(this).after(`<div class="moreWindow">${messagehtml}</div>`);
+        },function(){
+            $(this).parent().find('.moreWindow').css('display','none')
+        })
     }
  }
 //正则匹配
