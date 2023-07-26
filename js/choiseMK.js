@@ -1,4 +1,4 @@
-function choiseMKind(WBox){
+function choiseMKind(WElement, WBox){
     function isSubstring(a, b) {
         // 使用 indexOf() 方法查找字符串 a 在字符串 b 中的索引
         const index = b.indexOf(a);
@@ -27,7 +27,8 @@ function choiseMKind(WBox){
         for (let i = 1; i < rows.length-1; i++) {
             var row = rows[i];
             var Wcategory1 = row.getElementsByTagName('td')[2].innerText;
-            if (WBox==Wcategory1||WBox == '全部') {
+            var Wcategory2 = row.getElementsByTagName('td')[5].innerText;
+            if ((WBox==Wcategory1||WBox == '全种系')&&(isSubstring(WElement,Wcategory2)||WElement == '全地域')) {
                 row.style.display = ''; 
                 Wnum+=1
             }else{
@@ -36,15 +37,16 @@ function choiseMKind(WBox){
           }
           for (let i = 1; i < rows2.length-2; i++) {
             var row = rows2[i];
-            var Wcategory2 = row.getElementsByTagName('td')[3].innerText;
-            if (WBox==Wcategory2||WBox == '全部') {
+            var Wcategory3 = row.getElementsByTagName('td')[3].innerText;
+            var Wcategory4 = row.getElementsByTagName('td')[4].innerText;
+            if ((WBox==Wcategory3||WBox == '全部')&&(isSubstring(WElement,Wcategory4)||WElement == '全部')) {
                 row.style.display = ''; 
                 Wnum+=1
             }else{
                 row.style.display = 'none'; 
             }
           }
-          document.getElementsByClassName('B_E_searchNum')[0].innerText = `${WBox}种系 共有 ${Wnum} 条数据`
+          document.getElementsByClassName('B_E_searchNum')[0].innerText = `${WElement}地域 ${WBox}种系 共有 ${Wnum} 条数据`
 
     // }
 }
