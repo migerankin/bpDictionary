@@ -1,4 +1,6 @@
-var MkindName = '全部'
+
+var MkindName = '全种系'
+var Mwhere = '全地域'
 function writeM(){
     nowPage = 1
     clearInterval(interevalPic)
@@ -9,10 +11,23 @@ function writeM(){
     <div onclick="scrollToSection('Boss')">Boss</div>
 </div>`
     var M_htmlStr = `<p class="windowTitle">| 地图及自由探索怪物清单</p>
-    <p class="Topword">该清单包含野外地图及自由探索地图中的小怪及 Boss ,暂不包含仅在多人副本及主线剧情副本中出现的怪物。<br>地图点位上的红色标注为有可能刷新该怪物的地点，左键单击图片可将其放大并可用鼠标滚轮再次放大。<br>对于怪物的弱点与抵抗属性的机制，有两种情况造成的伤害将获得提升：一，装备怪物弱点属性的武器，造成任意属性（除开怪物的抵抗属性）的伤害；二，装备任意属性的武器，对怪物造成弱点属性的伤害。战斗幻想造成的伤害不受情况一的影响，即，不会因为你装备了怪物弱点属性的武器而获得伤害提升。</p>
-    
-    <div class="BchoiseBoxLevel BchoiseBoxLevelWM" style="flex-wrap: wrap; padding-bottom: 10px; border: none; margin-bottom: -10px;">
-    <div style="background-color: rgb(55, 194, 192); color: rgb(38, 41, 46); border-color: rgb(55, 194, 192, 0);">全部</div>
+    <p class="Topword">该清单包含野外地图及自由探索地图中的小怪及 Boss ,暂不包含仅在多人副本及主线剧情副本中出现的怪物。<br>地图点位上的红色标注为有可能刷新该怪物的地点，左键单击图片可将其放大并可用鼠标滚轮再次放大。<br>对于怪物的弱点与抵抗属性，有两种情况造成的伤害将获得提升：一，装备怪物弱点属性的武器，造成任意属性（除开怪物的抵抗属性）的伤害；二，装备任意属性的武器，对怪物造成弱点属性的伤害。战斗幻想造成的伤害不受上述情况一的影响，即，不会随角色装备的武器属性的变化而变化。</p>
+    <div class="BchoiseBoxLevel BchoiseBoxLevelWhere" style="flex-wrap: wrap; padding-bottom: 10px; border: none; margin-bottom: -20px; margin-top: -5px;">
+    <div style="background-color: rgb(55, 194, 192); color: rgb(38, 41, 46); border-color: rgb(55, 194, 192, 0); width: auto;">全地域</div>
+    <div>アステリア平原</div>
+    <div>バハマール高原</div>
+    <div>モンテノール渓谷</div>
+    <div>エバーグリーン砂漠</div>
+    <div>巨竜の爪痕・自由探索</div>
+    <div>ボルオム遺跡・自由探索</div>
+    <div>木漏れ日射す林道・自由探索</div>
+    <div>ともし火の森・自由探索</div>
+    <div>雨止まぬ森・自由探索</div>
+    <div>枷神の産屋・自由探索</div>
+    <p class="B_E_searchNum" style="bottom: 10px;">全部种系 共有 null 条数据</p>
+</div>
+    <div class="BchoiseBoxLevel BchoiseBoxLevelWM" style="flex-wrap: wrap; padding-bottom: 10px; border: none; margin-bottom: -10px; height: 28px; overflow: hidden; transition: .5s;" id="MonsterKindShowAll">
+    <div style="background-color: rgb(55, 194, 192); color: rgb(38, 41, 46); border-color: rgb(55, 194, 192, 0); width: auto;">全种系</div>
     <div>ボア系</div>
     <div>ゴート系</div>
     <div>フォックス系</div>
@@ -37,7 +52,7 @@ function writeM(){
     <div>オーガ系</div>
     <div>山賊系</div>
     <div>ゾルキシア系</div>
-    <p class="B_E_searchNum">全部种系 共有 null 条数据</p>
+    <p class="MshowMoreTag">[展开]</p>
 </div>
 
     <p class="M_mbTile" id="xiaoguai" style="margin-top: 20px;">地图及自由探索中的小怪</p>
@@ -156,17 +171,36 @@ function writeM(){
         // table.rows[i].cells[8].setAttribute('title', '知力');
         // table.rows[i].cells[9].setAttribute('title', '精神力');
     }
-    document.getElementsByClassName('B_E_searchNum')[0].innerText = `全部类型 全部属性 共有 ${table.rows.length+tableB.rows.length-5} 条数据`
+    
+    document.getElementsByClassName('B_E_searchNum')[0].innerText = `全部地域 全部种系 共有 ${table.rows.length+tableB.rows.length-5} 条数据`
     // document.getElementsByClassName('window')[0].innerHTML += MB_htmlStr
     showStart()
-    $('.BchoiseBoxLevel div').click(function(){
-        $('.BchoiseBoxLevel div').css('background-color','rgb(55, 194, 192, 0)')
-        $('.BchoiseBoxLevel div').css('color','rgb(55, 194, 192)')
-        $('.BchoiseBoxLevel div').css('border-color','rgb(55, 194, 192)')
+    $('.BchoiseBoxLevelWhere div').click(function(){
+        $('.BchoiseBoxLevelWhere div').css('background-color','rgb(55, 194, 192, 0)')
+        $('.BchoiseBoxLevelWhere div').css('color','rgb(55, 194, 192)')
+        $('.BchoiseBoxLevelWhere div').css('border-color','rgb(55, 194, 192)')
+        this.style.backgroundColor='rgb(55, 194, 192)'
+        this.style.color='rgb(38, 41, 46)'
+        this.style.borderColor='rgb(55, 194, 192, 0)'
+        Mwhere = this.innerText
+        choiseMKind(Mwhere, MkindName)
+    })
+    $('.BchoiseBoxLevelWM div').click(function(){
+        $('.BchoiseBoxLevelWM div').css('background-color','rgb(55, 194, 192, 0)')
+        $('.BchoiseBoxLevelWM div').css('color','rgb(55, 194, 192)')
+        $('.BchoiseBoxLevelWM div').css('border-color','rgb(55, 194, 192)')
         this.style.backgroundColor='rgb(55, 194, 192)'
         this.style.color='rgb(38, 41, 46)'
         this.style.borderColor='rgb(55, 194, 192, 0)'
         MkindName = this.innerText
-        choiseMKind(MkindName)
+        choiseMKind(Mwhere, MkindName)
     })
+}
+document.getElementsByClassName('MshowMoreTag')[0].onclick=function(){
+    if(document.getElementById('MonsterKindShowAll').style.height!='160px'){
+    document.getElementById('MonsterKindShowAll').style.height = '160px'
+    document.getElementsByClassName('MshowMoreTag')[0].innerHTML = '[收起]'}
+    else{
+    document.getElementById('MonsterKindShowAll').style.height = '28px'
+    document.getElementsByClassName('MshowMoreTag')[0].innerHTML = '[展开]'}
 }
