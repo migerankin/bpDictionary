@@ -76,7 +76,7 @@ a{
     position: relative;
 }
 .titlebox{
-    transition: .3s;
+    transition: .4s;
     display: none;
     background-color: #000000b4;
     box-shadow: 0 0 40px 5px rgba(0, 0, 0, .3);
