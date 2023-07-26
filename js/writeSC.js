@@ -2,6 +2,8 @@ var scWhere = `全地图`
 var scKind = `全种类`
 function writeSC(){
     nowPage = 1
+    scWhere = `全地图`
+    scKind = `全种类`
     document.getElementsByClassName('window')[0].style.paddingTop = '85px'
     clearInterval(interevalPic)
 
