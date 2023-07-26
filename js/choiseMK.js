@@ -46,7 +46,7 @@ function choiseMKind(WElement, WBox){
                 row.style.display = 'none'; 
             }
           }
-          document.getElementsByClassName('B_E_searchNum')[0].innerText = `${WElement}地域 ${WBox}种系 共有 ${Wnum} 条数据`
+          document.getElementsByClassName('B_E_searchNum')[0].innerText = `${WElement} ${WBox} 共有 ${Wnum} 条数据`
 
     // }
 }
