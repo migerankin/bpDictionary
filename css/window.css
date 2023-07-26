@@ -94,13 +94,14 @@ td{
     position: absolute;
 }
 .MshowMoreTag{
+    color: #4bc6a9e4;
     top: 20px;
     transition: .3s;
     cursor: pointer;
     right: 15px;
 }
 .MshowMoreTag:hover{
-    color: rgb(219, 222, 225);
+    color: #2cd7af;
 }
 .Topword{
     color: rgb(185, 191, 197);
