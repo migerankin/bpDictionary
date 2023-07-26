@@ -65,7 +65,7 @@ td{
     font-size: 14px;
     font-weight: 600;
 }
-.BchoiseBoxLevelWM div{
+.BchoiseBoxLevelWM div,.BchoiseBoxLevelWhere div{
     margin-bottom: 12px;
 }
 .BchoiseBoxLevel div{
@@ -86,12 +86,21 @@ td{
 .BchoiseBoxElement div:nth-child(1),.BchoiseBoxLevel div:nth-child(1){
     width: 65px;
 }
-.B_E_searchNum{
+.B_E_searchNum,.MshowMoreTag{
     color: rgb(185, 191, 197);
     font-size: 13px;
     right: 0;
     bottom: 0;
     position: absolute;
+}
+.MshowMoreTag{
+    top: 20px;
+    transition: .3s;
+    cursor: pointer;
+    right: 15px;
+}
+.MshowMoreTag:hover{
+    color: rgb(219, 222, 225);
 }
 .Topword{
     color: rgb(185, 191, 197);
