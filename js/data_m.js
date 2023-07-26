@@ -3,6 +3,7 @@
 // ┣ name 名字
 // ┣ spaceName 分布地点
 // ┣ isBoss 小怪还是boss
+// ┣ monsKind 种系
 // ┗ mapWhere 分布地点地图序号
 var M_value=[
     {pid:'8001',name:'ゴブリン<br>普通哥布林', monsKind:'ゴブリン系' ,spaceName:'アステリア平原<br>バハマール高原<br><a onclick="showFuBenWhereIs(1)">巨竜の爪痕・自由探索</a>',isBoss:'小怪',mapWhere:['8001','8002','8003'],lessElem:'土',moreElem:'火'},
