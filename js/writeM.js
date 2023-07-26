@@ -3,6 +3,8 @@ var MkindName = '全种系'
 var Mwhere = '全地域'
 function writeM(){
     nowPage = 1
+    MkindName = '全种系'
+    Mwhere = '全地域'
     clearInterval(interevalPic)
     document.getElementsByClassName('window')[0].style.paddingTop = '85px'
 
