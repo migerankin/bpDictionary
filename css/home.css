@@ -84,12 +84,13 @@
     line-height: 32px;
 }
 .qbao img{
-    height: 180px;
-    padding-bottom: 8px;
+    height: 185px;
+    /* margin-bottom: 8px; */
 }
 .qbao div{
     width: 78%;
     margin-left: 40px;
+    padding-bottom: 8px;
 }
 .outBox{
     margin: 25px auto 35px;
