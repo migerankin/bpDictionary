@@ -195,7 +195,7 @@ function writeM(){
         MkindName = this.innerText
         choiseMKind(Mwhere, MkindName)
     })
-}
+    
 document.getElementsByClassName('MshowMoreTag')[0].onclick=function(){
     if(document.getElementById('MonsterKindShowAll').style.height!='160px'){
     document.getElementById('MonsterKindShowAll').style.height = '160px'
@@ -203,4 +203,5 @@ document.getElementsByClassName('MshowMoreTag')[0].onclick=function(){
     else{
     document.getElementById('MonsterKindShowAll').style.height = '28px'
     document.getElementsByClassName('MshowMoreTag')[0].innerHTML = '[展开]'}
+}
 }
