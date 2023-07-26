@@ -334,7 +334,7 @@ function searchByIndexOf(keyWord, list){
         
         document.getElementsByClassName('window')[0].innerHTML = searchhtml
 
-        let tableB = document.getElementsByTagName('table')[1];
+        let tableB = document.getElementsByTagName('table')[0];
     
         for (var i = 1; i < tableB.rows.length; i++) {
             tableB.rows[i].cells[1].style.backgroundColor = '#35353555';
