@@ -16,7 +16,7 @@ function writeSC(){
 //     <div onclick="scrollToSection('qita')">其他</div>
 // </div>`
     var SC_htmlStr = `<p class="windowTitle">| 幻想与武器素材</p>
-    <p class="Topword">该列表仅包含大地图及自由探索地图中的小怪掉落物和植物、矿物及水栖采集物，不包含大地图及自由探索地图中的 Boss 掉落物和多人副本特殊产物。<br>在获取方式为“小怪掉落”的条例中，地图点位为该小怪的分布图；在植物、矿物及水栖采集物的条例中，地图点位为拥有必出采集点的稀有采集物的必出采集点；其他类别的条例和植物、矿物及水栖采集物中的非稀有采集物和暂不具备必出采集点的稀有采集物则不在地图点位中进行标注。<br>地图及材料名称为了方便查询因而与游戏内对照保留了原文。</p>
+    <p class="Topword">该列表仅包含大地图及自由探索地图中的小怪掉落物和植物、矿物及水栖采集物，不包含大地图及自由探索地图中的 Boss 掉落物和多人副本特殊产物。<br>在获取方式为“小怪掉落”的条例中，地图点位为该小怪的分布图；在植物、矿物及水栖采集物的条例中，地图点位为拥有必出采集点的稀有采集物的必出采集点；其他类别的条例和植物、矿物及水栖采集物中的非稀有采集物和暂不具备必出采集点的稀有采集物则不在地图点位中进行标注。</p>
     <div class="BchoiseBoxLevel BchoiseBoxLevelWhere" style="flex-wrap: wrap; padding-bottom: 10px; border: none; margin-bottom: -20px; margin-top: -5px;">
     <div style="background-color: rgb(55, 194, 192); color: rgb(38, 41, 46); border-color: rgb(55, 194, 192, 0);  width: auto;">全地图</div>
     <div>アステリア平原</div>
