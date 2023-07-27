@@ -69,7 +69,7 @@ var SC_value = [
 
     
     { pid: '7501', name: '動的エングラムの欠片', kind: '小怪掉落', obtain: '全地图', mappic: '0' , sfrom:'任意小怪'},
-    { pid: '7502', name: '動的エングラムの結晶片', kind: '小怪掉落', obtain: '全地图', mappic: '0' , sfrom:'任意小怪'},
+    { pid: '7502', name: '動的エングラム結晶片', kind: '小怪掉落', obtain: '全地图', mappic: '0' , sfrom:'任意小怪'},
     { pid: '7503', name: '火精の結晶片G1', kind: '小怪掉落', obtain: '全地图', mappic: '0' , sfrom:'对应属性小怪'},
     { pid: '7504', name: '氷精の結晶片G1', kind: '小怪掉落', obtain: '全地图', mappic: '0' , sfrom:'对应属性小怪'},
     { pid: '7505', name: '雷精の結晶片G1', kind: '小怪掉落', obtain: '全地图', mappic: '0' , sfrom:'对应属性小怪'},
