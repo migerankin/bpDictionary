@@ -1,8 +1,8 @@
 .madeThingsWindow{
     /* width: 55%; */
-    min-width: 800px;
+    min-width: 830px;
     height: 440px;
-    background-color: rgba(153, 153, 153, 0.04);
+    background-color: rgba(31, 31, 31, 0.1);
     position: fixed;
     transition: .5s;
     display: none;
@@ -12,8 +12,9 @@
     top: 50%;
     transform: translateX(-50%) translateY(-50%) scale(0.95);
     backdrop-filter: blur(4px);
+    border-left: 1px solid #415e55;
     border-bottom: #6bc7a580 1px solid;
-    border-radius: 15px 3px 3px 3px;
+    border-radius: 0 3px 3px 3px;
     box-shadow: 0 2px 50px 1px rgba(0, 0, 0, 0.2);
 }
 .madeThingsWindow_closeBtn img{
