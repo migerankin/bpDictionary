@@ -31,6 +31,7 @@ var SC_value = [
     { pid: '7021', name: 'リュウノツメモドキ', obtain: '<a onclick="showFuBenWhereIs(1)">巨竜の爪痕・自由探索</a>', kind: '植物采集', mappic:'1', sfrom:'植物'},
     { pid: '7022', name: '燃える妖花', obtain: '<a onclick="showFuBenWhereIs(1)">巨竜の爪痕・自由探索</a>', kind: '植物采集', mappic:'1', sfrom:'植物'},  
     { pid: '7023', name: 'フィエルの若木', obtain: '<a onclick="showFuBenWhereIs(3)">ともし火の森・自由探索</a>', kind: '植物采集', mappic:'1', sfrom:'植物'},  
+    { pid: '7024', name: 'ルーノキノコ・イミュー', obtain: '<a onclick="showFuBenWhereIs(1)">巨竜の爪痕・自由探索</a>', kind: '植物采集', mappic:'1', sfrom:'植物'},  
     
 
     { pid: '7207', name: '水晶の原石', kind: '矿物采集', obtain: '全地图', mappic: '0', sfrom:'矿物'},
