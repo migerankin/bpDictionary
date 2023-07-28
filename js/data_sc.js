@@ -49,7 +49,7 @@ var SC_value = [
     { pid: '7219', name: '雨唄いの化石', kind: '矿物采集', obtain: 'エバーグリーン砂漠', mappic: '1', sfrom:'矿物'},
     { pid: '7220', name: '谷底白砂', kind: '矿物采集', obtain: 'エバーグリーン砂漠', mappic: '1', sfrom:'矿物'},
     { pid: '7221', name: '風の這痕', kind: '矿物采集', obtain: 'エバーグリーン砂漠', mappic: '0', sfrom:'矿物'},
-    { pid: '7222', name: '砂丘生痕', kind: '矿物采集', obtain: 'エバーグリーン砂漠', mappic: '0', sfrom:'矿物'},
+    { pid: '7222', name: '砂丘生痕', kind: '矿物采集', obtain: 'エバーグリーン砂漠', mappic: '1', sfrom:'矿物'},
     { pid: '7223', name: '哭竜鉱', kind: '矿物采集', obtain: '<a onclick="showFuBenWhereIs(1)">巨竜の爪痕・自由探索</a>', mappic: '1', sfrom:'矿物'},
     { pid: '7224', name: '翼竜の化石', kind: '矿物采集', obtain: '<a onclick="showFuBenWhereIs(1)">巨竜の爪痕・自由探索</a>', mappic: '1', sfrom:'矿物'},
     { pid: '7225', name: '風故物', kind: '矿物采集', obtain: '<a onclick="showFuBenWhereIs(5)">木漏れ日射す林道・自由探索</a>', mappic: '1', sfrom:'矿物'},
