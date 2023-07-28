@@ -89,7 +89,7 @@ var MB_value = [
     {pid:'8516',name:'鮮やかナッポ<br>缤纷纳波', monsKind:'ナッポ系' ,spaceName:'モンテノール渓谷',isBoss:'Boss',mapWhere:['8109'],showTime:'讨伐附件的同类型敌人<br>白天',level:'45'},
     {pid:'8517',name:'渓谷の遊猟者<br>峡谷的游猎者', monsKind:'ムーク系' ,spaceName:'モンテノール渓谷',isBoss:'Boss',mapWhere:['8110'],showTime:'讨伐附件的同类型敌人<br>夜间',level:'35'},
     {pid:'8518',name:'小さき闘技者<br>小小技斗者', monsKind:'ムーク系' ,spaceName:'モンテノール渓谷',isBoss:'Boss',mapWhere:['8111'],showTime:'讨伐附件的同类型敌人',level:'36'},
-    {pid:'8519',name:'スカイサーペント<br>螣蛇', monsKind:'ヤンマ系' ,spaceName:'モンテノール渓谷',isBoss:'Boss',mapWhere:['8112'],showTime:'讨伐附件的同类型敌人<br>夜间',level:'21'},
+    {pid:'8519',name:'スカイサーペント<br>螣蛇', monsKind:'ヤンマ系' ,spaceName:'モンテノール渓谷',isBoss:'Boss',mapWhere:['8112'],showTime:'讨伐附件的同类型敌人',level:'21'},
     {pid:'8520',name:'渓谷の尖兵<br>峡谷的哨兵', monsKind:'ムーク系' ,spaceName:'モンテノール渓谷',isBoss:'Boss',mapWhere:['8113'],showTime:'讨伐附件的同类型敌人<br>夜间',level:'47'},
     {pid:'8521',name:'剛腕の覇者<br>刚腕的霸者', monsKind:'ドゴルマン系' ,spaceName:'エバーグリーン砂漠',isBoss:'Boss',mapWhere:['8114'],showTime:'讨伐附件的同类型敌人<br>多人讨伐概率增加',level:'48'},
     {pid:'8522',name:'隠者の鋭鋏<br>隐士的锐爪', monsKind:'カニクモ系' ,spaceName:'エバーグリーン砂漠',isBoss:'Boss',mapWhere:['8115'],showTime:'讨伐附件的同类型敌人',level:'45'},
