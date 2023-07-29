@@ -49,7 +49,7 @@ var E_value = [
 
     {pid:'0012',name:'砂漠のシャドウバイパー<br>沙漠中的影蝰蛇',kind:'三叶',lev:'40',atk:'10',def:'16',j:'8',n:'23',q:'8',z:'26',s:'30',end:'屈强的心身G2<br>博识G2<br>耐土心得G3',endexp:'耐久+7 精神+7<br>知力+13<br>土属性耐性+10',isJust:'0',madeIt:{tuzhi:'<a onclick="showFuBenWhereIs(2)">雨止まぬ森・自由探索</a> 开宝箱<img src="./img/precious/0002.png" alt="暂缺" class="madeItWinImg">',sucai_Q:'ルーノ',sucai_Q_num:'293000',sucai_C:['動的エングラムの欠片','グロークンシード','山賊の術士の靴'],sucai_C_num:[69,15,15],sucai_B:'',sucai_B_num:''}},
 
-    {pid:'0013',name:'*視線も集めております<br>*目不转睛',kind:'三叶',lev:'15',atk:'2',def:'7',j:'12',n:'8',q:'9',z:'5',s:'11',end:'シックスセンスG1<br>巧妙G1<br>防御的极意：土属性攻击・G1',endexp:'知力+3 精神+3<br>器用+5<br>土属性受伤减免+8%',isJust:'1',madeIt:{tuzhi:'2023夏活4500个贝壳道具交换',sucai_Q:'-',sucai_Q_num:'-',sucai_C:['動的エングラム結晶片','トコヨ草'],sucai_C_num:[8,10],sucai_B:'',sucai_B_num:''}},
+    {pid:'0013',name:'*視線も集めております<br>*目不转睛',kind:'三叶',lev:'15',atk:'2',def:'7',j:'12',n:'8',q:'9',z:'5',s:'11',end:'シックスセンスG1<br>巧妙G1<br>防御的极意：土属性攻击・G1',endexp:'知力+3 精神+3<br>器用+5<br>土属性受伤减免+8%',isJust:'1',madeIt:{tuzhi:'2023夏活4500个贝壳道具交换',sucai_Q:'ルーノ',sucai_Q_num:'20000',sucai_C:['動的エングラム結晶片','トコヨ草'],sucai_C_num:[8,10],sucai_B:'',sucai_B_num:''}},
 
 
     ///////////////
@@ -77,7 +77,7 @@ var E_value = [
 
     {pid:'1011',name:'守護の要ゾルキシア兵長<br>守护之柱・兵长索尔基西亚',kind:'山岳',lev:'40',atk:'7',def:'20',j:'18',n:'23',q:'18',z:'26',s:'12',end:'トランスG2<br>忍耐力G2<br>アンチポイズンG3',endexp:'筋力+7 知力+7<br>耐久+13<br>毒耐性+100%',isJust:'0',madeIt:{tuzhi:'<a onclick="showFuBenWhereIs(4)">枷神の産屋・自由探索</a> 开宝箱<img src="./img/precious/0006.png" alt="暂缺" class="madeItWinImg">',sucai_Q:'ルーノ',sucai_Q_num:'293000',sucai_C:['さざなみ石','動的エングラムの欠片','ゾルキシア槍兵の鎧'],sucai_C_num:[6,69,15],sucai_B:'',sucai_B_num:''}},
 
-    {pid:'1012',name:'*エーリンゼ様のバカンス<br>*艾丽丝小姐的假期',kind:'山岳',lev:'15',atk:'3',def:'6',j:'7',n:'10',q:'11',z:'9',s:'6',end:'生命奔流G1<br>タフネスG1<br>博识G1',endexp:'HP+100<br>筋力+3 耐久+3<br>知力+5',isJust:'1',madeIt:{tuzhi:'2023夏活4500个贝壳道具交换',sucai_Q:'-',sucai_Q_num:'-',sucai_C:['動的エングラムの欠片','グロークンシード'],sucai_C_num:[23,3],sucai_B:'',sucai_B_num:''}},
+    {pid:'1012',name:'*エーリンゼ様のバカンス<br>*艾丽丝小姐的假期',kind:'山岳',lev:'15',atk:'3',def:'6',j:'7',n:'10',q:'11',z:'9',s:'6',end:'生命奔流G1<br>タフネスG1<br>博识G1',endexp:'HP+100<br>筋力+3 耐久+3<br>知力+5',isJust:'1',madeIt:{tuzhi:'2023夏活4500个贝壳道具交换',sucai_Q:'ルーノ',sucai_Q_num:'20000',sucai_C:['動的エングラムの欠片','グロークンシード'],sucai_C_num:[23,3],sucai_B:'',sucai_B_num:''}},
 
 
     ///////////////
