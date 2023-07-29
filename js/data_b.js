@@ -98,7 +98,7 @@ var B_value = [
 
     {pid:'5036',name:'ナッポβ<br>纳波β',element:'无',lev:'35',atk:'11',def:'12',j:'21',n:'22',q:'28',z:'18',s:'28',end:'气合奔流G1<br>シックスセンスG2<br>博识G2',endexp:'ST+5<br>知力+7 精神+7<br>知力+13',cd:'75',skill:'生成一个可以回复友方角色生命值的区域',kind:'回复',isJust:'0',madeIt:{tuzhi:'初始',sucai_Q:'ルーノ',sucai_Q_num:'-',sucai_C:['-'],sucai_C_num:[],sucai_B:'ナッポβ',sucai_B_num:'',otherWords:'完成任务「イタズラ好きの果実たち」'}},
 
-    {pid:'5037',name:'アインレインα<br>爱因莱因α',element:'冰',lev:'40',atk:'19',def:'10',j:'9',n:'18',q:'31',z:'31',s:'36',end:'ウィズダムG2',endexp:'器用+7 知力+7',cd:'65',skill:'生成一个能够抵御远程伤害的防御屏障，并为屏障中的友方角色赋予伤害减免・中状态',kind:'辅助',isJust:'0',madeIt:{tuzhi:'初始',sucai_Q:'ルーノ',sucai_Q_num:'待补充',sucai_C:['-'],sucai_C_num:[2,2],sucai_B:'アインレインα',sucai_B_num:'',otherWords:'通行证六十级'}},
+    {pid:'5037',name:'アインレインα<br>爱因莱因α',element:'冰',lev:'40',atk:'19',def:'10',j:'9',n:'18',q:'31',z:'31',s:'36',end:'ウィズダムG2',endexp:'器用+7 知力+7',cd:'65',skill:'生成一个能够抵御远程伤害的防御屏障，并为屏障中的友方角色赋予伤害减免・中状态',kind:'辅助',isJust:'0',madeIt:{tuzhi:'初始',sucai_Q:'ルーノ',sucai_Q_num:'1000',sucai_C:['-'],sucai_C_num:[2,2],sucai_B:'アインレインα',sucai_B_num:'',otherWords:'通行证六十级'}},
 
     {pid:'5038',name:'カガチヤンマ<br>灰卡伽蜻蜓',element:'无',lev:'40',atk:'15',def:'11',j:'21',n:'35',q:'21',z:'31',s:'23',end:'强击：远隔攻击・G1<br气功G2<br集中G2',endexp:'战远程攻击造成伤害+5%<br>耐久+7 器用+7<br>精神+13',cd:'80',skill:'发射睡眠弹，并未命中的敌人赋予睡眠状态',kind:'攻击',isJust:'0',madeIt:{tuzhi:'初始',sucai_Q:'ルーノ',sucai_Q_num:'293000',sucai_C:['さざなみ石','動的エングラムの欠片','ナッポの扇葉'],sucai_C_num:[3,10,1],sucai_B:'カガチヤンマ',sucai_B_num:'2',otherWords:'ガレィリッジ廃道（图一左下）'}},
 
@@ -136,7 +136,7 @@ var B_value = [
 
     {pid:'5055',name:'隠者の鋭鋏<br>隐士的锐爪',element:'冰',lev:'45',atk:'21',def:'10',j:'23',n:'41',q:'35',z:'9',s:'35',end:'アサルトダイブG1<br>ストラテジストG3<br>忍耐力G3',endexp:'高空突击（高度加成）伤害+4%<br>耐久+13 知力+13<br>耐久+25',cd:'60',skill:'撞击地面，造成冰属性伤害',kind:'攻击',isJust:'0',madeIt:{tuzhi:'初始',sucai_Q:'ルーノ',sucai_Q_num:'371300',sucai_C:['環状石','動的エングラムの欠片','シャドウバイパーの厚手の外皮'],sucai_C_num:[15,74,8],sucai_B:'隠者の鋭鋏',sucai_B_num:'1',otherWords:''}},
 
-    {pid:'5056',name:'アインレインβ<br>爱因莱因β',element:'冰',lev:'50',atk:'22',def:'12',j:'32',n:'3',q:'38',z:'45',s:'38',end:'气合奔流G1',endexp:'ST+5',cd:'70',skill:'在原地生成领域并进行攻击，为敌人赋予受到伤害增加・小状态、冰属性耐性下降・小状态、移动速度下降・小状态降低',kind:'攻击',isJust:'0',madeIt:{tuzhi:'初始',sucai_Q:'ルーノ',sucai_Q_num:'待补充',sucai_C:['-'],sucai_C_num:[],sucai_B:'アインレインβ',sucai_B_num:'',otherWords:'付费通行证满级奖励'}},
+    {pid:'5056',name:'アインレインβ<br>爱因莱因β',element:'冰',lev:'50',atk:'22',def:'12',j:'32',n:'3',q:'38',z:'45',s:'38',end:'气合奔流G1',endexp:'ST+5',cd:'70',skill:'在原地生成领域并进行攻击，为敌人赋予受到伤害增加・小状态、冰属性耐性下降・小状态、移动速度下降・小状态降低',kind:'攻击',isJust:'0',madeIt:{tuzhi:'初始',sucai_Q:'ルーノ',sucai_Q_num:'1000',sucai_C:['-'],sucai_C_num:[],sucai_B:'アインレインβ',sucai_B_num:'',otherWords:'付费通行证满级奖励'}},
 
     {pid:'5057',name:'フェステβ<br>菲丝特β',element:'无',lev:'50',atk:'21',def:'13',j:'45',n:'29',q:'19',z:'22',s:'48',end:'生命奔流G3',endexp:'HP+700',cd:'90',skill:'在战场上鼓舞应援，一定时间内为自身赋予造成伤害提升・小状态、移动速度提升・小状态、技能冷却时间缩短・中状态、霸体状态',kind:'辅助',isJust:'0',madeIt:{tuzhi:'初始',sucai_Q:'ルーノ',sucai_Q_num:'待补充',sucai_C:['-'],sucai_C_num:[],sucai_B:'フェステβ',sucai_B_num:'',otherWords:'2000BP兑换'}},
 
