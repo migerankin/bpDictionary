@@ -129,7 +129,7 @@ var E_value = [
 
     {pid:'3009',name:'御柱のクロノゲート<br>御柱的时空门',kind:'风车',lev:'40',atk:'8',def:'18',j:'10',n:'24',q:'18',z:'24',s:'24',end:'短缩：BイマジンG1<br>シックスセンスG2<br>巧妙G2',endexp:'战斗幻想冷却缩减+6%<br>知力+7 精神+7<br>器用+13',isJust:'0',madeIt:{tuzhi:'<a onclick="showFuBenWhereIs(2)">雨止まぬ森・自由探索</a> 开宝箱得到的任务板里<img src="./img/precious/0002.png" alt="暂缺" class="madeItWinImg">',sucai_Q:'ルーノ',sucai_Q_num:'293000',sucai_C:['動的エングラムの欠片','グロークンシード','ゾルキシア銃機兵のグローブ'],sucai_C_num:[69,15,15],sucai_B:'',sucai_B_num:''}},
 
-    {pid:'3010',name:'*クラスパートナーのバカンス<br>*与同伴共度的假期',kind:'风车',lev:'15',atk:'3',def:'6',j:'11',n:'5',q:'6',z:'11',s:'12',end:'短缩：BイマジンG1<br>屈强的心身G1<br>忍耐力G1',endexp:'战斗幻想冷却缩减+6%<br>精神+3 耐久+3<br>耐久+5',isJust:'1',madeIt:{tuzhi:'「冒険者登録をしよう」任务',sucai_Q:'ルーノ',sucai_Q_num:'待补充',sucai_C:['-'],sucai_C_num:[2,2],sucai_B:'',sucai_B_num:''}},
+    {pid:'3010',name:'*クラスパートナーのバカンス<br>*与同伴共度的假期',kind:'风车',lev:'15',atk:'3',def:'6',j:'11',n:'5',q:'6',z:'11',s:'12',end:'短缩：BイマジンG1<br>屈强的心身G1<br>忍耐力G1',endexp:'战斗幻想冷却缩减+6%<br>精神+3 耐久+3<br>耐久+5',isJust:'1',madeIt:{tuzhi:'「冒険者登録をしよう」任务',sucai_Q:'ルーノ',sucai_Q_num:'20000',sucai_C:['動的エングラムの欠片','環状石'],sucai_C_num:[23,3],sucai_B:'',sucai_B_num:''}},
 
 
     ///////////////
@@ -159,6 +159,6 @@ var E_value = [
 
     {pid:'4012',name:'新米亭主のお手伝い<br>新晋主人的帮手',kind:'水瓶',lev:'40',atk:'9',def:'16',j:'18',n:'29',q:'17',z:'10',s:'28',end:'防御的极意：土属性攻击・G1<br>インスピレーションG2<br>忍耐力G2',endexp:'土属性受伤减免+8%<br>筋力+7 精神+7<br>耐久+13',isJust:'0',madeIt:{tuzhi:'角色任务「新米亭主のお手伝い」',sucai_Q:'ルーノ',sucai_Q_num:'293000',sucai_C:['さざなみ石','動的エングラムの欠片','タイラントボアの無傷の牙'],sucai_C_num:[6,69,15],sucai_B:'',sucai_B_num:''}},
 
-    {pid:'4013',name:'*アステルリーズ・ビーチの夏<br>*阿斯特里海滩之夏',kind:'水瓶',lev:'15',atk:'3',def:'6',j:'11',n:'9',q:'11',z:'5',s:'8',end:'博识G1<br>ストラテジストG1<br>防御的极意：火属性攻击・G1',endexp:'知力+5<br>耐久+3 知力+3<br>火属性受伤减免+8%',isJust:'1',madeIt:{tuzhi:'2023夏活4500个贝壳道具交换',sucai_Q:'ルーノ',sucai_Q_num:'待补充',sucai_C:['-'],sucai_C_num:[2,2],sucai_B:'',sucai_B_num:''}},
+    {pid:'4013',name:'*アステルリーズ・ビーチの夏<br>*阿斯特里海滩之夏',kind:'水瓶',lev:'15',atk:'3',def:'6',j:'11',n:'9',q:'11',z:'5',s:'8',end:'博识G1<br>ストラテジストG1<br>防御的极意：火属性攻击・G1',endexp:'知力+5<br>耐久+3 知力+3<br>火属性受伤减免+8%',isJust:'1',madeIt:{tuzhi:'2023夏活4500个贝壳道具交换',sucai_Q:'ルーノ',sucai_Q_num:'20000',sucai_C:['動的エングラム結晶片','水晶の原石'],sucai_C_num:[8,10],sucai_B:'',sucai_B_num:''}},
 
 ]
