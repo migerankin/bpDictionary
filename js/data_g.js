@@ -33,4 +33,5 @@ var G_value = [
     { kind:'newThings', kindSecond:'4', picId:'230028', isShow:'1', urlOut:'', words:'', EBWname:'*貝殻ゴブリン', justWord:''},
     { kind:'willThings', kindSecond:'1', picId:'230029', isShow:'1', urlOut:'https://www.bilibili.com/video/BV1E14y1o7cf', words:'通信九 / 熟肉总结 / 蓝色协议中文站', EBWname:'', justWord:''},
     { kind:'willThings', kindSecond:'1', picId:'230030', isShow:'1', urlOut:'https://www.bilibili.com/video/BV1DM4y1p7Lb', words:'pv预告 / 欧美服开启预告', EBWname:'', justWord:''},
+    { kind:'willThings', kindSecond:'1', picId:'230031', isShow:'1', urlOut:'https://www.bilibili.com/video/BV1tV4y1v7ob', words:'通信十 / 熟肉总结 / 蓝色协议中文站', EBWname:'', justWord:''},
 ]
