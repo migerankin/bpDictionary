@@ -57,7 +57,7 @@ var E_value = [
     ////////////////
     {pid:'1001',name:'遠くに臨むアステルリーズ<br>远方的阿斯特里',kind:'山岳',lev:'5',atk:'2',def:'1',j:'5',n:'2',q:'5',z:'5',s:'4',end:'アンチスタンG3',endexp:'气绝耐性+100%',isJust:'0',madeIt:{tuzhi:'冒险者任务板・三',sucai_Q:'ルーノ',sucai_Q_num:'1400',sucai_C:['さざなみ石','ランドフォックスの尻尾','動的エングラムの欠片'],sucai_C_num:[2,3,9],sucai_B:'',sucai_B_num:''}},
 
-    {pid:'1002',name:'ラルパル村ポータル<br>拉尔帕尔村的传送点',kind:'山岳',lev:'10',atk:'1',def:'5',j:'9',n:'2',q:'9',z:'5',s:'6',end:'短缩：クラスAG1<br>生命奔流G1<br>集中G1',endexp:'クラスアクション间隔缩短+6%<br>HP+100<br>精神+5',isJust:'0',madeIt:{tuzhi:'冒险者任务板・四',sucai_Q:'ルーノ',sucai_Q_num:'8800',sucai_C:['動的エングラムの欠片','エルダーゴブリンの首飾り','グロークンシード'],sucai_C_num:[20,3,3],sucai_B:'',sucai_B_num:''}},
+    {pid:'1002',name:'ラルパル村ポータル<br>拉尔帕尔村的传送点',kind:'山岳',lev:'10',atk:'1',def:'5',j:'9',n:'2',q:'9',z:'5',s:'6',end:'短缩：クラスAG1<br>生命奔流G1<br>集中G1',endexp:'职业技能（右键）冷却缩短+6%<br>HP+100<br>精神+5',isJust:'0',madeIt:{tuzhi:'冒险者任务板・四',sucai_Q:'ルーノ',sucai_Q_num:'8800',sucai_C:['動的エングラムの欠片','エルダーゴブリンの首飾り','グロークンシード'],sucai_C_num:[20,3,3],sucai_B:'',sucai_B_num:''}},
 
     {pid:'1003',name:'神に守られし土地<br>神佑的土地',kind:'山岳',lev:'10',atk:'2',def:'4',j:'4',n:'8',q:'5',z:'7',s:'5',end:'耐雷心得G3<>タフネスG1<>博识G1',endexp:'雷属性耐性+10<br>筋力+3 耐久+3<br>知力+5',isJust:'0',madeIt:{tuzhi:'冒险者任务板・四',sucai_Q:'ルーノ',sucai_Q_num:'8800',sucai_C:['水晶の原石','動的エングラム結晶片','煙霧苔'],sucai_C_num:[10,7,3],sucai_B:'',sucai_B_num:''}},
 
@@ -65,7 +65,7 @@ var E_value = [
 
     {pid:'1005',name:'目指すはオアシス<br>目光尽头的绿洲',kind:'山岳',lev:'20',atk:'4',def:'9',j:'8',n:'12',q:'13',z:'14',s:'6',end:'短缩：ULTG1<br>不屈G2<br>巧妙G2',endexp:'大招冷却缩减+4%<br>防御+40<br>器用+13',isJust:'0',madeIt:{tuzhi:'冒险者任务板・七',sucai_Q:'ルーノ',sucai_Q_num:'20000',sucai_C:['動的エングラム結晶片','割れた貝殻','雨唄いの化石'],sucai_C_num:[12,5,3],sucai_B:'',sucai_B_num:''}},
 
-    {pid:'1006',name:'お姉様へ……<br>温柔的大姐姐……',kind:'山岳',lev:'25',atk:'4',def:'12',j:'13',n:'8',q:'16',z:'16',s:'13',end:'短缩：クラスAG1<br>シックスセンスG2<br>刚力G2',endexp:'クラスアクション间隔缩短+6%<br>知力+7 精神+7<br>筋力+13',isJust:'0',madeIt:{tuzhi:'角色任务「お姉様へ……」',sucai_Q:'ルーノ',sucai_Q_num:'95800',sucai_C:['動的エングラム結晶片','トコヨ草','砂ミミズ'],sucai_C_num:[16,10,3],sucai_B:'',sucai_B_num:''}},
+    {pid:'1006',name:'お姉様へ……<br>温柔的大姐姐……',kind:'山岳',lev:'25',atk:'4',def:'12',j:'13',n:'8',q:'16',z:'16',s:'13',end:'短缩：クラスAG1<br>シックスセンスG2<br>刚力G2',endexp:'职业技能（右键）冷却缩短+6%<br>知力+7 精神+7<br>筋力+13',isJust:'0',madeIt:{tuzhi:'角色任务「お姉様へ……」',sucai_Q:'ルーノ',sucai_Q_num:'95800',sucai_C:['動的エングラム結晶片','トコヨ草','砂ミミズ'],sucai_C_num:[16,10,3],sucai_B:'',sucai_B_num:''}},
 
     {pid:'1007',name:'ゴブリンキャンプとゴブリンめし<br>哥布林营地的妖精野餐',kind:'山岳',lev:'30',atk:'7',def:'11',j:'12',n:'4',q:'12',z:'23',s:'23',end:'短缩：BイマジンG1<br>エキスパートG2<br>忍耐力G2',endexp:'战斗幻想冷却缩减+6%<br>筋力+7 器用+7<br>耐久+13',isJust:'0',madeIt:{tuzhi:'冒险者任务板・九',sucai_Q:'ルーノ',sucai_Q_num:'162200',sucai_C:['動的エングラムの欠片','グロークンシード','山賊の射手の手袋'],sucai_C_num:[59,3,5],sucai_B:'',sucai_B_num:''}},
 
