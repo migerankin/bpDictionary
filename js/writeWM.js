@@ -25,6 +25,7 @@ function writeWM(){
     <div>弓箭</div>
     <div>法杖</div>
     <div>锤子</div>
+    <div>枪</div>
 </div>
 <div class="BchoiseBoxElement">
     <div style="background-color: rgb(55, 194, 192); color: rgb(38, 41, 46); border-color: rgb(55, 194, 192, 0);">全部</div>
@@ -62,6 +63,7 @@ function writeWM(){
         else if(WM_every.kind=='2'&&WM_every.zy=='3')kind=`职业技巧·弓箭`
         else if(WM_every.kind=='2'&&WM_every.zy=='4')kind=`职业技巧·法杖`
         else if(WM_every.kind=='2'&&WM_every.zy=='5')kind=`职业技巧·锤子`
+        else if(WM_every.kind=='2'&&WM_every.zy=='6')kind=`职业技巧·枪`
         if(WM_every.kind=='1'&&WM_every.level=='G1')word=WMwhere_value[0].toGet
         else if(WM_every.kind=='1'&&WM_every.level=='G2')word=WMwhere_value[1].toGet
         else if(WM_every.kind=='1'&&WM_every.level=='G3')word=WMwhere_value[2].toGet
