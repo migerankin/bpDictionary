@@ -14,19 +14,26 @@ function writeM(){
 </div>`
     var M_htmlStr = `<p class="windowTitle">| 地图及自由探索怪物清单</p>
     <p class="Topword">该清单包含野外地图及自由探索地图中的小怪及 Boss ,暂不包含仅在多人副本及主线剧情副本中出现的怪物。<br>地图点位上的红色标注为有可能刷新该怪物的地点，左键单击图片可将其放大并可用鼠标滚轮再次放大。<br>对于怪物的弱点与抵抗属性，有两种情况造成的伤害将获得提升：一，装备怪物弱点属性的武器，造成任意属性（除开怪物的抵抗属性）的伤害；二，装备任意属性的武器，对怪物造成弱点属性的伤害。战斗幻想造成的伤害不受上述情况一的影响，即，不会随角色装备的武器属性的变化而变化。</p>
-    <div class="BchoiseBoxLevel BchoiseBoxLevelWhere" style="flex-wrap: wrap; padding-bottom: 10px; border: none; margin-bottom: -20px; margin-top: -5px;">
+    <div class="BchoiseBoxLevel BchoiseBoxLevelWhere" style="flex-wrap: wrap; padding-bottom: 10px; border: none; margin-bottom: -20px; margin-top: -5px; height: 28px; overflow: hidden; transition: .5s;" id="MapKindShowAll">
     <div style="background-color: rgb(55, 194, 192); color: rgb(38, 41, 46); border-color: rgb(55, 194, 192, 0); width: auto;">全地域</div>
     <div>アステリア平原</div>
     <div>バハマール高原</div>
     <div>モンテノール渓谷</div>
     <div>エバーグリーン砂漠</div>
+    <div>西バーンハルト半島</div>
     <div>巨竜の爪痕・自由探索</div>
     <div>ボルオム遺跡・自由探索</div>
     <div>木漏れ日射す林道・自由探索</div>
     <div>ともし火の森・自由探索</div>
     <div>雨止まぬ森・自由探索</div>
     <div>枷神の産屋・自由探索</div>
-    <p class="B_E_searchNum" style="bottom: 10px;">全部种系 共有 null 条数据</p>
+    <div>風精の舞台・自由探索</div>
+    <div>音無き都・自由探索</div>
+    <div>機跡の谷・自由探索</div>
+    <div>緋染めの樹林・自由探索</div>
+    <div>暁の虫砦・自由探索</div>
+    <div>呪霊たちの棲家・自由探索</div>
+    <p class="MshowMoreTag">[展开]</p>
 </div>
     <div class="BchoiseBoxLevel BchoiseBoxLevelWM" style="flex-wrap: wrap; padding-bottom: 10px; border: none; margin-bottom: -10px; height: 28px; overflow: hidden; transition: .5s;" id="MonsterKindShowAll">
     <div style="background-color: rgb(55, 194, 192); color: rgb(38, 41, 46); border-color: rgb(55, 194, 192, 0); width: auto;">全种系</div>
@@ -54,9 +61,10 @@ function writeM(){
     <div>オーガ系</div>
     <div>山賊系</div>
     <div>ゾルキシア系</div>
+    <div>バーンハルト兵系</div>
     <p class="MshowMoreTag">[展开]</p>
+    <p class="B_E_searchNum">全部种系 共有 null 条数据</p>
 </div>
-
     <p class="M_mbTile" id="xiaoguai" style="margin-top: 20px;">地图及自由探索中的小怪</p>
     <p class="Topword">以下为小怪清单，注意：<b>小怪的掉落物有区域分别，并非所有地图上的该种小怪都会掉落材料，</b>如有刷材料的需求请于材料列表中进行搜索或翻阅。</p>
     <table>
@@ -198,12 +206,20 @@ function writeM(){
         choiseMKind(Mwhere, MkindName)
     })
     
-document.getElementsByClassName('MshowMoreTag')[0].onclick=function(){
+document.getElementsByClassName('MshowMoreTag')[1].onclick=function(){
     if(document.getElementById('MonsterKindShowAll').style.height!='160px'){
     document.getElementById('MonsterKindShowAll').style.height = '160px'
-    document.getElementsByClassName('MshowMoreTag')[0].innerHTML = '[收起]'}
+    document.getElementsByClassName('MshowMoreTag')[1].innerHTML = '[收起]'}
     else{
     document.getElementById('MonsterKindShowAll').style.height = '28px'
+    document.getElementsByClassName('MshowMoreTag')[1].innerHTML = '[展开]'}
+}
+document.getElementsByClassName('MshowMoreTag')[0].onclick=function(){
+    if(document.getElementById('MapKindShowAll').style.height!='160px'){
+    document.getElementById('MapKindShowAll').style.height = '160px'
+    document.getElementsByClassName('MshowMoreTag')[0].innerHTML = '[收起]'}
+    else{
+    document.getElementById('MapKindShowAll').style.height = '28px'
     document.getElementsByClassName('MshowMoreTag')[0].innerHTML = '[展开]'}
 }
 }

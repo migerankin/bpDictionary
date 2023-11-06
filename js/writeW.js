@@ -23,6 +23,7 @@ function writeW(){
     <div>弓箭</div>
     <div>法杖</div>
     <div>锤子</div>
+    <div>枪</div>
 </div>
 <div class="BchoiseBoxElement">
     <div style="background-color: rgb(55, 194, 192); color: rgb(38, 41, 46); border-color: rgb(55, 194, 192, 0);">全部</div>
@@ -36,7 +37,9 @@ function writeW(){
 </div>
 <div class="BchoiseBoxLevel">
     <div style="background-color: rgb(55, 194, 192); color: rgb(38, 41, 46); border-color: rgb(55, 194, 192, 0);">全部</div>
+    <div>60</div>
     <div>50</div>
+    <div>45</div>
     <div>40</div>
     <div>35</div>
     <div>25</div>
