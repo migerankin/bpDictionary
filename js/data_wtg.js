@@ -25,5 +25,4 @@ var WTG_value = [
     {num:'24', jName:'ゾルキシア系',cName:'产屋军系',mons_normol:[52,53,56,57], mons_boss:[]},
     {num:'25', jName:'バーンハルト兵系',cName:'伯恩哈特兵系',mons_normol:[94,95,96], mons_boss:[48]},
     {num:'26', jName:'ファットマン系',cName:'肥胖兽系',mons_normol:[89,90], mons_boss:[]},
-    {num:'27', jName:'アバリティア系',cName:'阿瓦利提亚系',mons_normol:[], mons_boss:[]},
 ]
