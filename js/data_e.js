@@ -27,29 +27,29 @@ var E_value = [
     ////////////////
     {pid:'0001',name:'うりうりウリボ<br>抚摸小香猪',kind:'三叶',lev:'5',atk:'2',def:'1',j:'2',n:'5',q:'4',z:'5',s:'5',end:'勇猛G1<br>痛击G1<br>强击:通常攻击・G1',endexp:'攻击力+10<br>会心+12<br>普攻伤害+7%',isJust:'0',madeIt:{tuzhi:'初始',sucai_Q:'ルーノ',sucai_Q_num:'500',sucai_C:['動的エングラムの欠片','トコヨ草'],sucai_C_num:[2,2],sucai_B:'',sucai_B_num:''}},
 
-    {pid:'0002',name:'ジェイクの手紙<br>杰克的信',kind:'三叶',lev:'10',atk:'2',def:'4',j:'7',n:'5',q:'4',z:'7',s:'8',end:'气合奔流G1<br>ストラテジストG1<br>刚力G1',endexp:'ST+5<br>耐力+3 知力+3<br>筋力+5',isJust:'0',madeIt:{tuzhi:'角色任务「ジェイクの手紙」',sucai_Q:'ルーノ',sucai_Q_num:'8800',sucai_C:['動的エングラムの欠片','グロークンシード','リザードゴーストの澄んだ目玉'],sucai_C_num:[20,3,3],sucai_B:'',sucai_B_num:''}},
+    {pid:'0002',name:'ジェイクの手紙<br>杰克的信',kind:'三叶',lev:'10',atk:'2',def:'4',j:'7',n:'5',q:'4',z:'7',s:'8',end:'気合の奔流G1<br>ストラテジストG1<br>刚力G1',endexp:'ST+5<br>耐力+3 知力+3<br>筋力+5',isJust:'0',madeIt:{tuzhi:'角色任务「ジェイクの手紙」',sucai_Q:'ルーノ',sucai_Q_num:'8800',sucai_C:['動的エングラムの欠片','グロークンシード','リザードゴーストの澄んだ目玉'],sucai_C_num:[20,3,3],sucai_B:'',sucai_B_num:''}},
 
-    {pid:'0003',name:'神託の乙女<br>神谕少女',kind:'三叶',lev:'15',atk:'4',def:'5',j:'12',n:'13',q:'11',z:'1',s:'8',end:'防御の極意:光属性攻击・G1<br>气合奔流G1<br>集中G1',endexp:'光受到属性伤害降低8%<br>ST+5<br>精神+5',isJust:'0',madeIt:{tuzhi:'角色任务「神託の巫女」',sucai_Q:'ルーノ',sucai_Q_num:'20000',sucai_C:['動的エングラム結晶片','割れた貝殻','メリソス石灰石'],sucai_C_num:[8,5,3],sucai_B:'',sucai_B_num:''}},
+    {pid:'0003',name:'神託の乙女<br>神谕少女',kind:'三叶',lev:'15',atk:'4',def:'5',j:'12',n:'13',q:'11',z:'1',s:'8',end:'防御の極意:光属性攻击・G1<br>気合の奔流G1<br>集中G1',endexp:'受到光属性伤害降低8%<br>ST+5<br>精神+5',isJust:'0',madeIt:{tuzhi:'角色任务「神託の巫女」',sucai_Q:'ルーノ',sucai_Q_num:'20000',sucai_C:['動的エングラム結晶片','割れた貝殻','メリソス石灰石'],sucai_C_num:[8,5,3],sucai_B:'',sucai_B_num:''}},
 
-    {pid:'0004',name:'メリソス川のほとりに<br>于梅利索斯河畔',kind:'三叶',lev:'15',atk:'3',def:'6',j:'5',n:'6',q:'12',z:'11',s:'11',end:'耐雷心得G3<br>インスピレーションG1<br>博识G1',endexp:'雷属性耐性+10<br>筋力+3 精神+3<br>知力+5',isJust:'0',madeIt:{tuzhi:'冒险者任务板・五',sucai_Q:'ルーノ',sucai_Q_num:'20000',sucai_C:['さざなみ石','動的エングラムの欠片','ナッポの甘い果汁'],sucai_C_num:[3,23,3],sucai_B:'',sucai_B_num:''}},
+    {pid:'0004',name:'メリソス川のほとりに<br>于梅利索斯河畔',kind:'三叶',lev:'15',atk:'3',def:'6',j:'5',n:'6',q:'12',z:'11',s:'11',end:'耐雷の心得G3<br>インスピレーションG1<br>博识G1',endexp:'雷属性耐性+10<br>筋力+3 精神+3<br>知力+5',isJust:'0',madeIt:{tuzhi:'冒险者任务板・五',sucai_Q:'ルーノ',sucai_Q_num:'20000',sucai_C:['さざなみ石','動的エングラムの欠片','ナッポの甘い果汁'],sucai_C_num:[3,23,3],sucai_B:'',sucai_B_num:''}},
 
     {pid:'0005',name:'護る者の矜持<br>侍卫的矜持',kind:'三叶',lev:'20',atk:'4',def:'9',j:'15',n:'12',q:'10',z:'9',s:'9',end:'スタミナセーブ:闪・・G1<br>气功G2<br>博识G2',endexp:'闪避体力减免+10%<br>耐久+7 器用+7<br>知力+13',isJust:'0',madeIt:{tuzhi:'角色任务「護る者の矜持」',sucai_Q:'ルーノ',sucai_Q_num:'47500',sucai_C:['環状石','動的エングラムの欠片','オオカガチヤンマの厚い頭殻'],sucai_C_num:[3,34,4],sucai_B:'',sucai_B_num:''}},
 
-    {pid:'0006',name:'手作りの価値<br>手工的价值',kind:'三叶',lev:'25',atk:'5',def:'11',j:'16',n:'17',q:'9',z:'7',s:'16',end:'防御の極意:土属性攻击・G1<br>トランスG2<br>忍耐力G2',endexp:'土受到属性伤害降低8%<br>筋力+7 知力+7<br>耐久+13',isJust:'0',madeIt:{tuzhi:'角色任务「手作りの価値」',sucai_Q:'ルーノ',sucai_Q_num:'95800',sucai_C:['水晶の原石','動的エングラム結晶片','砂蝋枝'],sucai_C_num:[10,16,3],sucai_B:'',sucai_B_num:''}},
+    {pid:'0006',name:'手作りの価値<br>手工的价值',kind:'三叶',lev:'25',atk:'5',def:'11',j:'16',n:'17',q:'9',z:'7',s:'16',end:'防御の極意:土属性攻击・G1<br>トランスG2<br>忍耐力G2',endexp:'受到土属性伤害降低8%<br>筋力+7 知力+7<br>耐久+13',isJust:'0',madeIt:{tuzhi:'角色任务「手作りの価値」',sucai_Q:'ルーノ',sucai_Q_num:'95800',sucai_C:['水晶の原石','動的エングラム結晶片','砂蝋枝'],sucai_C_num:[10,16,3],sucai_B:'',sucai_B_num:''}},
 
     {pid:'0007',name:'過ぎし日の陽炎<br>昔日烈阳',kind:'三叶',lev:'30',atk:'8',def:'11',j:'23',n:'18',q:'11',z:'20',s:'3',end:'防御の極意:遠隔攻撃・G1<br>シックスセンスG2<br>刚力G2',endexp:'受到的远程攻击伤害降低5%<br>知力+7 精神+7<br>筋力+13',isJust:'0',madeIt:{tuzhi:'冒险者任务板・九',sucai_Q:'ルーノ',sucai_Q_num:'158600',sucai_C:['環状石','動的エングラムの欠片','シャドウバイパーのロングテール'],sucai_C_num:[3,59,5],sucai_B:'',sucai_B_num:''}},
 
-    {pid:'0008',name:'砂漠の暴れ猪デザートファング<br>沙漠野猪・大漠獠牙',kind:'三叶',lev:'30',atk:'5',def:'14',j:'9',n:'15',q:'18',z:'20',s:'14',end:'アンチブラインドG3<br>屈强的心身G2<br>巧妙G2',endexp:'暗闇耐性+100%<br>耐久+7 精神+7<br>器用+13',isJust:'0',madeIt:{tuzhi:'冒险者任务板・九',sucai_Q:'ルーノ',sucai_Q_num:'162200',sucai_C:['さざなみ石','動的エングラムの欠片','デザートファングの尖った爪'],sucai_C_num:[3,59,5],sucai_B:'',sucai_B_num:''}},
+    {pid:'0008',name:'砂漠の暴れ猪デザートファング<br>沙漠野猪・大漠獠牙',kind:'三叶',lev:'30',atk:'5',def:'14',j:'9',n:'15',q:'18',z:'20',s:'14',end:'アンチブラインドG3<br>屈強な心身G2<br>巧妙G2',endexp:'暗闇耐性+100%<br>耐久+7 精神+7<br>器用+13',isJust:'0',madeIt:{tuzhi:'冒险者任务板・九',sucai_Q:'ルーノ',sucai_Q_num:'162200',sucai_C:['さざなみ石','動的エングラムの欠片','デザートファングの尖った爪'],sucai_C_num:[3,59,5],sucai_B:'',sucai_B_num:''}},
 
     {pid:'0009',name:'山賊たちのねぐら<br>山贼巢穴',kind:'三叶',lev:'35',atk:'5',def:'19',j:'22',n:'22',q:'22',z:'16',s:'5',end:'不屈G2<br>气功G2<br>刚力G2',endexp:'防御力+40<br>耐久+7 器用+7<br>筋力+13',isJust:'0',madeIt:{tuzhi:'<a onclick="showFuBenWhereIs(6)">ボルオム遺跡・自由探索</a> 开宝箱<img src="./img/precious/0001.png" alt="暂缺" class="madeItWinImg">',sucai_Q:'ルーノ',sucai_Q_num:'224300',sucai_C:['動的エングラム結晶片','割れた貝殻','寂れユリ'],sucai_C_num:[22,15,9],sucai_B:'',sucai_B_num:''}},
 
-    {pid:'0010',name:'イマジンたちの声<br>幻想之声',kind:'三叶',lev:'35',atk:'4',def:'19',j:'16',n:'26',q:'18',z:'4',s:'27',end:'耐光心得G3<br>シックスセンスG2<br>忍耐力G2',endexp:'光属性耐性+10<br>知力+7 精神+7<br>耐久+13',isJust:'0',madeIt:{tuzhi:'角色任务「イマジンたちの声」',sucai_Q:'ルーノ',sucai_Q_num:'221500',sucai_C:['環状石','動的エングラムの欠片','ミーンの丸殻'],sucai_C_num:[15,64,24],sucai_B:'',sucai_B_num:''}},
+    {pid:'0010',name:'イマジンたちの声<br>幻想之声',kind:'三叶',lev:'35',atk:'4',def:'19',j:'16',n:'26',q:'18',z:'4',s:'27',end:'耐光の心得G3<br>シックスセンスG2<br>忍耐力G2',endexp:'光属性耐性+10<br>知力+7 精神+7<br>耐久+13',isJust:'0',madeIt:{tuzhi:'角色任务「イマジンたちの声」',sucai_Q:'ルーノ',sucai_Q_num:'221500',sucai_C:['環状石','動的エングラムの欠片','ミーンの丸殻'],sucai_C_num:[15,64,24],sucai_B:'',sucai_B_num:''}},
 
     {pid:'0011',name:'荒れ狂う剛禍の巨魁<br>狂暴的巨祸之首',kind:'三叶',lev:'40',atk:'6',def:'22',j:'26',n:'23',q:'14',z:'24',s:'14',end:'スタミナセーブ:避・G1<br>集中G2<br>タフネスG2',endexp:'闪避体力减免+10%<br>精神+13<br>筋力+7 耐久+7',isJust:'0',madeIt:{tuzhi:'通过 滝裏の盗掘痕跡・調査 获得的武器任务板<img src="./img/precious/0003.png" alt="暂缺" class="madeItWinImg">',sucai_Q:'ルーノ',sucai_Q_num:'293000',sucai_C:['環状石','動的エングラムの欠片','山賊の斥候の軽甲'],sucai_C_num:[15,69,15],sucai_B:'',sucai_B_num:''}},
 
-    {pid:'0012',name:'砂漠のシャドウバイパー<br>沙漠中的影蝰蛇',kind:'三叶',lev:'40',atk:'10',def:'16',j:'8',n:'23',q:'8',z:'26',s:'30',end:'屈强的心身G2<br>博识G2<br>耐土の心得G3G3',endexp:'耐久+7 精神+7<br>知力+13<br>土属性耐性+10',isJust:'0',madeIt:{tuzhi:'<a onclick="showFuBenWhereIs(2)">雨止まぬ森・自由探索</a> 开宝箱<img src="./img/precious/0002.png" alt="暂缺" class="madeItWinImg">',sucai_Q:'ルーノ',sucai_Q_num:'293000',sucai_C:['動的エングラムの欠片','グロークンシード','山賊の術士の靴'],sucai_C_num:[69,15,15],sucai_B:'',sucai_B_num:''}},
+    {pid:'0012',name:'砂漠のシャドウバイパー<br>沙漠中的影蝰蛇',kind:'三叶',lev:'40',atk:'10',def:'16',j:'8',n:'23',q:'8',z:'26',s:'30',end:'屈強な心身G2<br>博识G2<br>耐土の心得G3G3',endexp:'耐久+7 精神+7<br>知力+13<br>土属性耐性+10',isJust:'0',madeIt:{tuzhi:'<a onclick="showFuBenWhereIs(2)">雨止まぬ森・自由探索</a> 开宝箱<img src="./img/precious/0002.png" alt="暂缺" class="madeItWinImg">',sucai_Q:'ルーノ',sucai_Q_num:'293000',sucai_C:['動的エングラムの欠片','グロークンシード','山賊の術士の靴'],sucai_C_num:[69,15,15],sucai_B:'',sucai_B_num:''}},
 
-    {pid:'0013',name:'*視線も集めております<br>*目不转睛',kind:'三叶',lev:'15',atk:'2',def:'7',j:'12',n:'8',q:'9',z:'5',s:'11',end:'シックスセンスG1<br>巧妙G1<br>防御の極意:土属性攻击・G1',endexp:'知力+3 精神+3<br>器用+5<br>土受到属性伤害降低8%',isJust:'1',madeIt:{tuzhi:'2023夏活4500个贝壳道具交换',sucai_Q:'ルーノ',sucai_Q_num:'20000',sucai_C:['動的エングラム結晶片','トコヨ草'],sucai_C_num:[8,10],sucai_B:'',sucai_B_num:''}},
+    {pid:'0013',name:'*視線も集めております<br>*目不转睛',kind:'三叶',lev:'15',atk:'2',def:'7',j:'12',n:'8',q:'9',z:'5',s:'11',end:'シックスセンスG1<br>巧妙G1<br>防御の極意:土属性攻击・G1',endexp:'知力+3 精神+3<br>器用+5<br>受到土属性伤害降低8%',isJust:'1',madeIt:{tuzhi:'2023夏活4500个贝壳道具交换',sucai_Q:'ルーノ',sucai_Q_num:'20000',sucai_C:['動的エングラム結晶片','トコヨ草'],sucai_C_num:[8,10],sucai_B:'',sucai_B_num:''}},
     
     {pid:'0014',name:'亜人の大将オーガ<br>亚人的大将・战鬼',kind:'三叶',lev:'45',atk:'6',def:'22',j:'26',n:'26',q:'22',z:'7',s:'26',end:'耐土の心得G3<br>エキスパートG3<br>博識G3',endexp:'土属性耐性+10<br>筋力+13 器用+13<br>知力+25',isJust:'1',madeIt:{tuzhi:'<a onclick="showFuBenWhereIs(8)">音無き都・自由探索</a> 开宝箱<img src="./img/precious/0013.png" alt="暂缺" class="madeItWinImg">',sucai_Q:'ルーノ',sucai_Q_num:'366000',sucai_C:['環状石','動的エングラムの欠片','アイスエレメントの核'],sucai_C_num:[15,69,15],sucai_B:'',sucai_B_num:''}},
     
@@ -69,7 +69,7 @@ var E_value = [
 
     {pid:'1002',name:'ラルパル村ポータル<br>拉尔帕尔村的传送点',kind:'山岳',lev:'10',atk:'1',def:'5',j:'9',n:'2',q:'9',z:'5',s:'6',end:'短缩:クラスAG1<br>生命の奔流G1<br>集中G1',endexp:'职业技能(右键)冷却缩短+6%<br>生命值+100<br>精神+5',isJust:'0',madeIt:{tuzhi:'冒险者任务板・四',sucai_Q:'ルーノ',sucai_Q_num:'8800',sucai_C:['動的エングラムの欠片','エルダーゴブリンの首飾り','グロークンシード'],sucai_C_num:[20,3,3],sucai_B:'',sucai_B_num:''}},
 
-    {pid:'1003',name:'神に守られし土地<br>神佑的土地',kind:'山岳',lev:'10',atk:'2',def:'4',j:'4',n:'8',q:'5',z:'7',s:'5',end:'耐雷心得G3<>タフネスG1<>博识G1',endexp:'雷属性耐性+10<br>筋力+3 耐久+3<br>知力+5',isJust:'0',madeIt:{tuzhi:'冒险者任务板・四',sucai_Q:'ルーノ',sucai_Q_num:'8800',sucai_C:['水晶の原石','動的エングラム結晶片','煙霧苔'],sucai_C_num:[10,7,3],sucai_B:'',sucai_B_num:''}},
+    {pid:'1003',name:'神に守られし土地<br>神佑的土地',kind:'山岳',lev:'10',atk:'2',def:'4',j:'4',n:'8',q:'5',z:'7',s:'5',end:'耐雷の心得G3<>タフネスG1<>博识G1',endexp:'雷属性耐性+10<br>筋力+3 耐久+3<br>知力+5',isJust:'0',madeIt:{tuzhi:'冒险者任务板・四',sucai_Q:'ルーノ',sucai_Q_num:'8800',sucai_C:['水晶の原石','動的エングラム結晶片','煙霧苔'],sucai_C_num:[10,7,3],sucai_B:'',sucai_B_num:''}},
 
     {pid:'1004',name:'コイン亭亭主の秘密<br>亭主的秘密',kind:'山岳',lev:'15',atk:'3',def:'6',j:'11',n:'4',q:'7',z:'12',s:'11',end:'スタミナセーブ:跳・G1<br>气功G1<br>刚力G1',endexp:'跳跃体力减免+10%<br>耐久+3 器用+3<br>筋力+5',isJust:'0',madeIt:{tuzhi:'角色任务「コイン亭亭主の秘密」',sucai_Q:'ルーノ',sucai_Q_num:'20000',sucai_C:['動的エングラムの欠片','グロークンシード','カガチヤンマの羽'],sucai_C_num:[23,3,3],sucai_B:'',sucai_B_num:''}},
 
@@ -81,7 +81,7 @@ var E_value = [
 
     {pid:'1008',name:'闘技場に待ち受ける者達<br>竞技场中静候的观众',kind:'山岳',lev:'30',atk:'4',def:'15',j:'18',n:'20',q:'8',z:'14',s:'18',end:'耐闇の心得G3<br>ウィズダムG2<br>集中G2',endexp:'暗属性耐性+10<br>器用+7 知力+7<br>精神+13',isJust:'0',madeIt:{tuzhi:'冒险者任务板・九',sucai_Q:'ルーノ',sucai_Q_num:'162200',sucai_C:['環状石','動的エングラムの欠片','ムークの爪'],sucai_C_num:[3,59,5],sucai_B:'',sucai_B_num:''}},
 
-    {pid:'1009',name:'滝に煙る滅びし文明<br>萧瑟云雾里的文明断壁',kind:'山岳',lev:'35',atk:'5',def:'17',j:'25',n:'14',q:'14',z:'22',s:'16',end:'防御の極意:近接攻击G・1<br>エキスパートG2<br>博识G2',endexp:'近战攻击受伤减免+5%<br>筋力+7 器用+7<br>知力+13',isJust:'0',madeIt:{tuzhi:'<a onclick="showFuBenWhereIs(6)">ボルオム遺跡・自由探索</a> 开宝箱<img src="./img/precious/0004.png" alt="暂缺" class="madeItWinImg">',sucai_Q:'ルーノ',sucai_Q_num:'224300',sucai_C:['動的エングラム結晶片','トコヨ草','ボルオム鉛'],sucai_C_num:[22,15,9],sucai_B:'',sucai_B_num:''}},
+    {pid:'1009',name:'滝に煙る滅びし文明<br>萧瑟云雾里的文明断壁',kind:'山岳',lev:'35',atk:'5',def:'17',j:'25',n:'14',q:'14',z:'22',s:'16',end:'防御の極意:近接攻撃G・1<br>エキスパートG2<br>博识G2',endexp:'近战攻击受伤减免+5%<br>筋力+7 器用+7<br>知力+13',isJust:'0',madeIt:{tuzhi:'<a onclick="showFuBenWhereIs(6)">ボルオム遺跡・自由探索</a> 开宝箱<img src="./img/precious/0004.png" alt="暂缺" class="madeItWinImg">',sucai_Q:'ルーノ',sucai_Q_num:'224300',sucai_C:['動的エングラム結晶片','トコヨ草','ボルオム鉛'],sucai_C_num:[22,15,9],sucai_B:'',sucai_B_num:''}},
 
     {pid:'1010',name:'半年の間に何が？<br>半年后这世间将会？',kind:'山岳',lev:'35',atk:'3',def:'20',j:'16',n:'26',q:'11',z:'14',s:'25',end:'耐闇の心得G3<br>トランスG2<br>巧妙G2',endexp:'暗属性耐性+10<br>筋力+7 知力+7<br>器用+13',isJust:'0',madeIt:{tuzhi:'角色任务「半年の間に何が？」',sucai_Q:'ルーノ',sucai_Q_num:'221500',sucai_C:['動的エングラム結晶片','割れた貝殻','隕鉄の欠片'],sucai_C_num:[22,15,9],sucai_B:'',sucai_B_num:''}},
 
@@ -111,11 +111,11 @@ var E_value = [
 
     {pid:'2004',name:'群れ飛ぶガガチヤンマ<br>成群飞舞的蜻蜓',kind:'矢尻',lev:'15',atk:'2',def:'7',j:'5',n:'10',q:'9',z:'9',s:'13',end:'アンチパライズG3',endexp:'麻痹耐性+100%',isJust:'0',madeIt:{tuzhi:'冒险者任务板・五',sucai_Q:'ルーノ',sucai_Q_num:'20000',sucai_C:['環状石','動的エングラムの欠片','ミーンの羽'],sucai_C_num:[3,23,3],sucai_B:'',sucai_B_num:''}},
 
-    {pid:'2005',name:'乾いた風の終点<br>干风燥沙的终点',kind:'矢尻',lev:'20',atk:'5',def:'8',j:'13',n:'12',q:'10',z:'4',s:'14',end:'耐土の心得G3G3<br>屈强的心身G2<br>刚力G2',endexp:'土属性耐性+10<br>耐久+7 精神+7<br>筋力+13',isJust:'0',madeIt:{tuzhi:'冒险者任务板・七',sucai_Q:'ルーノ',sucai_Q_num:'47500',sucai_C:['水晶の原石','動的エングラム結晶片','レインフォールハーブ'],sucai_C_num:[10,12,3],sucai_B:'',sucai_B_num:''}},
+    {pid:'2005',name:'乾いた風の終点<br>干风燥沙的终点',kind:'矢尻',lev:'20',atk:'5',def:'8',j:'13',n:'12',q:'10',z:'4',s:'14',end:'耐土の心得G3G3<br>屈強な心身G2<br>刚力G2',endexp:'土属性耐性+10<br>耐久+7 精神+7<br>筋力+13',isJust:'0',madeIt:{tuzhi:'冒险者任务板・七',sucai_Q:'ルーノ',sucai_Q_num:'47500',sucai_C:['水晶の原石','動的エングラム結晶片','レインフォールハーブ'],sucai_C_num:[10,12,3],sucai_B:'',sucai_B_num:''}},
 
     {pid:'2006',name:'カップケーキの秘密<br>纸杯糕点的秘诀',kind:'矢尻',lev:'25',atk:'4',def:'12',j:'10',n:'16',q:'17',z:'7',s:'16',end:'耐土の心得G3G3<br>エキスパートG2<br>集中G2',endexp:'土属性耐性+10<br>筋力+7 器用+7<br>精神+13',isJust:'0',madeIt:{tuzhi:'角色任务「カップケーキの秘密」',sucai_Q:'ルーノ',sucai_Q_num:'92800',sucai_C:['さざなみ石','動的エングラムの欠片','シャドウバイパーのテール'],sucai_C_num:[3,46,4],sucai_B:'',sucai_B_num:''}},
 
-    {pid:'2007',name:'守りたい未来<br>想要守护的未来',kind:'矢尻',lev:'30',atk:'5',def:'14',j:'15',n:'18',q:'19',z:'6',s:'18',end:'气合奔流G1<br>トランスG2<br>巧妙G2',endexp:'ST+5<br>筋力+7 知力+7<br>器用+13',isJust:'0',madeIt:{tuzhi:'角色任务「守りたい未来」',sucai_Q:'ルーノ',sucai_Q_num:'162200',sucai_C:['水晶の原石','動的エングラム結晶片','風の這痕'],sucai_C_num:[10,20,3],sucai_B:'',sucai_B_num:''}},
+    {pid:'2007',name:'守りたい未来<br>想要守护的未来',kind:'矢尻',lev:'30',atk:'5',def:'14',j:'15',n:'18',q:'19',z:'6',s:'18',end:'気合の奔流G1<br>トランスG2<br>巧妙G2',endexp:'ST+5<br>筋力+7 知力+7<br>器用+13',isJust:'0',madeIt:{tuzhi:'角色任务「守りたい未来」',sucai_Q:'ルーノ',sucai_Q_num:'162200',sucai_C:['水晶の原石','動的エングラム結晶片','風の這痕'],sucai_C_num:[10,20,3],sucai_B:'',sucai_B_num:''}},
 
     {pid:'2008',name:'岩場に佇むホーンゴート<br>立于峭壁上的霍恩羊',kind:'矢尻',lev:'35',atk:'7',def:'15',j:'22',n:'10',q:'22',z:'24',s:'13',end:'スタミナセーブ:全・G1<br>インスピレーションG2<br>巧妙G2',endexp:'全体力减免+3%+10<br>筋力+7 精神+7<br>器用+13',isJust:'0',madeIt:{tuzhi:'<a onclick="showFuBenWhereIs(1)">巨竜の爪痕・自由探索</a> 开宝箱<img src="./img/precious/0012.png" alt="暂缺" class="madeItWinImg">',sucai_Q:'ルーノ',sucai_Q_num:'224300',sucai_C:['動的エングラム結晶片','トコヨ草','湧水石'],sucai_C_num:[22,15,9],sucai_B:'',sucai_B_num:''}},
 
@@ -138,7 +138,7 @@ var E_value = [
     ///////////////
     //  风车
     ////////////////
-    {pid:'3001',name:'フェステのこと<br>关于菲丝特',kind:'风车',lev:'5',atk:'2',def:'1',j:'4',n:'6',q:'4',z:'5',s:'2',end:'气合奔流G1<br>不屈G1<br>刚力G1',endexp:'ST+5<br>防御力+15<br>筋力+5',isJust:'0',madeIt:{tuzhi:'角色任务「フェステのこと」',sucai_Q:'ルーノ',sucai_Q_num:'1400',sucai_C:['動的エングラム結晶片','ジラ輝石','割れた貝殻'],sucai_C_num:[3,2,4],sucai_B:'',sucai_B_num:''}},
+    {pid:'3001',name:'フェステのこと<br>关于菲丝特',kind:'风车',lev:'5',atk:'2',def:'1',j:'4',n:'6',q:'4',z:'5',s:'2',end:'気合の奔流G1<br>不屈G1<br>刚力G1',endexp:'ST+5<br>防御力+15<br>筋力+5',isJust:'0',madeIt:{tuzhi:'角色任务「フェステのこと」',sucai_Q:'ルーノ',sucai_Q_num:'1400',sucai_C:['動的エングラム結晶片','ジラ輝石','割れた貝殻'],sucai_C_num:[3,2,4],sucai_B:'',sucai_B_num:''}},
 
     {pid:'3002',name:'下僕にメロメロ<br>我中意的下仆',kind:'风车',lev:'10',atk:'2',def:'4',j:'4',n:'8',q:'7',z:'4',s:'7',end:'短缩:BイマジンG1<br>不屈G1<br>忍耐力G1',endexp:'战斗幻想冷却缩减+6%<br>防御力+15<br>耐久+5',isJust:'0',madeIt:{tuzhi:'角色任务「下僕にメロメロ」',sucai_Q:'ルーノ',sucai_Q_num:'8800',sucai_C:['動的エングラムの欠片','環状石','ゴブリンウォーリアーのたてがみ'],sucai_C_num:[20,3,3],sucai_B:'',sucai_B_num:''}},
 
@@ -150,13 +150,13 @@ var E_value = [
 
     {pid:'3006',name:'ミンスターホルン村ポータル<br>米斯特霍恩村的传送点',kind:'风车',lev:'30',atk:'6',def:'14',j:'18',n:'14',q:'18',z:'14',s:'11',end:'短缩:ULT・G1<br>タフネスG2<br>博识G2',endexp:'大招冷却缩减+4%<br>筋力+7 耐久+7<br>知力+13',isJust:'0',madeIt:{tuzhi:'冒险者任务板・九',sucai_Q:'ルーノ',sucai_Q_num:'162200',sucai_C:['さざなみ石','動的エングラムの欠片','ロックリザードの大ヒレ'],sucai_C_num:[3,59,5],sucai_B:'',sucai_B_num:''}},
 
-    {pid:'3007',name:'大地に謡うトリックエルダー<br>诡秘长老向大地吟唱',kind:'风车',lev:'35',atk:'7',def:'17',j:'22',n:'17',q:'16',z:'13',s:'22',end:'アンチスタンG3<br>气合奔流G1<br>刚力G2',endexp:'眩晕耐性+100%<br>ST+5<br>筋力+13',isJust:'0',madeIt:{tuzhi:'<a onclick="showFuBenWhereIs(3)">ともし火の森・自由探索</a> 开宝箱',sucai_Q:'ルーノ',sucai_Q_num:'224300',sucai_C:['水晶の原石','動的エングラム結晶片','ミラービーンズ'],sucai_C_num:[15,22,9],sucai_B:'',sucai_B_num:''}},
+    {pid:'3007',name:'大地に謡うトリックエルダー<br>诡秘长老向大地吟唱',kind:'风车',lev:'35',atk:'7',def:'17',j:'22',n:'17',q:'16',z:'13',s:'22',end:'アンチスタンG3<br>気合の奔流G1<br>刚力G2',endexp:'眩晕耐性+100%<br>ST+5<br>筋力+13',isJust:'0',madeIt:{tuzhi:'<a onclick="showFuBenWhereIs(3)">ともし火の森・自由探索</a> 开宝箱',sucai_Q:'ルーノ',sucai_Q_num:'224300',sucai_C:['水晶の原石','動的エングラム結晶片','ミラービーンズ'],sucai_C_num:[15,22,9],sucai_B:'',sucai_B_num:''}},
 
-    {pid:'3008',name:'御柱の守護者バラージアーム<br>御柱守护者・迫击臂',kind:'风车',lev:'40',atk:'4',def:'24',j:'16',n:'23',q:'30',z:'6',s:'26',end:'气合奔流G1<br>ストラテジストG2<br>刚力G2',endexp:'ST+5<br>耐久+7 知力+7<br>筋力+13',isJust:'0',madeIt:{tuzhi:'<a onclick="showFuBenWhereIs(4)">枷神の産屋・自由探索</a> 开宝箱<img src="./img/precious/0005.png" alt="暂缺" class="madeItWinImg">',sucai_Q:'ルーノ',sucai_Q_num:'293000',sucai_C:['動的エングラムの欠片','グロークンシード','量産型アイアンコフィンの機鎧'],sucai_C_num:[69,15,15],sucai_B:'',sucai_B_num:''}},
+    {pid:'3008',name:'御柱の守護者バラージアーム<br>御柱守护者・迫击臂',kind:'风车',lev:'40',atk:'4',def:'24',j:'16',n:'23',q:'30',z:'6',s:'26',end:'気合の奔流G1<br>ストラテジストG2<br>刚力G2',endexp:'ST+5<br>耐久+7 知力+7<br>筋力+13',isJust:'0',madeIt:{tuzhi:'<a onclick="showFuBenWhereIs(4)">枷神の産屋・自由探索</a> 开宝箱<img src="./img/precious/0005.png" alt="暂缺" class="madeItWinImg">',sucai_Q:'ルーノ',sucai_Q_num:'293000',sucai_C:['動的エングラムの欠片','グロークンシード','量産型アイアンコフィンの機鎧'],sucai_C_num:[69,15,15],sucai_B:'',sucai_B_num:''}},
 
     {pid:'3009',name:'御柱のクロノゲート<br>御柱的时空门',kind:'风车',lev:'40',atk:'8',def:'18',j:'10',n:'24',q:'18',z:'24',s:'24',end:'短缩:BイマジンG1<br>シックスセンスG2<br>巧妙G2',endexp:'战斗幻想冷却缩减+6%<br>知力+7 精神+7<br>器用+13',isJust:'0',madeIt:{tuzhi:'<a onclick="showFuBenWhereIs(2)">雨止まぬ森・自由探索</a> 开宝箱得到的任务板里<img src="./img/precious/0002.png" alt="暂缺" class="madeItWinImg">',sucai_Q:'ルーノ',sucai_Q_num:'293000',sucai_C:['動的エングラムの欠片','グロークンシード','ゾルキシア銃機兵のグローブ'],sucai_C_num:[69,15,15],sucai_B:'',sucai_B_num:''}},
 
-    {pid:'3010',name:'*クラスパートナーのバカンス<br>*与同伴共度的假期',kind:'风车',lev:'15',atk:'3',def:'6',j:'11',n:'5',q:'6',z:'11',s:'12',end:'短缩:BイマジンG1<br>屈强的心身G1<br>忍耐力G1',endexp:'战斗幻想冷却缩减+6%<br>精神+3 耐久+3<br>耐久+5',isJust:'1',madeIt:{tuzhi:'「冒険者登録をしよう」任务',sucai_Q:'ルーノ',sucai_Q_num:'20000',sucai_C:['動的エングラムの欠片','環状石'],sucai_C_num:[23,3],sucai_B:'',sucai_B_num:''}},
+    {pid:'3010',name:'*クラスパートナーのバカンス<br>*与同伴共度的假期',kind:'风车',lev:'15',atk:'3',def:'6',j:'11',n:'5',q:'6',z:'11',s:'12',end:'短缩:BイマジンG1<br>屈強な心身G1<br>忍耐力G1',endexp:'战斗幻想冷却缩减+6%<br>精神+3 耐久+3<br>耐久+5',isJust:'1',madeIt:{tuzhi:'「冒険者登録をしよう」任务',sucai_Q:'ルーノ',sucai_Q_num:'20000',sucai_C:['動的エングラムの欠片','環状石'],sucai_C_num:[23,3],sucai_B:'',sucai_B_num:''}},
 
     {pid:'3011',name:'燃え盛る巨人炎獄<br>熊熊燃烧的巨人・炎狱',kind:'风车',lev:'45',atk:'5',def:'26',j:'0',n:'33',q:'18',z:'29',s:'26',end:'スタミナセーブ:跳・G1<br>ストラテジストG3<br>集中G3',endexp:'跳跃体力减免+10%<br>耐久力+13 知力+13<br>精神力+25',isJust:'0',madeIt:{tuzhi:'ストリーム武器ボード(40级暗武板子)',sucai_Q:'ルーノ',sucai_Q_num:'366000',sucai_C:['環状石','動的エングラムの欠片','イージスポッドの部品'],sucai_C_num:[15,69,15],sucai_B:'',sucai_B_num:''}},
 
@@ -173,9 +173,9 @@ var E_value = [
     ////////////////
     {pid:'4001',name:'巨竜の爪痕の主・荒ぶる牙王<br>巨龙爪痕之主・狂暴牙王',kind:'水瓶',lev:'10',atk:'3',def:'3',j:'5',n:'7',q:'7',z:'9',s:'1',end:'不屈G1<br>シックスセンスG1<br>刚力G1',endexp:'防御力+15<br>知力+3 精神+3<br>筋力+5',isJust:'0',madeIt:{tuzhi:'冒险者任务板・四',sucai_Q:'ルーノ',sucai_Q_num:'8800',sucai_C:['水晶の原石','動的エングラム結晶片','リュウノツメモドキ'],sucai_C_num:[10,7,3],sucai_B:'',sucai_B_num:''}},
 
-    {pid:'4002',name:'雄々しきカイザーエルク<br>威风凛凛的麋鹿',kind:'水瓶',lev:'10',atk:'2',def:'4',j:'7',n:'6',q:'5',z:'4',s:'8',end:'耐光心得G3<br>屈强的心身G1<br>巧妙G1',endexp:'光属性耐性+10<br>耐久+3 精神+3<br>器用+13',isJust:'0',madeIt:{tuzhi:'冒险者任务板・四',sucai_Q:'ルーノ',sucai_Q_num:'8800',sucai_C:['さざなみ石','動的エングラムの欠片','カイザーエルクの毛皮'],sucai_C_num:[3,20,3],sucai_B:'',sucai_B_num:''}},
+    {pid:'4002',name:'雄々しきカイザーエルク<br>威风凛凛的麋鹿',kind:'水瓶',lev:'10',atk:'2',def:'4',j:'7',n:'6',q:'5',z:'4',s:'8',end:'耐光の心得G3<br>屈強な心身G1<br>巧妙G1',endexp:'光属性耐性+10<br>耐久+3 精神+3<br>器用+13',isJust:'0',madeIt:{tuzhi:'冒险者任务板・四',sucai_Q:'ルーノ',sucai_Q_num:'8800',sucai_C:['さざなみ石','動的エングラムの欠片','カイザーエルクの毛皮'],sucai_C_num:[3,20,3],sucai_B:'',sucai_B_num:''}},
 
-    {pid:'4003',name:'交易商の通い道<br>商贸旅道',kind:'水瓶',lev:'15',atk:'4',def:'5',j:'8',n:'10',q:'6',z:'9',s:'11',end:'耐光心得G3<br>エキスパートG1<br>忍耐力G1',endexp:'光属性耐性+10<br>筋力+3 器用+3<br>耐久+5',isJust:'0',madeIt:{tuzhi:'冒险者任务板・五',sucai_Q:'ルーノ',sucai_Q_num:'20000',sucai_C:['環状石','動的エングラム結晶片','カニクモの爪'],sucai_C_num:[5,23,3],sucai_B:'',sucai_B_num:''}},
+    {pid:'4003',name:'交易商の通い道<br>商贸旅道',kind:'水瓶',lev:'15',atk:'4',def:'5',j:'8',n:'10',q:'6',z:'9',s:'11',end:'耐光の心得G3<br>エキスパートG1<br>忍耐力G1',endexp:'光属性耐性+10<br>筋力+3 器用+3<br>耐久+5',isJust:'0',madeIt:{tuzhi:'冒险者任务板・五',sucai_Q:'ルーノ',sucai_Q_num:'20000',sucai_C:['環状石','動的エングラム結晶片','カニクモの爪'],sucai_C_num:[5,23,3],sucai_B:'',sucai_B_num:''}},
 
     {pid:'4004',name:'ムークの縄張り<br>穆库的领地',kind:'水瓶',lev:'15',atk:'5',def:'5',j:'14',n:'10',q:'4',z:'6',s:'12',end:'防御の極意:雷属性攻击・G1<br>生命の奔流G1<br>巧妙G1',endexp:'受到雷属性伤害降低8%<br>生命值+100<br>器用+5',isJust:'0',madeIt:{tuzhi:'冒险者任务板・五',sucai_Q:'ルーノ',sucai_Q_num:'20000',sucai_C:['水晶の原石','動的エングラム結晶片','リッツェホーンウッド'],sucai_C_num:[10,8,3],sucai_B:'',sucai_B_num:''}},
 
