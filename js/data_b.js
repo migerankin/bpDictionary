@@ -138,7 +138,7 @@ var B_value = [
 
     {pid:'5056',name:'アインレインβ<br>爱因莱因β',element:'冰',lev:'50',atk:'22',def:'12',j:'32',n:'3',q:'38',z:'45',s:'38',end:'気合の奔流G1',endexp:'ST+5',cd:'70',skill:'在原地生成领域并进行攻击，为敌人施加受到伤害增加・小状态、冰属性耐性下降・小状态、移动速度下降・小状态降低',kind:'攻击',isJust:'0',madeIt:{tuzhi:'初始',sucai_Q:'ルーノ',sucai_Q_num:'1000',sucai_C:['-'],sucai_C_num:[],sucai_B:'アインレインβ',sucai_B_num:'',otherWords:'第一期付费通行证满级奖励'}},
 
-    {pid:'5057',name:'フェステβ<br>菲丝特β',element:'无',lev:'50',atk:'21',def:'13',j:'45',n:'29',q:'19',z:'22',s:'48',end:'生命の奔流G3',endexp:'HP+700',cd:'90',skill:'在战场上鼓舞应援，一定时间内为自身付与造成伤害提升・小状态、移动速度提升・小状态、技能冷却时间缩短・中状态、霸体状态',kind:'辅助',isJust:'0',madeIt:{tuzhi:'初始',sucai_Q:'ルーノ',sucai_Q_num:'待补充',sucai_C:['-'],sucai_C_num:[],sucai_B:'フェステβ',sucai_B_num:'',otherWords:'BP点数商城'}},
+    {pid:'5057',name:'フェステβ<br>菲丝特β',element:'无',lev:'50',atk:'21',def:'13',j:'45',n:'29',q:'19',z:'22',s:'48',end:'生命の奔流G3',endexp:'HP+700',cd:'90',skill:'在战场上鼓舞应援，一定时间内为自身付与造成伤害提升・小状态、移动速度提升・小状态、技能冷却时间缩短・中状态、霸体状态',kind:'辅助',isJust:'0',madeIt:{tuzhi:'初始',sucai_Q:'ルーノ',sucai_Q_num:'1000',sucai_C:['-'],sucai_C_num:[],sucai_B:'フェステβ',sucai_B_num:'',otherWords:'BP点数商城'}},
 
     {pid:'5058',name:'*貝殻ゴブリン<br>*贝壳哥布林',element:'火',lev:'15',atk:'6',def:'6',j:'12',n:'13',q:'12',z:'12',s:'12',end:'生命の奔流G1<br>トランスG1<br>剛力G1',endexp:'HP+100<br>筋力+3 知力+3<br>筋力+5',cd:'90',skill:'挥舞火把进行火属性攻击，并为敌人施加眩晕状态',kind:'攻击',isJust:'1',madeIt:{tuzhi:'初始',sucai_Q:'ルーノ',sucai_Q_num:'293000',sucai_C:['-'],sucai_C_num:[2,2],sucai_B:'*貝殻ゴブリン',sucai_B_num:'1',otherWords:'フィエル嶺水池（图二左）'}},
 
