@@ -190,7 +190,7 @@ var B_value = [
     
     {pid:'5082',name:'エレクトラβ<br>β',element:'无',lev:'60',atk:'30',def:'12',j:'56',n:'56',q:'31',z:'19',s:'31',end:'気合の奔流G1',endexp:'ST+5',cd:'65',skill:'使枪集中力量发动攻击,为敌人施加恐惧状态,命中时给予爆炸范围内的友方伤害提升・小效果',kind:'攻击',isJust:'0',madeIt:{tuzhi:'初始',sucai_Q:'ルーノ',sucai_Q_num:'1000',sucai_C:['-'],sucai_C_num:[],sucai_B:'エレクトラβ',sucai_B_num:'',otherWords:'BP点数商城'}},
 
-    {pid:'5083',name:'フレアデミドラゴン試作型<br>试做型炎龙β',element:'火',lev:'50',atk:'30',def:'12',j:'45',n:'32',q:'26',z:'45',s:'19',end:'タフネスG2',endexp:'筋力+7 耐久+7',cd:'200',skill:'对前方扇形范围释放火元素吐息攻击<br>长按召唤键发动<br>[凭依]<br>凭依试做型炎龙幻象,一定时间内赋予自身移动速度提升・大,体力恢复速度提高・大,造成伤害提高・中,收纳武器时强化跳跃高度',kind:'攻击',isJust:'0',madeIt:{tuzhi:'初始',sucai_Q:'ルーノ',sucai_Q_num:'0',sucai_C:['-'],sucai_C_num:[],sucai_B:'フレアデミドラゴン試作型β',sucai_B_num:'',otherWords:'2023年9月活动「トリック・スイーツ」奖励(限时)'}},
+    {pid:'5083',name:'フレアデミドラゴン試作型<br>试做型炎龙β',element:'火',lev:'50',atk:'30',def:'12',j:'45',n:'32',q:'26',z:'45',s:'19',end:'タフネスG2',endexp:'筋力+7 耐久+7',cd:'200',skill:'对前方扇形范围释放火元素吐息攻击<br>长按召唤键发动<br>[凭依]<br>凭依试做型炎龙幻象,一定时间内赋予自身移动速度提升・大,体力恢复速度提高・大,造成伤害提高・中,收纳武器时强化跳跃高度',kind:'攻击',isJust:'0',madeIt:{tuzhi:'初始',sucai_Q:'ルーノ',sucai_Q_num:'0',sucai_C:['-'],sucai_C_num:[],sucai_B:'フレアデミドラゴン試作型β',sucai_B_num:'',otherWords:'2023年9月活动「トリック・スイーツ」兑换奖励(限时)'}},
 
     {pid:'5084',name:'ヴェノミーン<br>紫蜂',element:'无',lev:'40',atk:'12',def:'13',j:'26',n:'5',q:'35',z:'31',s:'36',end:'強撃:Bイマジン・G1<br>ウィズダムG2<br>巧妙G2',endexp:'战斗幻想的伤害提高6%<br>器用+7 知力+7<br>器用+13',cd:'50',skill:'发射毒针攻击,为敌人施加中毒效果',kind:'攻击',isJust:'0',madeIt:{tuzhi:'初始',sucai_Q:'ルーノ',sucai_Q_num:'308600',sucai_C:['動的エングラム結晶片','ランツェウッド','トコヨ草'],sucai_C_num:[5,3,10],sucai_B:'ヴェノミーン',sucai_B_num:'1',otherWords:''}},
 
