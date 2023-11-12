@@ -17,18 +17,26 @@ function writeSC(){
 // </div>`
     var SC_htmlStr = `<p class="windowTitle">| 幻想与武器素材</p>
     <p class="Topword">该列表仅包含大地图及自由探索地图中的小怪掉落物和植物、矿物及水栖采集物，不包含大地图及自由探索地图中的 Boss 掉落物和多人副本特殊产物。<br>在获取方式为“小怪掉落”的条例中，地图点位为该小怪的分布图；在植物、矿物及水栖采集物的条例中，地图点位为拥有必出采集点的稀有采集物的必出采集点；其他类别的条例和植物、矿物及水栖采集物中的非稀有采集物和暂不具备必出采集点的稀有采集物则不在地图点位中进行标注。</p>
-    <div class="BchoiseBoxLevel BchoiseBoxLevelWhere" style="flex-wrap: wrap; padding-bottom: 10px; border: none; margin-bottom: -20px; margin-top: -5px;">
+    <div class="BchoiseBoxLevel BchoiseBoxLevelWhere" style="flex-wrap: wrap; padding-bottom: 10px; border: none; margin-bottom: -20px; margin-top: -5px;  height: 28px; overflow: hidden; transition: .5s;"  id="MapKindShowAll">
     <div style="background-color: rgb(55, 194, 192); color: rgb(38, 41, 46); border-color: rgb(55, 194, 192, 0);  width: auto;">全地图</div>
     <div>アステリア平原</div>
     <div>バハマール高原</div>
     <div>モンテノール渓谷</div>
     <div>エバーグリーン砂漠</div>
+    <div>西バーンハルト半島</div>
     <div>巨竜の爪痕・自由探索</div>
     <div>ボルオム遺跡・自由探索</div>
     <div>木漏れ日射す林道・自由探索</div>
     <div>ともし火の森・自由探索</div>
     <div>雨止まぬ森・自由探索</div>
     <div>枷神の産屋・自由探索</div>
+    <div>風精の舞台・自由探索</div>
+    <div>音無き都・自由探索</div>
+    <div>機跡の谷・自由探索</div>
+    <div>緋染めの樹林・自由探索</div>
+    <div>暁の虫砦・自由探索</div>
+    <div>呪霊たちの棲家・自由探索</div>
+    <p class="MshowMoreTag">[展开]</p>
 </div>
 <div class="BchoiseBoxLevel BchoiseBoxLevelWM" style="flex-wrap: wrap; padding-bottom: 0px; border: none;">
     <div style="background-color: rgb(55, 194, 192); color: rgb(38, 41, 46); border-color: rgb(55, 194, 192, 0); width: auto;">全种类</div>
@@ -144,4 +152,13 @@ function writeSC(){
         scKind = this.innerText
         choiseSCwhere(scWhere, scKind)
     })
+
+document.getElementsByClassName('MshowMoreTag')[0].onclick=function(){
+    if(document.getElementById('MapKindShowAll').style.height!='160px'){
+    document.getElementById('MapKindShowAll').style.height = '160px'
+    document.getElementsByClassName('MshowMoreTag')[0].innerHTML = '[收起]'}
+    else{
+    document.getElementById('MapKindShowAll').style.height = '28px'
+    document.getElementsByClassName('MshowMoreTag')[0].innerHTML = '[展开]'}
+}
 }

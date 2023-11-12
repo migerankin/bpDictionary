@@ -39,7 +39,7 @@ function choiseMKind(WElement, WBox){
             var row = rows2[i];
             var Wcategory3 = row.getElementsByTagName('td')[3].innerText;
             var Wcategory4 = row.getElementsByTagName('td')[4].innerText;
-            if ((WBox==Wcategory3||WBox == '全部')&&(isSubstring(WElement,Wcategory4)||WElement == '全部')) {
+            if ((WBox==Wcategory3||WBox == '全种系')&&(isSubstring(WElement,Wcategory4)||WElement == '全地域')) {
                 row.style.display = ''; 
                 Wnum+=1
             }else{

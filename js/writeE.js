@@ -114,7 +114,16 @@ $('.EchoiseBox div').click(function(){
     })
 }
 function drawMakeThingWindow(thingArray){
+    var sc_list = []
     var windowHtml = ``
+    thingArray.madeIt.sucai_C.forEach((sc)=>{
+        for (let i = 0; i<SC_value.length; i++){
+            if (sc == SC_value[i].name){
+                sc_list.push(i);
+                break;
+            }
+        }
+    })
     if(thingArray.madeIt.sucai_B==''){
         var sucai_num = 0
         windowHtml += `
@@ -141,42 +150,76 @@ function drawMakeThingWindow(thingArray){
                     <th width="20%">获取对象</th>
                     <th width="50%">地图点位</th>
                 </tr>`
-        SC_value.forEach((SC_every)=>{
-            if(thingArray.madeIt.sucai_C.includes(SC_every.name)){
-                if(SC_every.mappic=='1'){
-                    windowHtml += `<tr class="canclick">
-                        <td style="font-size: 14px;">${SC_every.name}</td>
-                        <td style="font-size: 14px;">${thingArray.madeIt.sucai_C_num[sucai_num++]}</td>
-                        <td style="font-size: 14px;">${SC_every.kind}</td>
-                        <td style="font-size: 14px;">${SC_every.obtain}</td>
-                        <td style="font-size: 14px;">${SC_every.sfrom}</td>
-                        <td><img src="./img/map/${SC_every.pid}.png" alt="暂无" style="height: 200px;"></td>
-                    </tr>`
-                }else if(SC_every.mappic=='2'){
-                    var imgSrcString  =``
-                    for(var i=0;i<SC_every.mapWhere.length;i++){
-                        imgSrcString += `<img src="./img/map/`+SC_every.mapWhere[i]+`.png" alt="暂无" style="height: 150px;">`
-                    }
-                    windowHtml += `<tr class="canclick">
-                    <td style="font-size: 14px;">${SC_every.name}</td>
+        // SC_value.forEach((SC_every)=>{
+        //     if(thingArray.madeIt.sucai_C.includes(SC_every.name)){
+        //         if(SC_every.mappic=='1'){
+        //             windowHtml += `<tr class="canclick">
+        //                 <td style="font-size: 14px;">${SC_every.name}</td>
+        //                 <td style="font-size: 14px;">${thingArray.madeIt.sucai_C_num[sucai_num++]}</td>
+        //                 <td style="font-size: 14px;">${SC_every.kind}</td>
+        //                 <td style="font-size: 14px;">${SC_every.obtain}</td>
+        //                 <td style="font-size: 14px;">${SC_every.sfrom}</td>
+        //                 <td><img src="./img/map/${SC_every.pid}.png" alt="暂无" style="height: 200px;"></td>
+        //             </tr>`
+        //         }else if(SC_every.mappic=='2'){
+        //             var imgSrcString  =``
+        //             for(var i=0;i<SC_every.mapWhere.length;i++){
+        //                 imgSrcString += `<img src="./img/map/`+SC_every.mapWhere[i]+`.png" alt="暂无" style="height: 150px;">`
+        //             } 
+        //             windowHtml += `<tr class="canclick">
+        //             <td style="font-size: 14px;">${SC_every.name}</td>
+        //             <td style="font-size: 14px;">${thingArray.madeIt.sucai_C_num[sucai_num++]}</td>
+        //             <td style="font-size: 14px;">${SC_every.kind}</td>
+        //             <td style="font-size: 14px;">${SC_every.obtain}</td>
+        //             <td style="font-size: 14px;">${SC_every.sfrom}</td>
+        //                 <td class="manyImgBar" style="max-width: 300px;">${imgSrcString}</td>
+        //             </tr>`
+        //         }else{
+        //             windowHtml += `<tr>
+        //                 <td style="font-size: 14px;">${SC_every.name}</td>
+        //                 <td style="font-size: 14px;">${thingArray.madeIt.sucai_C_num[sucai_num++]}</td>
+        //                 <td style="font-size: 14px;">${SC_every.kind}</td>
+        //                 <td style="font-size: 14px;">${SC_every.obtain}</td>
+        //                 <td style="font-size: 14px;">${SC_every.sfrom}</td>
+        //                 <td>-</td>
+        //             </tr>`
+        //         }
+        //     }
+        // })
+        for (let i = 0;i<sc_list.length;i++){
+            if(SC_value[sc_list[i]].mappic=='1'){
+                windowHtml += `<tr class="canclick">
+                    <td style="font-size: 14px;">${SC_value[sc_list[i]].name}</td>
                     <td style="font-size: 14px;">${thingArray.madeIt.sucai_C_num[sucai_num++]}</td>
-                    <td style="font-size: 14px;">${SC_every.kind}</td>
-                    <td style="font-size: 14px;">${SC_every.obtain}</td>
-                    <td style="font-size: 14px;">${SC_every.sfrom}</td>
-                        <td class="manyImgBar" style="max-width: 300px;">${imgSrcString}</td>
-                    </tr>`
-                }else{
-                    windowHtml += `<tr>
-                        <td style="font-size: 14px;">${SC_every.name}</td>
-                        <td style="font-size: 14px;">${thingArray.madeIt.sucai_C_num[sucai_num++]}</td>
-                        <td style="font-size: 14px;">${SC_every.kind}</td>
-                        <td style="font-size: 14px;">${SC_every.obtain}</td>
-                        <td style="font-size: 14px;">${SC_every.sfrom}</td>
-                        <td>-</td>
-                    </tr>`
+                    <td style="font-size: 14px;">${SC_value[sc_list[i]].kind}</td>
+                    <td style="font-size: 14px;">${SC_value[sc_list[i]].obtain}</td>
+                    <td style="font-size: 14px;">${SC_value[sc_list[i]].sfrom}</td>
+                    <td><img src="./img/map/${SC_value[sc_list[i]].pid}.png" alt="暂无" style="height: 200px;"></td>
+                </tr>`
+            }else if(SC_value[sc_list[i]].mappic=='2'){
+                var imgSrcString  =``
+                for(var y=0;y<SC_value[sc_list[i]].mapWhere.length;y++){
+                    imgSrcString += `<img src="./img/map/`+SC_value[sc_list[i]].mapWhere[y]+`.png" alt="暂无" style="height: 150px;">`
                 }
+                windowHtml += `<tr class="canclick">
+                <td style="font-size: 14px;">${SC_value[sc_list[i]].name}</td>
+                <td style="font-size: 14px;">${thingArray.madeIt.sucai_C_num[sucai_num++]}</td>
+                <td style="font-size: 14px;">${SC_value[sc_list[i]].kind}</td>
+                <td style="font-size: 14px;">${SC_value[sc_list[i]].obtain}</td>
+                <td style="font-size: 14px;">${SC_value[sc_list[i]].sfrom}</td>
+                <td class="manyImgBar" style="max-width: 300px;">${imgSrcString}</td>
+                </tr>`
+            }else{
+                windowHtml += `<tr>
+                    <td style="font-size: 14px;">${SC_value[sc_list[i]].name}</td>
+                    <td style="font-size: 14px;">${thingArray.madeIt.sucai_C_num[sucai_num++]}</td>
+                    <td style="font-size: 14px;">${SC_value[sc_list[i]].kind}</td>
+                    <td style="font-size: 14px;">${SC_value[sc_list[i]].obtain}</td>
+                    <td style="font-size: 14px;">${SC_value[sc_list[i]].sfrom}</td>
+                    <td>-</td>
+                </tr>`
             }
-        })
+        }
         
         windowHtml += `</tbody>
         </table></div>`
@@ -193,7 +236,6 @@ function drawMakeThingWindow(thingArray){
         // draggableElement.style.top = window.innerHeight-450+'px'
         // draggableElement.style.left = window.innerWidth-805+'px'
     }else if(thingArray.madeIt.sucai_B!=''&&thingArray.madeIt.sucai_B!='wepen'){
-        // console.log('dddddddddd');
         var sucai_num = 0
         windowHtml += `
         <div class="ThingWindow_nameBox">
@@ -282,42 +324,76 @@ function drawMakeThingWindow(thingArray){
                             <th width="15%">获取对象</th>
                             <th width="50%">地图点位</th>
                         </tr>`
-                SC_value.forEach((SC_every)=>{
-                    if(thingArray.madeIt.sucai_C.includes(SC_every.name)){
-                        if(SC_every.mappic=='1'){
-                            windowHtml += `<tr class="canclick">
-                                <td style="font-size: 14px;">${SC_every.name}</td>
-                                <td style="font-size: 14px;">${thingArray.madeIt.sucai_C_num[sucai_num++]}</td>
-                                <td style="font-size: 14px;">${SC_every.kind}</td>
-                                <td style="font-size: 14px;">${SC_every.obtain}</td>
-                                <td style="font-size: 14px;">${SC_every.sfrom}</td>
-                                <td><img src="./img/map/${SC_every.pid}.png" alt="暂无" style="height: 200px;"></td>
-                            </tr>`
-                        }else if(SC_every.mappic=='2'){
-                            var imgSrcString  =``
-                            for(var i=0;i<SC_every.mapWhere.length;i++){
-                                imgSrcString += `<img src="./img/map/`+SC_every.mapWhere[i]+`.png" alt="暂无" style="height: 150px;">`
-                            }
-                            windowHtml += `<tr class="canclick">
-                            <td style="font-size: 14px;">${SC_every.name}</td>
+                // SC_value.forEach((SC_every)=>{
+                //     if(thingArray.madeIt.sucai_C.includes(SC_every.name)){
+                //         if(SC_every.mappic=='1'){
+                //             windowHtml += `<tr class="canclick">
+                //                 <td style="font-size: 14px;">${SC_every.name}</td>
+                //                 <td style="font-size: 14px;">${thingArray.madeIt.sucai_C_num[sucai_num++]}</td>
+                //                 <td style="font-size: 14px;">${SC_every.kind}</td>
+                //                 <td style="font-size: 14px;">${SC_every.obtain}</td>
+                //                 <td style="font-size: 14px;">${SC_every.sfrom}</td>
+                //                 <td><img src="./img/map/${SC_every.pid}.png" alt="暂无" style="height: 200px;"></td>
+                //             </tr>`
+                //         }else if(SC_every.mappic=='2'){
+                //             var imgSrcString  =``
+                //             for(var i=0;i<SC_every.mapWhere.length;i++){
+                //                 imgSrcString += `<img src="./img/map/`+SC_every.mapWhere[i]+`.png" alt="暂无" style="height: 150px;">`
+                //             }
+                //             windowHtml += `<tr class="canclick">
+                //             <td style="font-size: 14px;">${SC_every.name}</td>
+                //             <td style="font-size: 14px;">${thingArray.madeIt.sucai_C_num[sucai_num++]}</td>
+                //             <td style="font-size: 14px;">${SC_every.kind}</td>
+                //             <td style="font-size: 14px;">${SC_every.obtain}</td>
+                //             <td style="font-size: 14px;">${SC_every.sfrom}</td>
+                //             <td class="manyImgBar" style="max-width: 300px;">${imgSrcString}</td>
+                //             </tr>`
+                //         }else{
+                //             windowHtml += `<tr>
+                //                 <td style="font-size: 14px;">${SC_every.name}</td>
+                //                 <td style="font-size: 14px;">${thingArray.madeIt.sucai_C_num[sucai_num++]}</td>
+                //                 <td style="font-size: 14px;">${SC_every.kind}</td>
+                //                 <td style="font-size: 14px;">${SC_every.obtain}</td>
+                //                 <td style="font-size: 14px;">${SC_every.sfrom}</td>
+                //                 <td>-</td>
+                //             </tr>`
+                //         }
+                //     }
+                // })
+                for (let i = 0;i<sc_list.length;i++){
+                    if(SC_value[sc_list[i]].mappic=='1'){
+                        windowHtml += `<tr class="canclick">
+                            <td style="font-size: 14px;">${SC_value[sc_list[i]].name}</td>
                             <td style="font-size: 14px;">${thingArray.madeIt.sucai_C_num[sucai_num++]}</td>
-                            <td style="font-size: 14px;">${SC_every.kind}</td>
-                            <td style="font-size: 14px;">${SC_every.obtain}</td>
-                            <td style="font-size: 14px;">${SC_every.sfrom}</td>
-                                <td class="manyImgBar" style="max-width: 300px;">${imgSrcString}</td>
-                            </tr>`
-                        }else{
-                            windowHtml += `<tr>
-                                <td style="font-size: 14px;">${SC_every.name}</td>
-                                <td style="font-size: 14px;">${thingArray.madeIt.sucai_C_num[sucai_num++]}</td>
-                                <td style="font-size: 14px;">${SC_every.kind}</td>
-                                <td style="font-size: 14px;">${SC_every.obtain}</td>
-                                <td style="font-size: 14px;">${SC_every.sfrom}</td>
-                                <td>-</td>
-                            </tr>`
+                            <td style="font-size: 14px;">${SC_value[sc_list[i]].kind}</td>
+                            <td style="font-size: 14px;">${SC_value[sc_list[i]].obtain}</td>
+                            <td style="font-size: 14px;">${SC_value[sc_list[i]].sfrom}</td>
+                            <td><img src="./img/map/${SC_value[sc_list[i]].pid}.png" alt="暂无" style="height: 200px;"></td>
+                        </tr>`
+                    }else if(SC_value[sc_list[i]].mappic=='2'){
+                        var imgSrcString  =``
+                        for(var y=0;y<SC_value[sc_list[i]].mapWhere.length;y++){
+                            imgSrcString += `<img src="./img/map/`+SC_value[sc_list[i]].mapWhere[y]+`.png" alt="暂无" style="height: 150px;">`
                         }
+                        windowHtml += `<tr class="canclick">
+                        <td style="font-size: 14px;">${SC_value[sc_list[i]].name}</td>
+                        <td style="font-size: 14px;">${thingArray.madeIt.sucai_C_num[sucai_num++]}</td>
+                        <td style="font-size: 14px;">${SC_value[sc_list[i]].kind}</td>
+                        <td style="font-size: 14px;">${SC_value[sc_list[i]].obtain}</td>
+                        <td style="font-size: 14px;">${SC_value[sc_list[i]].sfrom}</td>
+                        <td class="manyImgBar" style="max-width: 300px;">${imgSrcString}</td>
+                        </tr>`
+                    }else{
+                        windowHtml += `<tr>
+                            <td style="font-size: 14px;">${SC_value[sc_list[i]].name}</td>
+                            <td style="font-size: 14px;">${thingArray.madeIt.sucai_C_num[sucai_num++]}</td>
+                            <td style="font-size: 14px;">${SC_value[sc_list[i]].kind}</td>
+                            <td style="font-size: 14px;">${SC_value[sc_list[i]].obtain}</td>
+                            <td style="font-size: 14px;">${SC_value[sc_list[i]].sfrom}</td>
+                            <td>-</td>
+                        </tr>`
                     }
-                })
+                }
             }else{
                 windowHtml+=`</tbody></table></div></div>
                 <div class="ThingWindow_madeBox">
@@ -373,42 +449,76 @@ function drawMakeThingWindow(thingArray){
                             <th width="15%">获取对象</th>
                             <th width="50%">地图点位</th>
                         </tr>`
-                SC_value.forEach((SC_every)=>{
-                    if(thingArray.madeIt.sucai_C.includes(SC_every.name)){
-                        if(SC_every.mappic=='1'){
-                            windowHtml += `<tr class="canclick">
-                                <td style="font-size: 14px;">${SC_every.name}</td>
-                                <td style="font-size: 14px;">${thingArray.madeIt.sucai_C_num[sucai_num++]}</td>
-                                <td style="font-size: 14px;">${SC_every.kind}</td>
-                                <td style="font-size: 14px;">${SC_every.obtain}</td>
-                                <td style="font-size: 14px;">${SC_every.sfrom}</td>
-                                <td><img src="./img/map/${SC_every.pid}.png" alt="暂无" style="height: 200px;"></td>
-                            </tr>`
-                        }else if(SC_every.mappic=='2'){
-                            var imgSrcString  =``
-                            for(var i=0;i<SC_every.mapWhere.length;i++){
-                                imgSrcString += `<img src="./img/map/`+SC_every.mapWhere[i]+`.png" alt="暂无" style="height: 150px;">`
-                            }
-                            windowHtml += `<tr class="canclick">
-                            <td style="font-size: 14px;">${SC_every.name}</td>
-                                <td style="font-size: 14px;">${thingArray.madeIt.sucai_C_num[sucai_num++]}</td>
-                                <td style="font-size: 14px;">${SC_every.kind}</td>
-                                <td style="font-size: 14px;">${SC_every.obtain}</td>
-                                <td style="font-size: 14px;">${SC_every.sfrom}</td>
-                                <td class="manyImgBar" style="max-width: 300px;">${imgSrcString}</td>
-                            </tr>`
-                        }else{
-                            windowHtml += `<tr>
-                                <td style="font-size: 14px;">${SC_every.name}</td>
-                                <td style="font-size: 14px;">${thingArray.madeIt.sucai_C_num[sucai_num++]}</td>
-                                <td style="font-size: 14px;">${SC_every.kind}</td>
-                                <td style="font-size: 14px;">${SC_every.obtain}</td>
-                                <td style="font-size: 14px;">${SC_every.sfrom}</td>
-                                <td>-</td>
-                            </tr>`
+                // SC_value.forEach((SC_every)=>{
+                //     if(thingArray.madeIt.sucai_C.includes(SC_every.name)){
+                //         if(SC_every.mappic=='1'){
+                //             windowHtml += `<tr class="canclick">
+                //                 <td style="font-size: 14px;">${SC_every.name}</td>
+                //                 <td style="font-size: 14px;">${thingArray.madeIt.sucai_C_num[sucai_num++]}</td>
+                //                 <td style="font-size: 14px;">${SC_every.kind}</td>
+                //                 <td style="font-size: 14px;">${SC_every.obtain}</td>
+                //                 <td style="font-size: 14px;">${SC_every.sfrom}</td>
+                //                 <td><img src="./img/map/${SC_every.pid}.png" alt="暂无" style="height: 200px;"></td>
+                //             </tr>`
+                //         }else if(SC_every.mappic=='2'){
+                //             var imgSrcString  =``
+                //             for(var i=0;i<SC_every.mapWhere.length;i++){
+                //                 imgSrcString += `<img src="./img/map/`+SC_every.mapWhere[i]+`.png" alt="暂无" style="height: 150px;">`
+                //             }
+                //             windowHtml += `<tr class="canclick">
+                //             <td style="font-size: 14px;">${SC_every.name}</td>
+                //                 <td style="font-size: 14px;">${thingArray.madeIt.sucai_C_num[sucai_num++]}</td>
+                //                 <td style="font-size: 14px;">${SC_every.kind}</td>
+                //                 <td style="font-size: 14px;">${SC_every.obtain}</td>
+                //                 <td style="font-size: 14px;">${SC_every.sfrom}</td>
+                //                 <td class="manyImgBar" style="max-width: 300px;">${imgSrcString}</td>
+                //             </tr>`
+                //         }else{
+                //             windowHtml += `<tr>
+                //                 <td style="font-size: 14px;">${SC_every.name}</td>
+                //                 <td style="font-size: 14px;">${thingArray.madeIt.sucai_C_num[sucai_num++]}</td>
+                //                 <td style="font-size: 14px;">${SC_every.kind}</td>
+                //                 <td style="font-size: 14px;">${SC_every.obtain}</td>
+                //                 <td style="font-size: 14px;">${SC_every.sfrom}</td>
+                //                 <td>-</td>
+                //             </tr>`
+                //         }
+                //     }
+                // })
+                for (let i = 0;i<sc_list.length;i++){
+                    if(SC_value[sc_list[i]].mappic=='1'){
+                        windowHtml += `<tr class="canclick">
+                            <td style="font-size: 14px;">${SC_value[sc_list[i]].name}</td>
+                            <td style="font-size: 14px;">${thingArray.madeIt.sucai_C_num[sucai_num++]}</td>
+                            <td style="font-size: 14px;">${SC_value[sc_list[i]].kind}</td>
+                            <td style="font-size: 14px;">${SC_value[sc_list[i]].obtain}</td>
+                            <td style="font-size: 14px;">${SC_value[sc_list[i]].sfrom}</td>
+                            <td><img src="./img/map/${SC_value[sc_list[i]].pid}.png" alt="暂无" style="height: 200px;"></td>
+                        </tr>`
+                    }else if(SC_value[sc_list[i]].mappic=='2'){
+                        var imgSrcString  =``
+                        for(var y=0;y<SC_value[sc_list[i]].mapWhere.length;y++){
+                            imgSrcString += `<img src="./img/map/`+SC_value[sc_list[i]].mapWhere[y]+`.png" alt="暂无" style="height: 150px;">`
                         }
+                        windowHtml += `<tr class="canclick">
+                        <td style="font-size: 14px;">${SC_value[sc_list[i]].name}</td>
+                        <td style="font-size: 14px;">${thingArray.madeIt.sucai_C_num[sucai_num++]}</td>
+                        <td style="font-size: 14px;">${SC_value[sc_list[i]].kind}</td>
+                        <td style="font-size: 14px;">${SC_value[sc_list[i]].obtain}</td>
+                        <td style="font-size: 14px;">${SC_value[sc_list[i]].sfrom}</td>
+                        <td class="manyImgBar" style="max-width: 300px;">${imgSrcString}</td>
+                        </tr>`
+                    }else{
+                        windowHtml += `<tr>
+                            <td style="font-size: 14px;">${SC_value[sc_list[i]].name}</td>
+                            <td style="font-size: 14px;">${thingArray.madeIt.sucai_C_num[sucai_num++]}</td>
+                            <td style="font-size: 14px;">${SC_value[sc_list[i]].kind}</td>
+                            <td style="font-size: 14px;">${SC_value[sc_list[i]].obtain}</td>
+                            <td style="font-size: 14px;">${SC_value[sc_list[i]].sfrom}</td>
+                            <td>-</td>
+                        </tr>`
                     }
-                })
+                }
             }else{
                 windowHtml+=`</tbody></table></div></div>
                 <div class="ThingWindow_madeBox">

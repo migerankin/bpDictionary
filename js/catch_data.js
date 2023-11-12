@@ -3,6 +3,7 @@ fetch('https://object-web.blue-protocol.com/news.json?ver=f58ae37e3346c951fccaf7
 .then(response => response.json())
 .then(data => {
     returnArray = data
+    console.log(returnArray)
     writeG()
 })
 .catch(error => {
